@@ -1,0 +1,4 @@
+{
+"toggleFLWindow":{"order":  1,  "onUp":"electrics.values.LWindow = 0-(electrics.values.LWindow or 1)", "title": "Front Left Window", "desc": "Opens/closes Front Left Window" },
+"toggleFRWindow":{"order":  2,  "onUp":"electrics.values.RWindow = 0-(electrics.values.RWindow or 1)", "title": "Front Right Window", "desc": "Opens/closes Front Right Window" }
+}

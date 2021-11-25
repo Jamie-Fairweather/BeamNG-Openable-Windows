@@ -1,0 +1,138 @@
+{
+  "super_glass_fixed" : {
+    "name" : "super_glass_fixed",
+    "mapTo" : "super_glass_fixed",
+    "class" : "Material",
+    "persistentId" : "1b05f60c-ad49-49de-bc60-90bd982bff43",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/super/openable_materials/super_glass_fixed_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/super/openable_materials/super_glass_fixed_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "super_glass_dmg_fixed" : {
+    "name" : "super_glass_dmg_fixed",
+    "mapTo" : "super_glass_dmg_fixed",
+    "class" : "Material",
+    "persistentId" : "717dfd5a-354d-468e-836d-927bca0fa528",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/super/openable_materials/super_glass_fixed_dmg_b.color.png",
+        "normalMap": "vehicles/common/glass_dmg_n.dds",
+        "opacityMap": "/vehicles/super/openable_materials/super_glass_fixed_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "super_glass_int_fixed" : {
+    "name" : "super_glass_int_fixed",
+    "class" : "Material",
+    "persistentId" : "5d834a51-6f46-4b67-be6a-7c627e2ca5ec",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/super/openable_materials/super_glass_fixed_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "mapTo" : "super_glass_int_fixed",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true
+  },
+  "super_glass_openable" : {
+    "name" : "super_glass_openable",
+    "mapTo" : "super_glass_openable",
+    "class" : "Material",
+    "persistentId" : "1b05f60c-ad49-49de-bc60-90bd982bff43",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/super/openable_materials/super_glass_openable_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/super/openable_materials/super_glass_openable_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "super_glass_int_openable" : {
+    "name" : "super_glass_int_openable",
+    "class" : "Material",
+    "persistentId" : "5d834a51-6f46-4b67-be6a-7c627e2ca5ec",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/super/openable_materials/super_glass_openable_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "mapTo" : "super_glass_int_openable",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true
+  }
+}

@@ -1,0 +1,64 @@
+{
+"Jamie599s_super_fixed_doorglass_R": {
+    "information":{
+        "authors":"Jamie599",
+        "name":"Right Door Fixed Glass",
+        "value":40,
+    },
+    "slotType" : "super_fixed_doorglass_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"doorglass_R_break", "deformMaterialBase":"super_glass_fixed", "deformMaterialDamaged":"super_glass_dmg_fixed"},
+         ["super_doorglass_fixed_R", ["super_door_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound7", "deformVolume":0.7}],
+         {"deformGroup":"doorglass_R_break", "deformMaterialBase":"super_glass_int_fixed", "deformMaterialDamaged":"super_glass_dmg_fixed"},
+         ["super_doorglass_fixed_R_int", ["super_door_R"]],
+         {"deformGroup":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--RIGHT DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"super_door_R"},
+         {"nodeWeight":1.8},
+         ["d10r",-0.75, -0.42, 0.95],
+         ["d11r",-0.64, -0.12, 1.09],
+         ["d12r",-0.64, 0.49, 1.08],
+         ["d13r",-0.76, 0.45, 0.95],
+         {"group":""},
+    ],
+},
+"Jamie599s_super_fixed_doorglass_L": {
+    "information":{
+        "authors":"Jamie",
+        "name":"Left Door Fixed Glass",
+        "value":40,
+    },
+    "slotType" : "super_fixed_doorglass_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"doorglass_L_break", "deformMaterialBase":"super_glass_fixed", "deformMaterialDamaged":"super_glass_dmg_fixed"},
+         ["super_doorglass_fixed_L", ["super_door_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
+         {"deformGroup":"doorglass_L_break", "deformMaterialBase":"super_glass_int_fixed", "deformMaterialDamaged":"super_glass_dmg_fixed"},
+         ["super_doorglass_fixed_L_int", ["super_door_L"]],
+         {"deformGroup":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--LEFT DOOR--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"super_door_L"},
+         {"nodeWeight":1.8},
+         ["d10l", 0.75, -0.42, 0.95],
+         ["d11l", 0.64, -0.12, 1.09],
+         ["d12l", 0.64, 0.49, 1.08],
+         ["d13l", 0.76, 0.45, 0.95],
+         {"group":""},
+    ],
+},
+}
