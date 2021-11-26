@@ -1,12 +1,20 @@
 {
 "bindings" :   [
     {
-        "control"           : "t"          ,
+        "control"           : "alt 1"          ,
         "action"            : "toggleFLWindow"
     },
     {
-        "control"           : "y"          ,
+        "control"           : "alt 2"          ,
         "action"            : "toggleFRWindow"
+    },
+    {
+        "control"           : "alt 3"          ,
+        "action"            : "toggleRLWindow"
+    },
+    {
+        "control"           : "alt 4"          ,
+        "action"            : "toggleRRWindow"
     }
   ],
 "name"              : "Keyboard"          ,
