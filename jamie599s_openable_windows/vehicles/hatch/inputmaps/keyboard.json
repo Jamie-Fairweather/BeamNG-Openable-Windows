@@ -1,12 +1,20 @@
 {
 "bindings" :   [
     {
-        "control"           : "alt 1"          ,
-        "action"            : "toggleFLWindow"
+        "control"           : "shift u"          ,
+        "action"            : "LWindowUp"
     },
     {
-        "control"           : "alt 2"          ,
-        "action"            : "toggleFRWindow"
+        "control"           : "shift j"          ,
+        "action"            : "LWindowDown"
+    },
+    {
+        "control"           : "shift i"          ,
+        "action"            : "RWindowUp"
+    },
+    {
+        "control"           : "shift k"          ,
+        "action"            : "RWindowDown"
     }
   ],
 "name"              : "Keyboard"          ,

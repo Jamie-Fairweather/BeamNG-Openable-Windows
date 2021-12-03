@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2021-12-03T23:01:30</created>
+    <modified>2021-12-03T23:01:30</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="fullsize_glass-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.4784314 0.4784314 0.4784314 1</color>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.3</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="fullsize_glass_int-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.5882353 0.5882353 0.5882353 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="fullsize_glass-material" name="fullsize_glass">
+      <instance_effect url="#fullsize_glass-effect"/>
+    </material>
+    <material id="fullsize_glass_int-material" name="fullsize_glass_int">
+      <instance_effect url="#fullsize_glass_int-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="fullsize_doorglass_RR_001-mesh" name="fullsize_doorglass_RR.001">
+      <mesh>
+        <source id="fullsize_doorglass_RR_001-mesh-positions">
+          <float_array id="fullsize_doorglass_RR_001-mesh-positions-array" count="60">-87.80138 125.8544 100.8366 -85.48235 123.0663 107.7382 -88.67894 127.0566 97.42785 -76.23668 114.5873 125.6651 -70.16692 110.2148 134.2964 -81.17695 118.6864 117.2162 -69.88634 102.5328 134.8857 -86.42655 102.7021 106.2215 -85.93395 102.5583 107.6605 -88.28797 103.2465 100.7698 -88.48128 103.3096 100.0347 -89.24153 103.5479 97.25572 -69.82765 98.72238 135.0305 -72.89227 99.41191 130.7664 -82.43531 101.6282 115.2514 -85.91474 102.5542 107.7022 -81.54698 101.3919 117.1777 -77.54613 100.4719 123.9245 -76.49092 100.2286 125.7084 -76.45704 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_001-mesh-normals">
+          <float_array id="fullsize_doorglass_RR_001-mesh-normals-array" count="60">-0.9454287 0.01950186 0.3252448 -0.9319171 0.01916569 0.3621647 -0.9588422 0.01983726 0.2832458 -0.956138 0.01971542 0.2922524 -0.9653594 0.020509 0.2601169 -0.9662508 0.02014225 0.2568144 -0.9638836 0.02111917 0.2654854 -0.8112506 0.009704947 0.584618 -0.8129168 0.01364219 0.5822201 -0.8129929 0.01474058 0.582087 -0.9071107 0.01843333 0.4204882 -0.9264765 0.01892197 0.3758766 0.9065777 -0.02462911 -0.4213198 -0.8901634 0.01788443 0.4552904 -0.8593753 0.01690733 0.5110657 -0.8826374 0.01782304 0.4697166 -0.8430272 0.01632767 0.5376232 -0.8143662 0.01474058 0.5801642 -0.8357353 0.01644974 0.5488862 -0.8135119 0.01614445 0.5813242</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_001-mesh-map-0">
+          <float_array id="fullsize_doorglass_RR_001-mesh-map-0-array" count="108">0.7090935 0.06128007 0.6087578 0.07011127 0.5947822 0.03396326 0.7090935 0.06128007 0.5947822 0.03396326 0.7062912 0.03263199 0.5947822 0.03396326 0.70597 0.02889937 0.7062911 0.03263199 0.7059701 0.02889937 0.588807 0.01669365 0.7047723 0.01468223 0.7287713 0.2227758 0.710171 0.2216141 0.7254758 0.1976149 0.7144497 0.1099042 0.7098501 0.06883561 0.7098708 0.06906086 0.7144497 0.1099042 0.6303731 0.1212617 0.6087578 0.07011127 0.7201548 0.158301 0.6303731 0.1212617 0.7156196 0.1203273 0.7201548 0.1583009 0.6505769 0.1687757 0.6303731 0.1212617 0.710171 0.2216141 0.6721292 0.2192382 0.6505769 0.1687757 0.6505769 0.1687757 0.7213537 0.1683615 0.7213866 0.1686367 0.7090935 0.06128007 0.7098502 0.06883561 0.6087578 0.07011127 0.5947822 0.03396326 0.588807 0.01669365 0.70597 0.02889937 0.7144497 0.1099042 0.6087578 0.07011127 0.7098501 0.06883561 0.7144497 0.1099042 0.7156196 0.1203273 0.6303731 0.1212617 0.7201548 0.1583009 0.7213536 0.1683615 0.6505769 0.1687757 0.7213866 0.1686367 0.7254758 0.1976149 0.6505769 0.1687757 0.7254758 0.1976149 0.710171 0.2216141 0.6505769 0.1687757</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_001-mesh-map-1">
+          <float_array id="fullsize_doorglass_RR_001-mesh-map-1-array" count="108">-3.716265 1.75737 -3.670203 2.006687 -3.783335 2.040821 -3.716265 1.75737 -3.783335 2.040821 -3.807074 1.764036 -3.783335 2.040821 -3.816504 1.764809 -3.807074 1.764036 -3.816504 1.764809 -3.826147 2.05554 -3.853592 1.767726 -2.90775 1.708664 -2.912774 1.754862 -3.057882 1.716849 -3.521555 1.744223 -3.692234 1.755611 -3.691297 1.75556 -3.521555 1.744223 -3.460166 1.953065 -3.670203 2.006687 -3.283039 1.730067 -3.460166 1.953065 -3.478218 1.74133 -3.283039 1.730067 -3.219159 1.902879 -3.460166 1.953065 -2.912774 1.754862 -2.923049 1.849347 -3.219159 1.902879 -3.219159 1.902879 -3.231562 1.727088 -3.229926 1.727006 -3.716265 1.75737 -3.692234 1.75561 -3.670203 2.006687 -3.783335 2.040821 -3.826147 2.05554 -3.816504 1.764809 -3.521555 1.744223 -3.670203 2.006687 -3.692234 1.755611 -3.521555 1.744223 -3.478218 1.74133 -3.460166 1.953065 -3.283039 1.730067 -3.231562 1.727088 -3.219159 1.902879 -3.229926 1.727006 -3.057882 1.716849 -3.219159 1.902879 -3.057882 1.716849 -2.912774 1.754862 -3.219159 1.902879</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-map-1-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_001-mesh-map-2">
+          <float_array id="fullsize_doorglass_RR_001-mesh-map-2-array" count="108">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-map-2-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_001-mesh-colors-geom-fullsize_doorglass_RR-map0" name="geom-fullsize_doorglass_RR-map0">
+          <float_array id="fullsize_doorglass_RR_001-mesh-colors-geom-fullsize_doorglass_RR-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_001-mesh-colors-geom-fullsize_doorglass_RR-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RR_001-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RR_001-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass-material" count="18">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RR_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RR_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_001-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_001-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RR_001-mesh-colors-geom-fullsize_doorglass_RR-map0" offset="3" set="0"/>
+          <p>7 0 0 0 1 1 1 1 0 2 2 2 7 0 3 3 0 2 4 4 9 3 5 5 0 2 6 6 10 4 7 7 9 3 8 8 10 4 9 9 2 5 10 10 11 6 11 11 12 7 12 12 6 8 13 13 13 9 14 14 14 10 15 15 8 11 16 16 15 12 17 17 14 10 18 18 5 13 19 19 1 1 20 20 17 14 21 21 5 13 22 22 16 15 23 23 17 14 24 24 3 16 25 25 5 13 26 26 6 8 27 27 4 17 28 28 3 16 29 29 3 16 30 30 18 18 31 31 19 19 32 32 7 0 33 33 8 11 34 34 1 1 35 35 0 2 36 36 2 5 37 37 10 4 38 38 14 10 39 39 1 1 40 40 8 11 41 41 14 10 42 42 16 15 43 43 5 13 44 44 17 14 45 45 18 18 46 46 3 16 47 47 19 19 48 48 13 9 49 49 3 16 50 50 13 9 51 51 6 8 52 52 3 16 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RR_int_001-mesh" name="fullsize_doorglass_RR_int.001">
+      <mesh>
+        <source id="fullsize_doorglass_RR_int_001-mesh-positions">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-positions-array" count="60">-85.07143 123.4654 107.5773 -87.40036 126.2811 100.6067 -88.28836 127.497 97.16384 -69.59513 110.4861 134.4014 -75.75246 114.9023 125.6835 -80.74248 119.0424 117.15 -69.3125 102.7269 134.9951 -86.00918 102.7154 106.0878 -87.8938 103.2664 100.5387 -85.52912 102.5746 107.4982 -88.08396 103.3283 99.81687 -88.85931 103.5708 96.98867 -69.24956 98.70326 135.1488 -72.49958 99.43142 130.6458 -81.98256 101.6309 115.2297 -81.11889 101.4001 117.1108 -85.43546 102.5542 107.7022 -77.0396 100.4626 123.9929 -76.01331 100.226 125.7277 -75.99308 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int_001-mesh-normals">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-normals-array" count="60">0.9563369 -0.01962357 -0.2916071 0.958961 -0.01977616 -0.282848 0.9459847 -0.01941043 -0.3236296 0.9325538 -0.01907467 -0.3605268 0.9652378 -0.02041745 -0.2605748 0.9637417 -0.02102786 -0.2660071 0.9661384 -0.02005094 -0.2572442 0.8100749 -0.009705126 -0.586246 0.8118468 -0.01477134 -0.5836837 0.8117415 -0.01367241 -0.5838569 0.8906477 -0.01788437 -0.4543423 0.9078401 -0.01837283 -0.4189139 0.9271451 -0.01886087 -0.3742274 -0.9081541 0.02215677 0.4180493 0.8425977 -0.01641917 -0.5382933 0.8593884 -0.01693809 -0.511043 0.8830609 -0.0177924 -0.468921 0.8122638 -0.01617503 -0.5830659 0.8131583 -0.01489341 -0.581852 0.8350325 -0.01648026 -0.5499538</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int_001-mesh-map-0">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-map-0-array" count="108">0.7071742 0.03262144 0.5947822 0.03396326 0.7099838 0.0614928 0.6087578 0.07011127 0.7099838 0.0614928 0.5947822 0.03396326 0.7068642 0.02899253 0.7056624 0.01466679 0.588807 0.01669365 0.5947822 0.03396326 0.7068642 0.02899253 0.588807 0.01669365 0.7296196 0.2228288 0.7261725 0.1965224 0.710171 0.2216141 0.6303731 0.1212617 0.7153407 0.1102396 0.6087578 0.07011127 0.7107183 0.0688247 0.7153406 0.1102396 0.7108182 0.0699175 0.6505769 0.1687757 0.7210483 0.1586696 0.6303731 0.1212617 0.7164725 0.1203179 0.6303731 0.1212617 0.7210482 0.1586696 0.7222221 0.1685186 0.6505769 0.1687757 0.7261725 0.1965224 0.6505769 0.1687757 0.6721292 0.2192382 0.710171 0.2216141 0.6087578 0.07011127 0.7107184 0.0688247 0.7099838 0.0614928 0.5947822 0.03396326 0.7071743 0.03262144 0.7068642 0.02899253 0.6303731 0.1212617 0.7164726 0.1203179 0.7153407 0.1102396 0.7107183 0.0688247 0.6087578 0.07011127 0.7153406 0.1102396 0.6505769 0.1687757 0.7222027 0.1683565 0.7210483 0.1586696 0.7222221 0.1685186 0.7222028 0.1683565 0.6505769 0.1687757 0.6505769 0.1687757 0.710171 0.2216141 0.7261725 0.1965224</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int_001-mesh-map-1">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-map-1-array" count="108">-3.746366 1.751752 -3.722527 2.030726 -3.655315 1.745073 -3.61001 1.996595 -3.655315 1.745073 -3.722527 2.030726 -3.755553 1.752502 -3.793011 1.755442 -3.765428 2.045465 -3.722527 2.030726 -3.755553 1.752502 -3.765428 2.045465 -2.846743 1.696475 -3.00441 1.705037 -2.85201 1.74478 -3.400868 1.942982 -3.460779 1.731927 -3.61001 1.996595 -3.632122 1.743365 -3.460779 1.731927 -3.627597 1.743119 -3.159788 1.892798 -3.221972 1.717765 -3.400868 1.942982 -3.419053 1.72913 -3.400868 1.942982 -3.221972 1.717765 -3.171423 1.714849 -3.159788 1.892798 -3.00441 1.705037 -3.159788 1.892798 -2.862312 1.839266 -2.85201 1.74478 -3.61001 1.996595 -3.632122 1.743366 -3.655315 1.745073 -3.722527 2.030726 -3.746366 1.751752 -3.755553 1.752502 -3.400868 1.942982 -3.419053 1.72913 -3.460779 1.731927 -3.632122 1.743365 -3.61001 1.996595 -3.460779 1.731927 -3.159788 1.892798 -3.17239 1.714897 -3.221972 1.717765 -3.171423 1.714849 -3.17239 1.714897 -3.159788 1.892798 -3.159788 1.892798 -2.85201 1.74478 -3.00441 1.705037</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-map-1-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int_001-mesh-map-2">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-map-2-array" count="108">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-map-2-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int_001-mesh-colors-geom-fullsize_doorglass_RR_int-map0" name="geom-fullsize_doorglass_RR_int-map0">
+          <float_array id="fullsize_doorglass_RR_int_001-mesh-colors-geom-fullsize_doorglass_RR_int-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int_001-mesh-colors-geom-fullsize_doorglass_RR_int-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RR_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RR_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass_int-material" count="18">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RR_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RR_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int_001-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int_001-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RR_int_001-mesh-colors-geom-fullsize_doorglass_RR_int-map0" offset="3" set="0"/>
+          <p>8 0 0 0 1 1 1 1 7 2 2 2 0 3 3 3 7 2 4 4 1 1 5 5 10 4 6 6 11 5 7 7 2 6 8 8 1 1 9 9 10 4 10 10 2 6 11 11 12 7 12 12 13 8 13 13 6 9 14 14 5 10 15 15 14 11 16 16 0 3 17 17 9 12 18 18 14 11 19 19 16 13 20 20 4 14 21 21 17 15 22 22 5 10 23 23 15 16 24 24 5 10 25 25 17 15 26 26 19 17 27 27 4 14 28 28 13 8 29 29 4 14 30 30 3 18 31 31 6 9 32 32 0 3 33 33 9 12 34 34 7 2 35 35 1 1 36 36 8 0 37 37 10 4 38 38 5 10 39 39 15 16 40 40 14 11 41 41 9 12 42 42 0 3 43 43 14 11 44 44 4 14 45 45 18 19 46 46 17 15 47 47 19 17 48 48 18 19 49 49 4 14 50 50 4 14 51 51 6 9 52 52 13 8 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RL_int_001-mesh" name="fullsize_doorglass_RL_int.001">
+      <mesh>
+        <source id="fullsize_doorglass_RL_int_001-mesh-positions">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-positions-array" count="60">87.40034 126.2812 100.6067 85.07138 123.4653 107.5773 88.28831 127.4971 97.16384 75.75236 114.9022 125.6835 69.5951 110.4861 134.4015 80.74245 119.0424 117.15 69.31246 102.7269 134.9951 85.52906 102.5746 107.4982 86.00911 102.7154 106.0878 87.89376 103.2664 100.5387 88.08391 103.3283 99.81687 88.85927 103.5708 96.98867 69.24951 98.70326 135.1488 72.49952 99.43141 130.6459 81.98255 101.6309 115.2297 85.4354 102.5542 107.7022 81.11889 101.4001 117.1108 77.03957 100.4626 123.9929 76.01325 100.226 125.7278 75.99308 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int_001-mesh-normals">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-normals-array" count="60">-0.9325538 -0.01907467 -0.3605268 -0.9459847 -0.01941043 -0.3236296 -0.9271447 -0.01889139 -0.3742272 -0.958961 -0.01977616 -0.282848 -0.9563369 -0.01962357 -0.2916071 -0.9652378 -0.02041745 -0.2605748 -0.966146 -0.02005106 -0.2572157 -0.9637417 -0.02102786 -0.2660071 -0.8100749 -0.009705126 -0.586246 -0.8117415 -0.01367241 -0.5838569 -0.8118468 -0.01477134 -0.5836837 -0.9078455 -0.01837235 -0.4189023 0.9081588 0.01809781 0.4182346 -0.8906477 -0.01788437 -0.4543423 -0.8830609 -0.0177924 -0.468921 -0.8593884 -0.01693809 -0.511043 -0.8425889 -0.01641958 -0.5383071 -0.8350092 -0.01648044 -0.5499891 -0.8131583 -0.01489341 -0.581852 -0.812239 -0.01617515 -0.5831006</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int_001-mesh-map-0">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-map-0-array" count="108">0.6087578 0.07011127 0.7099841 0.06149286 0.7107184 0.0688247 0.7099841 0.06149291 0.5947822 0.03396326 0.7071738 0.03262144 0.5947822 0.03396326 0.7068638 0.02899247 0.7071738 0.03262144 0.7068638 0.02899247 0.588807 0.01669365 0.7056625 0.01466679 0.7296194 0.2228287 0.710171 0.2216141 0.7261725 0.1965225 0.7153409 0.1102397 0.7107185 0.0688247 0.7108183 0.0699175 0.6303731 0.1212617 0.7153408 0.1102397 0.7164729 0.1203179 0.7210482 0.1586695 0.6303731 0.1212617 0.7164728 0.1203179 0.6505769 0.1687757 0.7210482 0.1586695 0.7222024 0.1683565 0.710171 0.2216141 0.6721292 0.2192382 0.6505769 0.1687757 0.6505769 0.1687757 0.7222024 0.1683565 0.7222217 0.1685181 0.6087578 0.07011127 0.5947822 0.03396326 0.7099841 0.06149286 0.5947822 0.03396326 0.588807 0.01669365 0.7068638 0.02899247 0.7153409 0.1102397 0.6087578 0.07011127 0.7107185 0.0688247 0.6303731 0.1212617 0.6087578 0.07011127 0.7153408 0.1102397 0.6505769 0.1687757 0.6303731 0.1212617 0.7210482 0.1586695 0.7222217 0.1685181 0.7261725 0.1965225 0.6505769 0.1687757 0.7261725 0.1965225 0.710171 0.2216141 0.6505769 0.1687757</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int_001-mesh-map-1">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-map-1-array" count="108">4.610005 1.996594 4.655309 1.745072 4.632116 1.743365 4.655309 1.745072 4.722522 2.030726 4.746361 1.751752 4.722522 2.030726 4.755548 1.752502 4.746361 1.751752 4.755548 1.752502 4.765422 2.045465 4.793007 1.755441 3.846738 1.696475 3.852005 1.744779 4.004405 1.705036 4.460776 1.731926 4.632116 1.743365 4.627592 1.743118 4.400864 1.942981 4.460776 1.731926 4.419051 1.729129 4.221969 1.717764 4.400864 1.942981 4.419051 1.729129 4.159781 1.892796 4.221969 1.717764 4.172385 1.714897 3.852005 1.744779 3.862308 1.839265 4.159781 1.892796 4.159781 1.892796 4.172385 1.714896 4.171421 1.714849 4.610005 1.996594 4.722522 2.030726 4.655309 1.745072 4.722522 2.030726 4.765422 2.045465 4.755548 1.752502 4.460776 1.731926 4.610005 1.996594 4.632116 1.743365 4.400864 1.942981 4.610005 1.996594 4.460776 1.731926 4.159781 1.892796 4.400864 1.942981 4.221969 1.717764 4.171421 1.714849 4.004405 1.705036 4.159781 1.892796 4.004405 1.705036 3.852005 1.744779 4.159781 1.892796</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-map-1-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int_001-mesh-map-2">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-map-2-array" count="108">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-map-2-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int_001-mesh-colors-geom-fullsize_doorglass_RL_int-map0" name="geom-fullsize_doorglass_RL_int-map0">
+          <float_array id="fullsize_doorglass_RL_int_001-mesh-colors-geom-fullsize_doorglass_RL_int-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int_001-mesh-colors-geom-fullsize_doorglass_RL_int-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RL_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RL_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass_int-material" count="18">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RL_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RL_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int_001-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int_001-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RL_int_001-mesh-colors-geom-fullsize_doorglass_RL_int-map0" offset="3" set="0"/>
+          <p>1 0 0 0 8 1 1 1 7 2 2 2 8 1 3 3 0 3 4 4 9 4 5 5 0 3 6 6 10 5 7 7 9 4 8 8 10 5 9 9 2 6 10 10 11 7 11 11 12 8 12 12 6 9 13 13 13 10 14 14 14 11 15 15 7 2 16 16 15 12 17 17 5 13 18 18 14 11 19 19 16 14 20 20 17 15 21 21 5 13 22 22 16 14 23 23 3 16 24 24 17 15 25 25 18 17 26 26 6 9 27 27 4 18 28 28 3 16 29 29 3 16 30 30 18 17 31 31 19 19 32 32 1 0 33 33 0 3 34 34 8 1 35 35 0 3 36 36 2 6 37 37 10 5 38 38 14 11 39 39 1 0 40 40 7 2 41 41 5 13 42 42 1 0 43 43 14 11 44 44 3 16 45 45 5 13 46 46 17 15 47 47 19 19 48 48 13 10 49 49 3 16 50 50 13 10 51 51 6 9 52 52 3 16 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RL_001-mesh" name="fullsize_doorglass_RL.001">
+      <mesh>
+        <source id="fullsize_doorglass_RL_001-mesh-positions">
+          <float_array id="fullsize_doorglass_RL_001-mesh-positions-array" count="60">88.6789 127.0566 97.42785 87.80131 125.8545 100.8366 85.48233 123.0662 107.7382 81.1769 118.6863 117.2161 76.23672 114.5873 125.665 70.16691 110.2148 134.2964 69.88628 102.5328 134.8857 86.42649 102.7021 106.2215 88.28797 103.2465 100.7698 85.9339 102.5583 107.6605 88.48128 103.3096 100.0347 89.24151 103.5479 97.25572 69.82759 98.72238 135.0305 72.89221 99.41191 130.7665 81.54694 101.3919 117.1777 82.43528 101.6282 115.2515 85.9147 102.5542 107.7022 76.49092 100.2286 125.7084 77.54612 100.4719 123.9245 76.45703 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_001-mesh-normals">
+          <float_array id="fullsize_doorglass_RL_001-mesh-normals-array" count="60">0.9454287 0.01950186 0.3252448 0.956138 0.01971542 0.2922524 0.9588422 0.01983726 0.2832458 0.9319171 0.01916569 0.3621647 0.9653594 0.020509 0.2601169 0.9638836 0.02111917 0.2654854 0.9662508 0.02014225 0.2568144 0.8112506 0.009704947 0.584618 0.8129929 0.01474058 0.582087 0.8129023 0.01364195 0.5822402 0.8901634 0.01788443 0.4552904 0.9071107 0.01843333 0.4204882 0.9264905 0.0189827 0.3758394 -0.9052411 -0.01541239 -0.4246188 0.8430272 0.01632767 0.5376232 0.8593753 0.01690733 0.5110657 0.8826374 0.01782304 0.4697166 0.8135264 0.01614475 0.581304 0.8143662 0.01474058 0.5801642 0.8357493 0.01645004 0.5488649</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_001-mesh-map-0">
+          <float_array id="fullsize_doorglass_RL_001-mesh-map-0-array" count="108">0.7090936 0.06128007 0.7062907 0.03263199 0.5947822 0.03396326 0.6087578 0.07011127 0.7090935 0.06128007 0.5947822 0.03396326 0.7059694 0.02889931 0.7047724 0.01468223 0.588807 0.01669365 0.5947822 0.03396326 0.7059694 0.02889931 0.588807 0.01669365 0.7287711 0.2227757 0.7254757 0.197615 0.710171 0.2216141 0.6303731 0.1212617 0.7144497 0.1099042 0.6087578 0.07011127 0.70985 0.06883561 0.7144497 0.1099042 0.7098706 0.06906086 0.6505769 0.1687757 0.7201544 0.1583008 0.6303731 0.1212617 0.7156196 0.1203273 0.6303731 0.1212617 0.7201545 0.1583008 0.6505769 0.1687757 0.7254757 0.197615 0.7213864 0.1686369 0.6505769 0.1687757 0.6721292 0.2192382 0.710171 0.2216141 0.6087578 0.07011127 0.7098501 0.06883561 0.7090935 0.06128007 0.5947822 0.03396326 0.7062907 0.03263199 0.7059694 0.02889931 0.6303731 0.1212617 0.7156196 0.1203273 0.7144497 0.1099042 0.70985 0.06883561 0.6087578 0.07011127 0.7144497 0.1099042 0.6505769 0.1687757 0.7213534 0.1683615 0.7201544 0.1583008 0.7213864 0.1686369 0.7213534 0.1683615 0.6505769 0.1687757 0.6505769 0.1687757 0.710171 0.2216141 0.7254757 0.197615</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_001-mesh-map-1">
+          <float_array id="fullsize_doorglass_RL_001-mesh-map-1-array" count="108">4.716275 1.757371 4.807086 1.764037 4.783345 2.040824 4.670214 2.006688 4.716275 1.757371 4.783345 2.040824 4.816517 1.76481 4.853604 1.767727 4.826158 2.055542 4.783345 2.040824 4.816517 1.76481 4.826158 2.055542 3.907756 1.708664 4.05789 1.716849 3.912781 1.754862 4.460176 1.953065 4.521565 1.744224 4.670214 2.006688 4.692244 1.755612 4.521565 1.744224 4.691307 1.755561 4.219172 1.902882 4.283051 1.730067 4.460176 1.953065 4.478228 1.741332 4.460176 1.953065 4.28305 1.730067 4.219172 1.902882 4.05789 1.716849 4.229938 1.727007 4.219172 1.902882 3.923059 1.849349 3.912781 1.754862 4.670214 2.006688 4.692244 1.755612 4.716275 1.757371 4.783345 2.040824 4.807086 1.764037 4.816517 1.76481 4.460176 1.953065 4.478228 1.741332 4.521565 1.744224 4.692244 1.755612 4.670214 2.006688 4.521565 1.744224 4.219172 1.902882 4.231573 1.727089 4.283051 1.730067 4.229938 1.727007 4.231573 1.727089 4.219172 1.902882 4.219172 1.902882 3.912781 1.754862 4.05789 1.716849</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-map-1-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_001-mesh-map-2">
+          <float_array id="fullsize_doorglass_RL_001-mesh-map-2-array" count="108">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-map-2-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_001-mesh-colors-geom-fullsize_doorglass_RL-map0" name="geom-fullsize_doorglass_RL-map0">
+          <float_array id="fullsize_doorglass_RL_001-mesh-colors-geom-fullsize_doorglass_RL-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_001-mesh-colors-geom-fullsize_doorglass_RL-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RL_001-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RL_001-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass-material" count="18">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RL_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RL_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_001-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_001-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RL_001-mesh-colors-geom-fullsize_doorglass_RL-map0" offset="3" set="0"/>
+          <p>7 0 0 0 8 1 1 1 1 2 2 2 2 3 3 3 7 0 4 4 1 2 5 5 10 4 6 6 11 5 7 7 0 6 8 8 1 2 9 9 10 4 10 10 0 6 11 11 12 7 12 12 13 8 13 13 6 9 14 14 3 10 15 15 15 11 16 16 2 3 17 17 9 12 18 18 15 11 19 19 16 13 20 20 4 14 21 21 18 15 22 22 3 10 23 23 14 16 24 24 3 10 25 25 18 15 26 26 4 14 27 27 13 8 28 28 19 17 29 29 4 14 30 30 5 18 31 31 6 9 32 32 2 3 33 33 9 12 34 34 7 0 35 35 1 2 36 36 8 1 37 37 10 4 38 38 3 10 39 39 14 16 40 40 15 11 41 41 9 12 42 42 2 3 43 43 15 11 44 44 4 14 45 45 17 19 46 46 18 15 47 47 19 17 48 48 17 19 49 49 4 14 50 50 4 14 51 51 6 9 52 52 13 8 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RL_int-mesh" name="fullsize_doorglass_RL_int">
+      <mesh>
+        <source id="fullsize_doorglass_RL_int-mesh-positions">
+          <float_array id="fullsize_doorglass_RL_int-mesh-positions-array" count="93">88.62387 45.41944 100.0334 88.36201 68.76379 100.3573 85.97993 68.86155 107.2984 86.1939 46.32162 107.0242 88.02975 96.92371 100.5199 89.38815 68.80087 96.7597 89.02152 96.7718 96.9389 85.65673 96.74653 107.4761 68.8838 50.77523 135.8652 76.59743 49.0382 125.5302 76.37655 69.29147 125.6765 68.99673 69.69607 135.858 69.18932 94.85651 135.2957 76.09344 95.71523 125.7414 89.58241 44.99955 96.54308 81.53521 69.05268 116.9706 81.74886 47.68624 116.7846 81.22781 96.29575 117.0995 85.52906 102.5746 107.4982 86.00911 102.7154 106.0878 87.89376 103.2664 100.5387 88.08391 103.3283 99.81687 88.85927 103.5708 96.98867 69.24951 98.70326 135.1488 72.49952 99.43141 130.6459 81.98255 101.6309 115.2297 85.4354 102.5542 107.7022 81.11889 101.4001 117.1108 77.03957 100.4626 123.9929 76.01325 100.226 125.7278 75.99308 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-positions-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int-mesh-normals">
+          <float_array id="fullsize_doorglass_RL_int-mesh-normals-array" count="93">-0.9540378 -0.008026599 -0.2995789 -0.9558369 -0.005798637 -0.2938407 -0.9301735 -0.004822075 -0.3670886 -0.9285398 -0.006744682 -0.3711718 -0.9554663 -0.01489335 -0.2947245 -0.9636911 -0.0152899 -0.2665814 -0.9617316 -0.008820116 -0.2738518 -0.9460291 -0.01937955 -0.3235018 -0.9284148 -0.01370292 -0.3712927 -0.9290993 -0.01895248 -0.3693447 -0.9573527 -0.01965427 -0.2882526 -0.9649215 -0.02056986 -0.2617316 -0.9637417 -0.02102786 -0.2660071 -0.8045141 -0.00125128 -0.5939323 -0.8097609 -0.001312315 -0.5867585 -0.8351363 -0.004730522 -0.5500229 -0.8355837 -0.00451678 -0.5493446 -0.8101608 -0.008209645 -0.5861504 -0.810564 -0.01110905 -0.5855447 -0.8358956 -0.01144474 -0.5487692 -0.9644524 -0.005462825 -0.2642005 -0.8892273 -0.004150509 -0.4574468 -0.8857884 -0.006500542 -0.4640439 -0.9078862 -0.01834201 -0.4188154 -0.9079443 -0.01828092 -0.418692 -0.884965 -0.01290959 -0.4654787 -0.8862214 -0.01785379 -0.4629178 -0.8592393 -0.01706022 -0.5112892 -0.8382899 -0.01654118 -0.5449739 -0.8123031 -0.01617521 -0.5830112 -0.8100749 -0.009705126 -0.586246</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int-mesh-map-0">
+          <float_array id="fullsize_doorglass_RL_int-mesh-map-0-array" count="222">0.875688 0.0307722 0.9896831 0.02886515 0.9852759 0.06522202 0.9852759 0.06522202 0.8752651 0.066913 0.875688 0.0307722 0.875688 0.0307722 0.7381482 0.03225165 0.7388687 0.01409083 0.7388687 0.01409083 0.875502 0.01249486 0.875688 0.0307722 0.7099841 0.06149286 0.7391631 0.06846576 0.7107184 0.0688247 0.7381482 0.03225165 0.7099841 0.06149291 0.7071738 0.03262144 0.7068638 0.02899247 0.7381482 0.03225165 0.7071738 0.03262144 0.7388687 0.01409083 0.7068638 0.02899247 0.7056625 0.01466679 0.9636741 0.2268047 0.871221 0.2265061 0.8731681 0.1672692 0.8731681 0.1672692 0.971981 0.1662143 0.9636741 0.2268047 0.7482128 0.22399 0.7261725 0.1965225 0.7442166 0.1682277 0.7381482 0.03225165 0.875688 0.0307722 0.8752651 0.066913 0.8752651 0.066913 0.7391631 0.06846576 0.7381482 0.03225165 0.9896831 0.02886515 0.875688 0.0307722 0.875502 0.01249486 0.875502 0.01249486 0.991733 0.0111407 0.9896831 0.02886515 0.871221 0.2265061 0.7482128 0.22399 0.7442166 0.1682277 0.7442166 0.1682277 0.8731681 0.1672692 0.871221 0.2265061 0.8752651 0.066913 0.9852759 0.06522202 0.9786136 0.1174921 0.9786136 0.1174921 0.8743394 0.1187553 0.8752651 0.066913 0.7391631 0.06846576 0.7153409 0.1102397 0.7108183 0.0699175 0.7153408 0.1102397 0.7413839 0.1200449 0.7164729 0.1203179 0.7391631 0.06846576 0.8752651 0.066913 0.8743394 0.1187553 0.8743394 0.1187553 0.7413839 0.1200449 0.7391631 0.06846576 0.8743394 0.1187553 0.9786136 0.1174921 0.971981 0.1662143 0.971981 0.1662143 0.8731681 0.1672692 0.8743394 0.1187553 0.7413839 0.1200449 0.7210482 0.1586695 0.7164728 0.1203179 0.7210482 0.1586695 0.7442166 0.1682277 0.7222024 0.1683565 0.7413839 0.1200449 0.8743394 0.1187553 0.8731681 0.1672692 0.8731681 0.1672692 0.7442166 0.1682277 0.7413839 0.1200449 0.7222217 0.1685181 0.7442166 0.1682277 0.7261725 0.1965225 0.7381482 0.03225165 0.7391631 0.06846576 0.7099841 0.06149291 0.7388687 0.01409083 0.7381482 0.03225165 0.7068638 0.02899247 0.7482128 0.22399 0.7296194 0.2228287 0.7261725 0.1965225 0.7108183 0.0699175 0.7107185 0.0688247 0.7391631 0.06846576 0.7391631 0.06846576 0.7413839 0.1200449 0.7153409 0.1102397 0.7413839 0.1200449 0.7442166 0.1682277 0.7210482 0.1586695 0.7222217 0.1685181 0.7222024 0.1683565 0.7442166 0.1682277</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-map-0-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int-mesh-map-1">
+          <float_array id="fullsize_doorglass_RL_int-mesh-map-1-array" count="222">4.768983 1.333525 4.781634 1.050555 4.664237 1.061491 4.664237 1.061491 4.653899 1.33471 4.768983 1.333525 4.768983 1.333525 4.752931 1.674868 4.800846 1.673026 4.800846 1.673026 4.818558 1.333975 4.768983 1.333525 4.655309 1.745072 4.638285 1.67272 4.632116 1.743365 4.752931 1.674868 4.655309 1.745072 4.746361 1.751752 4.755548 1.752502 4.752931 1.674868 4.746361 1.751752 4.800846 1.673026 4.755548 1.752502 4.793007 1.755441 3.827943 1.115476 3.833399 1.344826 4.189937 1.339922 4.189937 1.339922 4.200607 1.09442 3.827943 1.115476 3.841702 1.650294 4.004405 1.705036 4.176259 1.660219 4.752931 1.674868 4.768983 1.333525 4.653899 1.33471 4.653899 1.33471 4.638285 1.67272 4.752931 1.674868 4.781634 1.050555 4.768983 1.333525 4.818558 1.333975 4.818558 1.333975 4.827943 1.045465 4.781634 1.050555 3.833399 1.344826 3.841702 1.650294 4.176259 1.660219 4.176259 1.660219 4.189937 1.339922 3.833399 1.344826 4.653899 1.33471 4.664237 1.061491 4.449486 1.078032 4.449486 1.078032 4.439164 1.337027 4.653899 1.33471 4.638285 1.67272 4.460776 1.731926 4.627592 1.743118 4.460776 1.731926 4.424313 1.667256 4.419051 1.729129 4.638285 1.67272 4.653899 1.33471 4.439164 1.337027 4.439164 1.337027 4.424313 1.667256 4.638285 1.67272 4.439164 1.337027 4.449486 1.078032 4.200607 1.09442 4.200607 1.09442 4.189937 1.339922 4.439164 1.337027 4.424313 1.667256 4.221969 1.717764 4.419051 1.729129 4.221969 1.717764 4.176259 1.660219 4.172385 1.714897 4.424313 1.667256 4.439164 1.337027 4.189937 1.339922 4.189937 1.339922 4.176259 1.660219 4.424313 1.667256 4.171421 1.714849 4.176259 1.660219 4.004405 1.705036 4.752931 1.674868 4.638285 1.67272 4.655309 1.745072 4.800846 1.673026 4.752931 1.674868 4.755548 1.752502 3.841702 1.650294 3.846738 1.696475 4.004405 1.705036 4.627592 1.743118 4.632116 1.743365 4.638285 1.67272 4.638285 1.67272 4.424313 1.667256 4.460776 1.731926 4.424313 1.667256 4.176259 1.660219 4.221969 1.717764 4.171421 1.714849 4.172385 1.714896 4.176259 1.660219</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-map-1-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int-mesh-map-2">
+          <float_array id="fullsize_doorglass_RL_int-mesh-map-2-array" count="222">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-map-2-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL_int-mesh-colors-geom-fullsize_doorglass_RL_int-map0" name="geom-fullsize_doorglass_RL_int-map0">
+          <float_array id="fullsize_doorglass_RL_int-mesh-colors-geom-fullsize_doorglass_RL_int-map0-array" count="444">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL_int-mesh-colors-geom-fullsize_doorglass_RL_int-map0-array" count="111" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RL_int-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RL_int-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass_int-material" count="37">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RL_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RL_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL_int-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RL_int-mesh-colors-geom-fullsize_doorglass_RL_int-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 1 1 1 3 2 2 2 3 2 3 3 2 3 4 4 1 0 5 5 1 0 6 6 4 4 7 7 6 5 8 8 6 5 9 9 5 6 10 10 1 0 11 11 19 7 12 12 7 8 13 13 18 9 14 14 4 4 15 15 19 7 16 16 20 10 17 17 21 11 18 18 4 4 19 19 20 10 20 20 6 5 21 21 21 11 22 22 22 12 23 23 8 13 24 24 11 14 25 25 10 15 26 26 10 15 27 27 9 16 28 28 8 13 29 29 12 17 30 30 24 18 31 31 13 19 32 32 4 4 33 33 1 0 34 34 2 3 35 35 2 3 36 36 7 8 37 37 4 4 38 38 0 1 39 39 1 0 40 40 5 6 41 41 5 6 42 42 14 20 43 43 0 1 44 44 11 14 45 45 12 17 46 46 13 19 47 47 13 19 48 48 10 15 49 49 11 14 50 50 2 3 51 51 3 2 52 52 16 21 53 53 16 21 54 54 15 22 55 55 2 3 56 56 7 8 57 57 25 23 58 58 26 24 59 59 25 23 60 60 17 25 61 61 27 26 62 62 7 8 63 63 2 3 64 64 15 22 65 65 15 22 66 66 17 25 67 67 7 8 68 68 15 22 69 69 16 21 70 70 9 16 71 71 9 16 72 72 10 15 73 73 15 22 74 74 17 25 75 75 28 27 76 76 27 26 77 77 28 27 78 78 13 19 79 79 29 28 80 80 17 25 81 81 15 22 82 82 10 15 83 83 10 15 84 84 13 19 85 85 17 25 86 86 30 29 87 87 13 19 88 88 24 18 89 89 4 4 90 90 7 8 91 91 19 7 92 92 6 5 93 93 4 4 94 94 21 11 95 95 12 17 96 96 23 30 97 97 24 18 98 98 26 24 99 99 18 9 100 100 7 8 101 101 7 8 102 102 17 25 103 103 25 23 104 104 17 25 105 105 13 19 106 106 28 27 107 107 30 29 108 108 29 28 109 109 13 19 110 110</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RR_int-mesh" name="fullsize_doorglass_RR_int">
+      <mesh>
+        <source id="fullsize_doorglass_RR_int-mesh-positions">
+          <float_array id="fullsize_doorglass_RR_int-mesh-positions-array" count="93">-88.62385 45.41944 100.0334 -86.19393 46.32151 107.0242 -85.97997 68.86141 107.2983 -88.36211 68.76398 100.3574 -88.02979 96.92384 100.5199 -89.02155 96.7718 96.9389 -89.38814 68.80101 96.75971 -85.65681 96.74648 107.4761 -68.88383 50.77535 135.8652 -68.99678 69.69628 135.858 -76.37659 69.29157 125.6765 -76.5975 49.03823 125.5302 -69.18938 94.85656 135.2957 -76.09348 95.71528 125.7413 -89.58243 44.99953 96.54307 -81.74893 47.68616 116.7846 -81.53526 69.05262 116.9706 -81.2278 96.29568 117.0995 -86.00918 102.7154 106.0878 -87.8938 103.2664 100.5387 -85.52912 102.5746 107.4982 -88.08396 103.3283 99.81687 -88.85931 103.5708 96.98867 -69.24956 98.70326 135.1488 -72.49958 99.43142 130.6458 -81.98256 101.6309 115.2297 -81.11889 101.4001 117.1108 -85.43546 102.5542 107.7022 -77.0396 100.4626 123.9929 -76.01331 100.226 125.7277 -75.99308 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-positions-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int-mesh-normals">
+          <float_array id="fullsize_doorglass_RR_int-mesh-normals-array" count="93">0.9540378 -0.008026599 -0.2995789 0.9285398 -0.006744682 -0.3711718 0.9301735 -0.004822075 -0.3670886 0.9558369 -0.005798637 -0.2938407 0.9617418 -0.008819937 -0.2738155 0.9636911 -0.0152899 -0.2665814 0.9554749 -0.01489353 -0.2946966 0.9460291 -0.01937955 -0.3235018 0.9284148 -0.01370292 -0.3712927 0.9290993 -0.01895248 -0.3693447 0.9649215 -0.02056986 -0.2617316 0.9573527 -0.01965427 -0.2882526 0.8045141 -0.00125128 -0.5939323 0.8355837 -0.00451678 -0.5493446 0.8351363 -0.004730522 -0.5500229 0.8097609 -0.001312315 -0.5867585 0.810564 -0.01110905 -0.5855447 0.8101608 -0.008209645 -0.5861504 0.8358956 -0.01144474 -0.5487692 0.9644524 -0.005462825 -0.2642005 0.8857884 -0.006500542 -0.4640439 0.8892273 -0.004150509 -0.4574468 0.8862214 -0.01785379 -0.4629178 0.884965 -0.01290959 -0.4654787 0.9078862 -0.01834201 -0.4188154 0.9079327 -0.01828068 -0.4187172 0.8383408 -0.01654154 -0.5448956 0.8592393 -0.01706022 -0.5112892 0.8123673 -0.01617527 -0.5829219 0.9637417 -0.02102786 -0.2660071 0.8100749 -0.009705126 -0.586246</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int-mesh-map-0">
+          <float_array id="fullsize_doorglass_RR_int-mesh-map-0-array" count="222">0.875688 0.0307722 0.8752651 0.066913 0.9852759 0.06522202 0.9852759 0.06522202 0.9896831 0.02886515 0.875688 0.0307722 0.875688 0.0307722 0.875502 0.01249486 0.7388687 0.01409083 0.7388687 0.01409083 0.7381482 0.03225165 0.875688 0.0307722 0.7381482 0.03225165 0.7099838 0.0614928 0.7391631 0.06846576 0.7107184 0.0688247 0.7391631 0.06846576 0.7099838 0.0614928 0.7388687 0.01409083 0.7068642 0.02899253 0.7381482 0.03225165 0.7071743 0.03262144 0.7381482 0.03225165 0.7068642 0.02899253 0.9636741 0.2268047 0.971981 0.1662143 0.8731681 0.1672692 0.8731681 0.1672692 0.871221 0.2265061 0.9636741 0.2268047 0.7261725 0.1965224 0.7482128 0.22399 0.7442166 0.1682277 0.7381482 0.03225165 0.7391631 0.06846576 0.8752651 0.066913 0.8752651 0.066913 0.875688 0.0307722 0.7381482 0.03225165 0.9896831 0.02886515 0.991733 0.0111407 0.875502 0.01249486 0.875502 0.01249486 0.875688 0.0307722 0.9896831 0.02886515 0.871221 0.2265061 0.8731681 0.1672692 0.7442166 0.1682277 0.7442166 0.1682277 0.7482128 0.22399 0.871221 0.2265061 0.8752651 0.066913 0.8743394 0.1187553 0.9786136 0.1174921 0.9786136 0.1174921 0.9852759 0.06522202 0.8752651 0.066913 0.7164726 0.1203179 0.7413839 0.1200449 0.7153407 0.1102396 0.7391631 0.06846576 0.7108182 0.0699175 0.7153406 0.1102396 0.7391631 0.06846576 0.7413839 0.1200449 0.8743394 0.1187553 0.8743394 0.1187553 0.8752651 0.066913 0.7391631 0.06846576 0.8743394 0.1187553 0.8731681 0.1672692 0.971981 0.1662143 0.971981 0.1662143 0.9786136 0.1174921 0.8743394 0.1187553 0.7222027 0.1683565 0.7442166 0.1682277 0.7210483 0.1586696 0.7413839 0.1200449 0.7210482 0.1586696 0.7442166 0.1682277 0.7413839 0.1200449 0.7442166 0.1682277 0.8731681 0.1672692 0.8731681 0.1672692 0.8743394 0.1187553 0.7413839 0.1200449 0.7442166 0.1682277 0.7222221 0.1685186 0.7261725 0.1965224 0.7381482 0.03225165 0.7071742 0.03262144 0.7099838 0.0614928 0.7388687 0.01409083 0.7056624 0.01466679 0.7068642 0.02899253 0.7261725 0.1965224 0.7296196 0.2228288 0.7482128 0.22399 0.7153406 0.1102396 0.7413839 0.1200449 0.7391631 0.06846576 0.7391631 0.06846576 0.7107183 0.0688247 0.7108182 0.0699175 0.7413839 0.1200449 0.7164725 0.1203179 0.7210482 0.1586696 0.7442166 0.1682277 0.7222028 0.1683565 0.7222221 0.1685186</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-map-0-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int-mesh-map-1">
+          <float_array id="fullsize_doorglass_RR_int-mesh-map-1-array" count="222">-3.768991 1.333528 -3.653904 1.334709 -3.664241 1.06149 -3.664241 1.06149 -3.781636 1.050555 -3.768991 1.333528 -3.768991 1.333528 -3.818561 1.333977 -3.80085 1.673027 -3.80085 1.673027 -3.752936 1.67487 -3.768991 1.333528 -3.752936 1.67487 -3.655315 1.745073 -3.638291 1.67272 -3.632122 1.743366 -3.638291 1.67272 -3.655315 1.745073 -3.80085 1.673027 -3.755553 1.752502 -3.752936 1.67487 -3.746366 1.751752 -3.752936 1.67487 -3.755553 1.752502 -2.827948 1.115477 -3.200614 1.094421 -3.189941 1.339923 -3.189941 1.339923 -2.833404 1.344829 -2.827948 1.115477 -3.00441 1.705037 -2.841707 1.650295 -3.176263 1.66022 -3.752936 1.67487 -3.638291 1.67272 -3.653904 1.334709 -3.653904 1.334709 -3.768991 1.333528 -3.752936 1.67487 -3.781636 1.050555 -3.827948 1.045465 -3.818561 1.333977 -3.818561 1.333977 -3.768991 1.333528 -3.781636 1.050555 -2.833404 1.344829 -3.189941 1.339923 -3.176263 1.66022 -3.176263 1.66022 -2.841707 1.650295 -2.833404 1.344829 -3.653904 1.334709 -3.439169 1.337027 -3.449492 1.078032 -3.449492 1.078032 -3.664241 1.06149 -3.653904 1.334709 -3.419053 1.72913 -3.424315 1.667256 -3.460779 1.731927 -3.638291 1.67272 -3.627597 1.743119 -3.460779 1.731927 -3.638291 1.67272 -3.424315 1.667256 -3.439169 1.337027 -3.439169 1.337027 -3.653904 1.334709 -3.638291 1.67272 -3.439169 1.337027 -3.189941 1.339923 -3.200614 1.094421 -3.200614 1.094421 -3.449492 1.078032 -3.439169 1.337027 -3.17239 1.714897 -3.176263 1.66022 -3.221972 1.717765 -3.424315 1.667256 -3.221972 1.717765 -3.176263 1.66022 -3.424315 1.667256 -3.176263 1.66022 -3.189941 1.339923 -3.189941 1.339923 -3.439169 1.337027 -3.424315 1.667256 -3.176263 1.66022 -3.171423 1.714849 -3.00441 1.705037 -3.752936 1.67487 -3.746366 1.751752 -3.655315 1.745073 -3.80085 1.673027 -3.793011 1.755442 -3.755553 1.752502 -3.00441 1.705037 -2.846743 1.696475 -2.841707 1.650295 -3.460779 1.731927 -3.424315 1.667256 -3.638291 1.67272 -3.638291 1.67272 -3.632122 1.743365 -3.627597 1.743119 -3.424315 1.667256 -3.419053 1.72913 -3.221972 1.717765 -3.176263 1.66022 -3.17239 1.714897 -3.171423 1.714849</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-map-1-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int-mesh-map-2">
+          <float_array id="fullsize_doorglass_RR_int-mesh-map-2-array" count="222">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-map-2-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR_int-mesh-colors-geom-fullsize_doorglass_RR_int-map0" name="geom-fullsize_doorglass_RR_int-map0">
+          <float_array id="fullsize_doorglass_RR_int-mesh-colors-geom-fullsize_doorglass_RR_int-map0-array" count="444">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR_int-mesh-colors-geom-fullsize_doorglass_RR_int-map0-array" count="111" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RR_int-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RR_int-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass_int-material" count="37">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RR_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RR_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR_int-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RR_int-mesh-colors-geom-fullsize_doorglass_RR_int-map0" offset="3" set="0"/>
+          <p>3 0 0 0 2 1 1 1 1 2 2 2 1 2 3 3 0 3 4 4 3 0 5 5 3 0 6 6 6 4 7 7 5 5 8 8 5 5 9 9 4 6 10 10 3 0 11 11 4 6 12 12 18 7 13 13 7 8 14 14 20 9 15 15 7 8 16 16 18 7 17 17 5 5 18 18 21 10 19 19 4 6 20 20 19 11 21 21 4 6 22 22 21 10 23 23 8 12 24 24 11 13 25 25 10 14 26 26 10 14 27 27 9 15 28 28 8 12 29 29 24 16 30 30 12 17 31 31 13 18 32 32 4 6 33 33 7 8 34 34 2 1 35 35 2 1 36 36 3 0 37 37 4 6 38 38 0 3 39 39 14 19 40 40 6 4 41 41 6 4 42 42 3 0 43 43 0 3 44 44 9 15 45 45 10 14 46 46 13 18 47 47 13 18 48 48 12 17 49 49 9 15 50 50 2 1 51 51 16 20 52 52 15 21 53 53 15 21 54 54 1 2 55 55 2 1 56 56 26 22 57 57 17 23 58 58 25 24 59 59 7 8 60 60 27 25 61 61 25 24 62 62 7 8 63 63 17 23 64 64 16 20 65 65 16 20 66 66 2 1 67 67 7 8 68 68 16 20 69 69 10 14 70 70 11 13 71 71 11 13 72 72 15 21 73 73 16 20 74 74 29 26 75 75 13 18 76 76 28 27 77 77 17 23 78 78 28 27 79 79 13 18 80 80 17 23 81 81 13 18 82 82 10 14 83 83 10 14 84 84 16 20 85 85 17 23 86 86 13 18 87 87 30 28 88 88 24 16 89 89 4 6 90 90 19 11 91 91 18 7 92 92 5 5 93 93 22 29 94 94 21 10 95 95 24 16 96 96 23 30 97 97 12 17 98 98 25 24 99 99 17 23 100 100 7 8 101 101 7 8 102 102 20 9 103 103 27 25 104 104 17 23 105 105 26 22 106 106 28 27 107 107 13 18 108 108 29 26 109 109 30 28 110 110</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RR-mesh" name="fullsize_doorglass_RR">
+      <mesh>
+        <source id="fullsize_doorglass_RR-mesh-positions">
+          <float_array id="fullsize_doorglass_RR-mesh-positions-array" count="93">-89.01806 45.79234 100.269 -88.75755 68.90572 100.5897 -86.38644 69.00251 107.462 -86.59911 46.68551 107.1906 -88.42699 96.78765 100.7507 -89.77116 68.94195 97.02769 -89.40694 96.63583 97.20512 -86.0649 96.61182 107.638 -69.46581 51.09403 135.746 -77.07062 49.37569 125.5135 -76.85256 69.42815 125.6582 -69.57579 69.82845 135.7391 -69.76632 94.73963 135.1819 -76.57305 95.59035 125.7224 -89.96417 45.37656 96.81317 -81.96376 69.1917 117.0385 -82.17541 48.03677 116.8543 -81.65881 96.16499 117.1661 -86.42655 102.7021 106.2215 -85.93395 102.5583 107.6605 -88.28797 103.2465 100.7698 -88.48128 103.3096 100.0347 -89.24153 103.5479 97.25572 -69.82765 98.72238 135.0305 -72.89227 99.41191 130.7664 -82.43531 101.6282 115.2514 -85.91474 102.5542 107.7022 -81.54698 101.3919 117.1777 -77.54613 100.4719 123.9245 -76.49092 100.2286 125.7084 -76.45704 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-positions-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR-mesh-normals">
+          <float_array id="fullsize_doorglass_RR-mesh-normals-array" count="93">-0.953884 0.008087635 0.3000668 -0.9557345 0.005829095 0.2941731 -0.9295125 0.004821956 0.3687592 -0.9278776 0.006775259 0.3728235 -0.9553059 0.01495426 0.2952408 -0.9638321 0.01535123 0.2660678 -0.9618973 0.008880972 0.273267 -0.9284183 0.01901328 0.3710499 -0.9454833 0.01944065 0.32509 -0.9277772 0.01376402 0.3728809 -0.957195 0.0197457 0.2887699 -0.9650442 0.02063089 0.2612739 -0.9638836 0.02111917 0.2654854 -0.8057053 0.001281797 0.5923154 -0.8109126 0.001342773 0.5851657 -0.835597 0.004730522 0.5493228 -0.8359835 0.004516839 0.5487362 -0.811326 0.008179128 0.5845368 -0.8117383 0.01110881 0.5839157 -0.8364018 0.01141405 0.547998 -0.964669 0.005493342 0.2634078 -0.8886584 0.004150569 0.4585512 -0.8852747 0.006500601 0.4650233 -0.90714 0.01840281 0.4204266 -0.9071522 0.01837253 0.4204017 -0.8857588 0.01791477 0.4638003 -0.8845003 0.01293998 0.4663602 -0.8591832 0.01706033 0.5113837 -0.838844 0.0164802 0.5441225 -0.8135016 0.01614487 0.5813386 -0.8112506 0.009704947 0.584618</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR-mesh-map-0">
+          <float_array id="fullsize_doorglass_RR-mesh-map-0-array" count="222">0.875688 0.0307722 0.9896831 0.02886515 0.9852759 0.06522202 0.9852759 0.06522202 0.8752651 0.066913 0.875688 0.0307722 0.875688 0.0307722 0.7381482 0.03225165 0.7388687 0.01409083 0.7388687 0.01409083 0.875502 0.01249486 0.875688 0.0307722 0.7098502 0.06883561 0.7090935 0.06128007 0.7391631 0.06846576 0.7381482 0.03225165 0.7090935 0.06128007 0.7062912 0.03263199 0.70597 0.02889937 0.7381482 0.03225165 0.7062911 0.03263199 0.7388687 0.01409083 0.7059701 0.02889937 0.7047723 0.01468223 0.9636741 0.2268047 0.871221 0.2265061 0.8731681 0.1672692 0.8731681 0.1672692 0.971981 0.1662143 0.9636741 0.2268047 0.7482128 0.22399 0.7254758 0.1976149 0.7442166 0.1682277 0.7381482 0.03225165 0.875688 0.0307722 0.8752651 0.066913 0.8752651 0.066913 0.7391631 0.06846576 0.7381482 0.03225165 0.9896831 0.02886515 0.875688 0.0307722 0.875502 0.01249486 0.875502 0.01249486 0.991733 0.0111407 0.9896831 0.02886515 0.871221 0.2265061 0.7482128 0.22399 0.7442166 0.1682277 0.7442166 0.1682277 0.8731681 0.1672692 0.871221 0.2265061 0.8752651 0.066913 0.9852759 0.06522202 0.9786136 0.1174921 0.9786136 0.1174921 0.8743394 0.1187553 0.8752651 0.066913 0.7391631 0.06846576 0.7144497 0.1099042 0.7098708 0.06906086 0.7156196 0.1203273 0.7144497 0.1099042 0.7413839 0.1200449 0.7391631 0.06846576 0.8752651 0.066913 0.8743394 0.1187553 0.8743394 0.1187553 0.7413839 0.1200449 0.7391631 0.06846576 0.8743394 0.1187553 0.9786136 0.1174921 0.971981 0.1662143 0.971981 0.1662143 0.8731681 0.1672692 0.8743394 0.1187553 0.7413839 0.1200449 0.7201548 0.158301 0.7156196 0.1203273 0.7213536 0.1683615 0.7201548 0.1583009 0.7442166 0.1682277 0.7413839 0.1200449 0.8743394 0.1187553 0.8731681 0.1672692 0.8731681 0.1672692 0.7442166 0.1682277 0.7413839 0.1200449 0.7442166 0.1682277 0.7213866 0.1686367 0.7213537 0.1683615 0.7381482 0.03225165 0.7391631 0.06846576 0.7090935 0.06128007 0.7388687 0.01409083 0.7381482 0.03225165 0.7059701 0.02889937 0.7482128 0.22399 0.7287713 0.2227758 0.7254758 0.1976149 0.7098708 0.06906086 0.7098501 0.06883561 0.7391631 0.06846576 0.7391631 0.06846576 0.7413839 0.1200449 0.7144497 0.1099042 0.7413839 0.1200449 0.7442166 0.1682277 0.7201548 0.158301 0.7442166 0.1682277 0.7254758 0.1976149 0.7213866 0.1686367</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-map-0-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR-mesh-map-1">
+          <float_array id="fullsize_doorglass_RR-mesh-map-1-array" count="222">-3.829981 1.343605 -3.84269 1.060631 -3.724683 1.071566 -3.724683 1.071566 -3.714309 1.34479 -3.829981 1.343605 -3.829981 1.343605 -3.813856 1.684961 -3.861661 1.683102 -3.861661 1.683102 -3.87943 1.344049 -3.829981 1.343605 -3.692234 1.75561 -3.716265 1.75737 -3.698622 1.682808 -3.813856 1.684961 -3.716265 1.75737 -3.807074 1.764036 -3.816504 1.764809 -3.813856 1.684961 -3.807074 1.764036 -3.861661 1.683102 -3.816504 1.764809 -3.853592 1.767726 -2.888846 1.125539 -2.894211 1.354902 -3.249204 1.350001 -3.249204 1.350001 -3.259842 1.104501 -2.888846 1.125539 -2.902499 1.660376 -3.057882 1.716849 -3.235568 1.670302 -3.813856 1.684961 -3.829981 1.343605 -3.714309 1.34479 -3.714309 1.34479 -3.698622 1.682808 -3.813856 1.684961 -3.84269 1.060631 -3.829981 1.343605 -3.87943 1.344049 -3.87943 1.344049 -3.888846 1.05554 -3.84269 1.060631 -2.894211 1.354902 -2.902499 1.660376 -3.235568 1.670302 -3.235568 1.670302 -3.249204 1.350001 -2.894211 1.354902 -3.714309 1.34479 -3.724683 1.071566 -3.508876 1.088109 -3.508876 1.088109 -3.498551 1.347106 -3.714309 1.34479 -3.698622 1.682808 -3.521555 1.744223 -3.691297 1.75556 -3.478218 1.74133 -3.521555 1.744223 -3.483674 1.677337 -3.698622 1.682808 -3.714309 1.34479 -3.498551 1.347106 -3.498551 1.347106 -3.483674 1.677337 -3.698622 1.682808 -3.498551 1.347106 -3.508876 1.088109 -3.259842 1.104501 -3.259842 1.104501 -3.249204 1.350001 -3.498551 1.347106 -3.483674 1.677337 -3.283039 1.730067 -3.478218 1.74133 -3.231562 1.727088 -3.283039 1.730067 -3.235568 1.670302 -3.483674 1.677337 -3.498551 1.347106 -3.249204 1.350001 -3.249204 1.350001 -3.235568 1.670302 -3.483674 1.677337 -3.235568 1.670302 -3.229926 1.727006 -3.231562 1.727088 -3.813856 1.684961 -3.698622 1.682808 -3.716265 1.75737 -3.861661 1.683102 -3.813856 1.684961 -3.816504 1.764809 -2.902499 1.660376 -2.90775 1.708664 -3.057882 1.716849 -3.691297 1.75556 -3.692234 1.755611 -3.698622 1.682808 -3.698622 1.682808 -3.483674 1.677337 -3.521555 1.744223 -3.483674 1.677337 -3.235568 1.670302 -3.283039 1.730067 -3.235568 1.670302 -3.057882 1.716849 -3.229926 1.727006</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-map-1-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR-mesh-map-2">
+          <float_array id="fullsize_doorglass_RR-mesh-map-2-array" count="222">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-map-2-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RR-mesh-colors-geom-fullsize_doorglass_RR-map0" name="geom-fullsize_doorglass_RR-map0">
+          <float_array id="fullsize_doorglass_RR-mesh-colors-geom-fullsize_doorglass_RR-map0-array" count="444">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RR-mesh-colors-geom-fullsize_doorglass_RR-map0-array" count="111" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RR-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RR-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass-material" count="37">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RR-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RR-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RR-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RR-mesh-colors-geom-fullsize_doorglass_RR-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 1 1 1 3 2 2 2 3 2 3 3 2 3 4 4 1 0 5 5 1 0 6 6 4 4 7 7 6 5 8 8 6 5 9 9 5 6 10 10 1 0 11 11 19 7 12 12 18 8 13 13 7 9 14 14 4 4 15 15 18 8 16 16 20 10 17 17 21 11 18 18 4 4 19 19 20 10 20 20 6 5 21 21 21 11 22 22 22 12 23 23 8 13 24 24 11 14 25 25 10 15 26 26 10 15 27 27 9 16 28 28 8 13 29 29 12 17 30 30 24 18 31 31 13 19 32 32 4 4 33 33 1 0 34 34 2 3 35 35 2 3 36 36 7 9 37 37 4 4 38 38 0 1 39 39 1 0 40 40 5 6 41 41 5 6 42 42 14 20 43 43 0 1 44 44 11 14 45 45 12 17 46 46 13 19 47 47 13 19 48 48 10 15 49 49 11 14 50 50 2 3 51 51 3 2 52 52 16 21 53 53 16 21 54 54 15 22 55 55 2 3 56 56 7 9 57 57 25 23 58 58 26 24 59 59 27 25 60 60 25 23 61 61 17 26 62 62 7 9 63 63 2 3 64 64 15 22 65 65 15 22 66 66 17 26 67 67 7 9 68 68 15 22 69 69 16 21 70 70 9 16 71 71 9 16 72 72 10 15 73 73 15 22 74 74 17 26 75 75 28 27 76 76 27 25 77 77 29 28 78 78 28 27 79 79 13 19 80 80 17 26 81 81 15 22 82 82 10 15 83 83 10 15 84 84 13 19 85 85 17 26 86 86 13 19 87 87 30 29 88 88 29 28 89 89 4 4 90 90 7 9 91 91 18 8 92 92 6 5 93 93 4 4 94 94 21 11 95 95 12 17 96 96 23 30 97 97 24 18 98 98 26 24 99 99 19 7 100 100 7 9 101 101 7 9 102 102 17 26 103 103 25 23 104 104 17 26 105 105 13 19 106 106 28 27 107 107 13 19 108 108 24 18 109 109 30 29 110 110</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="fullsize_doorglass_RL-mesh" name="fullsize_doorglass_RL">
+      <mesh>
+        <source id="fullsize_doorglass_RL-mesh-positions">
+          <float_array id="fullsize_doorglass_RL-mesh-positions-array" count="93">88.427 96.7875 100.7507 76.57304 95.59029 125.7224 88.75755 68.90582 100.5897 76.85246 69.42815 125.6582 86.06484 96.61182 107.638 86.38644 69.0024 107.462 81.65878 96.16503 117.1661 81.96374 69.1917 117.0385 86.59907 46.68543 107.1906 89.01804 45.79241 100.269 89.96412 45.37664 96.81321 89.77116 68.9419 97.02774 89.40693 96.63583 97.20511 69.76623 94.73954 135.1819 69.57578 69.82845 135.7391 69.46581 51.09386 135.746 77.07055 49.37562 125.5135 82.17539 48.03683 116.8543 86.42649 102.7021 106.2215 88.28797 103.2465 100.7698 85.9339 102.5583 107.6605 88.48128 103.3096 100.0347 89.24151 103.5479 97.25572 69.82759 98.72238 135.0305 72.89221 99.41191 130.7665 81.54694 101.3919 117.1777 82.43528 101.6282 115.2515 85.9147 102.5542 107.7022 76.49092 100.2286 125.7084 77.54612 100.4719 123.9245 76.45703 100.2221 125.756</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-positions-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL-mesh-normals">
+          <float_array id="fullsize_doorglass_RL-mesh-normals-array" count="93">0.9538752 0.008087515 0.3000946 0.9278776 0.006775259 0.3728235 0.9295125 0.004821956 0.3687592 0.9557345 0.005829095 0.2941731 0.9618973 0.008880972 0.273267 0.9638321 0.01535123 0.2660678 0.9553059 0.01495426 0.2952408 0.9454833 0.01944065 0.32509 0.9277772 0.01376402 0.3728809 0.9284183 0.01901328 0.3710499 0.9650442 0.02063089 0.2612739 0.957195 0.0197457 0.2887699 0.8057053 0.001281797 0.5923154 0.8359835 0.004516839 0.5487362 0.835597 0.004730522 0.5493228 0.8109271 0.001342833 0.5851457 0.8117383 0.01110881 0.5839157 0.811326 0.008179128 0.5845368 0.8364018 0.01141405 0.547998 0.964669 0.005493342 0.2634078 0.8852747 0.006500601 0.4650233 0.8886584 0.004150569 0.4585512 0.8857588 0.01791477 0.4638003 0.8845003 0.01293998 0.4663602 0.90714 0.01840281 0.4204266 0.9071522 0.01837253 0.4204017 0.838858 0.0164805 0.544101 0.8591832 0.01706033 0.5113837 0.8135119 0.01614445 0.5813242 0.9638836 0.02111917 0.2654854 0.8112506 0.009704947 0.584618</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL-mesh-map-0">
+          <float_array id="fullsize_doorglass_RL-mesh-map-0-array" count="222">0.875688 0.0307722 0.8752651 0.066913 0.9852759 0.06522202 0.9852759 0.06522202 0.9896831 0.02886515 0.875688 0.0307722 0.875688 0.0307722 0.875502 0.01249486 0.7388687 0.01409083 0.7388687 0.01409083 0.7381482 0.03225165 0.875688 0.0307722 0.7381482 0.03225165 0.7090936 0.06128007 0.7391631 0.06846576 0.7098501 0.06883561 0.7391631 0.06846576 0.7090935 0.06128007 0.7388687 0.01409083 0.7059694 0.02889931 0.7381482 0.03225165 0.7062907 0.03263199 0.7381482 0.03225165 0.7059694 0.02889931 0.9636741 0.2268047 0.971981 0.1662143 0.8731681 0.1672692 0.8731681 0.1672692 0.871221 0.2265061 0.9636741 0.2268047 0.7254757 0.197615 0.7482128 0.22399 0.7442166 0.1682277 0.7381482 0.03225165 0.7391631 0.06846576 0.8752651 0.066913 0.8752651 0.066913 0.875688 0.0307722 0.7381482 0.03225165 0.9896831 0.02886515 0.991733 0.0111407 0.875502 0.01249486 0.875502 0.01249486 0.875688 0.0307722 0.9896831 0.02886515 0.871221 0.2265061 0.8731681 0.1672692 0.7442166 0.1682277 0.7442166 0.1682277 0.7482128 0.22399 0.871221 0.2265061 0.8752651 0.066913 0.8743394 0.1187553 0.9786136 0.1174921 0.9786136 0.1174921 0.9852759 0.06522202 0.8752651 0.066913 0.7156196 0.1203273 0.7413839 0.1200449 0.7144497 0.1099042 0.7391631 0.06846576 0.7098706 0.06906086 0.7144497 0.1099042 0.7391631 0.06846576 0.7413839 0.1200449 0.8743394 0.1187553 0.8743394 0.1187553 0.8752651 0.066913 0.7391631 0.06846576 0.8743394 0.1187553 0.8731681 0.1672692 0.971981 0.1662143 0.971981 0.1662143 0.9786136 0.1174921 0.8743394 0.1187553 0.7213534 0.1683615 0.7442166 0.1682277 0.7201544 0.1583008 0.7413839 0.1200449 0.7201545 0.1583008 0.7442166 0.1682277 0.7413839 0.1200449 0.7442166 0.1682277 0.8731681 0.1672692 0.8731681 0.1672692 0.8743394 0.1187553 0.7413839 0.1200449 0.7442166 0.1682277 0.7213864 0.1686369 0.7254757 0.197615 0.7381482 0.03225165 0.7062907 0.03263199 0.7090936 0.06128007 0.7388687 0.01409083 0.7047724 0.01468223 0.7059694 0.02889931 0.7254757 0.197615 0.7287711 0.2227757 0.7482128 0.22399 0.7144497 0.1099042 0.7413839 0.1200449 0.7391631 0.06846576 0.7391631 0.06846576 0.70985 0.06883561 0.7098706 0.06906086 0.7413839 0.1200449 0.7156196 0.1203273 0.7201545 0.1583008 0.7442166 0.1682277 0.7213534 0.1683615 0.7213864 0.1686369</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-map-0-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL-mesh-map-1">
+          <float_array id="fullsize_doorglass_RL-mesh-map-1-array" count="222">4.829995 1.343607 4.714321 1.34479 4.724694 1.071565 4.724694 1.071565 4.842702 1.060632 4.829995 1.343607 4.829995 1.343607 4.879443 1.344049 4.861674 1.683103 4.861674 1.683103 4.813869 1.68496 4.829995 1.343607 4.813869 1.68496 4.716275 1.757371 4.698632 1.682809 4.692244 1.755612 4.698632 1.682809 4.716275 1.757371 4.861674 1.683103 4.816517 1.76481 4.813869 1.68496 4.807086 1.764037 4.813869 1.68496 4.816517 1.76481 3.888856 1.125537 4.25985 1.104501 4.24921 1.350002 4.24921 1.350002 3.894221 1.354903 3.888856 1.125537 4.05789 1.716849 3.902504 1.660375 4.235579 1.670302 4.813869 1.68496 4.698632 1.682809 4.714321 1.34479 4.714321 1.34479 4.829995 1.343607 4.813869 1.68496 4.842702 1.060632 4.888856 1.055542 4.879443 1.344049 4.879443 1.344049 4.829995 1.343607 4.842702 1.060632 3.894221 1.354903 4.24921 1.350002 4.235579 1.670302 4.235579 1.670302 3.902504 1.660375 3.894221 1.354903 4.714321 1.34479 4.498561 1.347107 4.508887 1.08811 4.508887 1.08811 4.724694 1.071565 4.714321 1.34479 4.478228 1.741332 4.483684 1.677339 4.521565 1.744224 4.698632 1.682809 4.691307 1.755561 4.521565 1.744224 4.698632 1.682809 4.483684 1.677339 4.498561 1.347107 4.498561 1.347107 4.714321 1.34479 4.698632 1.682809 4.498561 1.347107 4.24921 1.350002 4.25985 1.104501 4.25985 1.104501 4.508887 1.08811 4.498561 1.347107 4.231573 1.727089 4.235579 1.670302 4.283051 1.730067 4.483684 1.677339 4.28305 1.730067 4.235579 1.670302 4.483684 1.677339 4.235579 1.670302 4.24921 1.350002 4.24921 1.350002 4.498561 1.347107 4.483684 1.677339 4.235579 1.670302 4.229938 1.727007 4.05789 1.716849 4.813869 1.68496 4.807086 1.764037 4.716275 1.757371 4.861674 1.683103 4.853604 1.767727 4.816517 1.76481 4.05789 1.716849 3.907756 1.708664 3.902504 1.660375 4.521565 1.744224 4.483684 1.677339 4.698632 1.682809 4.698632 1.682809 4.692244 1.755612 4.691307 1.755561 4.483684 1.677339 4.478228 1.741332 4.28305 1.730067 4.235579 1.670302 4.231573 1.727089 4.229938 1.727007</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-map-1-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL-mesh-map-2">
+          <float_array id="fullsize_doorglass_RL-mesh-map-2-array" count="222">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-map-2-array" count="111" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fullsize_doorglass_RL-mesh-colors-geom-fullsize_doorglass_RL-map0" name="geom-fullsize_doorglass_RL-map0">
+          <float_array id="fullsize_doorglass_RL-mesh-colors-geom-fullsize_doorglass_RL-map0-array" count="444">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#fullsize_doorglass_RL-mesh-colors-geom-fullsize_doorglass_RL-map0-array" count="111" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fullsize_doorglass_RL-mesh-vertices">
+          <input semantic="POSITION" source="#fullsize_doorglass_RL-mesh-positions"/>
+        </vertices>
+        <triangles material="fullsize_glass-material" count="37">
+          <input semantic="VERTEX" source="#fullsize_doorglass_RL-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#fullsize_doorglass_RL-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#fullsize_doorglass_RL-mesh-map-2" offset="2" set="2"/>
+          <input semantic="COLOR" source="#fullsize_doorglass_RL-mesh-colors-geom-fullsize_doorglass_RL-map0" offset="3" set="0"/>
+          <p>2 0 0 0 5 1 1 1 8 2 2 2 8 2 3 3 9 3 4 4 2 0 5 5 2 0 6 6 11 4 7 7 12 5 8 8 12 5 9 9 0 6 10 10 2 0 11 11 0 6 12 12 18 7 13 13 4 8 14 14 20 9 15 15 4 8 16 16 18 7 17 17 12 5 18 18 21 10 19 19 0 6 20 20 19 11 21 21 0 6 22 22 21 10 23 23 15 12 24 24 16 13 25 25 3 14 26 26 3 14 27 27 14 15 28 28 15 12 29 29 24 16 30 30 13 17 31 31 1 18 32 32 0 6 33 33 4 8 34 34 5 1 35 35 5 1 36 36 2 0 37 37 0 6 38 38 9 3 39 39 10 19 40 40 11 4 41 41 11 4 42 42 2 0 43 43 9 3 44 44 14 15 45 45 3 14 46 46 1 18 47 47 1 18 48 48 13 17 49 49 14 15 50 50 5 1 51 51 7 20 52 52 17 21 53 53 17 21 54 54 8 2 55 55 5 1 56 56 25 22 57 57 6 23 58 58 26 24 59 59 4 8 60 60 27 25 61 61 26 24 62 62 4 8 63 63 6 23 64 64 7 20 65 65 7 20 66 66 5 1 67 67 4 8 68 68 7 20 69 69 3 14 70 70 16 13 71 71 16 13 72 72 17 21 73 73 7 20 74 74 28 26 75 75 1 18 76 76 29 27 77 77 6 23 78 78 29 27 79 79 1 18 80 80 6 23 81 81 1 18 82 82 3 14 83 83 3 14 84 84 7 20 85 85 6 23 86 86 1 18 87 87 30 28 88 88 24 16 89 89 0 6 90 90 19 11 91 91 18 7 92 92 12 5 93 93 22 29 94 94 21 10 95 95 24 16 96 96 23 30 97 97 13 17 98 98 26 24 99 99 6 23 100 100 4 8 101 101 4 8 102 102 20 9 103 103 27 25 104 104 6 23 105 105 25 22 106 106 29 27 107 107 1 18 108 108 28 26 109 109 30 28 110 110</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="fullsize_doorglass_fixed_RR" name="fullsize_doorglass_fixed_RR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RR_001-mesh" name="fullsize_doorglass_fixed_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass-material" target="#fullsize_glass-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_fixed_RR_int" name="fullsize_doorglass_fixed_RR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RR_int_001-mesh" name="fullsize_doorglass_fixed_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass_int-material" target="#fullsize_glass_int-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR_int-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_fixed_RL_int" name="fullsize_doorglass_fixed_RL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RL_int_001-mesh" name="fullsize_doorglass_fixed_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass_int-material" target="#fullsize_glass_int-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL_int-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_fixed_RL" name="fullsize_doorglass_fixed_RL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RL_001-mesh" name="fullsize_doorglass_fixed_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass-material" target="#fullsize_glass-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_openable_RL_int" name="fullsize_doorglass_openable_RL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RL_int-mesh" name="fullsize_doorglass_openable_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass_int-material" target="#fullsize_glass_int-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL_int-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_openable_RR_int" name="fullsize_doorglass_openable_RR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RR_int-mesh" name="fullsize_doorglass_openable_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass_int-material" target="#fullsize_glass_int-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR_int-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_openable_RR" name="fullsize_doorglass_openable_RR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RR-mesh" name="fullsize_doorglass_openable_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass-material" target="#fullsize_glass-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RR-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="fullsize_doorglass_openable_RL" name="fullsize_doorglass_openable_RL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#fullsize_doorglass_RL-mesh" name="fullsize_doorglass_openable_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="fullsize_glass-material" target="#fullsize_glass-material">
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL-map1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="geom-fullsize_doorglass_RL-map2" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

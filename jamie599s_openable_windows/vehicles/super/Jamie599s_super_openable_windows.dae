@@ -3,35 +3,15 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 2.93.6 commit date:2021-11-16, commit time:14:54, hash:c842a90e2fa1</authoring_tool>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
     </contributor>
-    <created>2021-11-25T20:22:51</created>
-    <modified>2021-11-25T20:22:51</modified>
+    <created>2021-12-03T20:22:27</created>
+    <modified>2021-12-03T20:22:27</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="super_glass_fixed-effect">
-      <profile_COMMON>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <color sid="diffuse">0.588 0.588 0.588 1</color>
-            </diffuse>
-            <transparent opaque="A_ONE">
-              <color sid="alpha">0 0 0 0</color>
-            </transparent>
-            <index_of_refraction>
-              <float sid="ior">1.45</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="super_glass_int_openable-effect">
+    <effect id="super_glass_int-effect">
       <profile_COMMON>
         <technique sid="common">
           <lambert>
@@ -48,24 +28,7 @@
         </technique>
       </profile_COMMON>
     </effect>
-    <effect id="super_glass_int_fixed-effect">
-      <profile_COMMON>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <color sid="diffuse">0.5882353 0.5882353 0.5882353 1</color>
-            </diffuse>
-            <index_of_refraction>
-              <float sid="ior">1.45</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="super_glass_openable-effect">
+    <effect id="super_glass-effect">
       <profile_COMMON>
         <technique sid="common">
           <lambert>
@@ -88,74 +51,14 @@
   </library_effects>
   <library_images/>
   <library_materials>
-    <material id="super_glass_fixed-material" name="super_glass_fixed">
-      <instance_effect url="#super_glass_fixed-effect"/>
+    <material id="super_glass_int-material" name="super_glass_int">
+      <instance_effect url="#super_glass_int-effect"/>
     </material>
-    <material id="super_glass_int_openable-material" name="super_glass_int_openable">
-      <instance_effect url="#super_glass_int_openable-effect"/>
-    </material>
-    <material id="super_glass_int_fixed-material" name="super_glass_int_fixed">
-      <instance_effect url="#super_glass_int_fixed-effect"/>
-    </material>
-    <material id="super_glass_openable-material" name="super_glass_openable">
-      <instance_effect url="#super_glass_openable-effect"/>
+    <material id="super_glass-material" name="super_glass">
+      <instance_effect url="#super_glass-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="super_doorglass_R_001-mesh" name="super_doorglass_R.001">
-      <mesh>
-        <source id="super_doorglass_R_001-mesh-positions">
-          <float_array id="super_doorglass_R_001-mesh-positions-array" count="33">-76.69687 -40.63496 85.80804 -81.29088 -34.76878 77.47018 -81.01987 -46.20052 77.29889 -76.82733 -29.29118 86.38844 -71.60852 -23.47187 94.81226 -71.4396 -39.19545 93.71236 -76.26384 -54.67549 85.09188 -79.84614 -67.74152 77.21951 -65.90327 -23.64775 101.8691 -61.96351 -13.03058 107.0177 -65.37015 -17.00462 102.9383</float_array>
-          <technique_common>
-            <accessor source="#super_doorglass_R_001-mesh-positions-array" count="11" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="super_doorglass_R_001-mesh-normals">
-          <float_array id="super_doorglass_R_001-mesh-normals-array" count="33">-0.884483 -0.03097718 0.465543 -0.8786813 -0.0430932 0.4754602 -0.8566205 -0.0436123 0.5141004 -0.8539571 -0.03637886 0.5190702 -0.867913 -0.05081492 0.4941104 -0.7953287 -0.04678583 0.6043704 -0.8195638 -0.05035674 0.5707709 -0.8755673 -0.04947173 0.4805564 -0.7734592 -0.04416191 0.6323059 -0.7433174 -0.04773145 0.6672338 -0.7523815 -0.04538154 0.6571626</float_array>
-          <technique_common>
-            <accessor source="#super_doorglass_R_001-mesh-normals-array" count="11" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="super_doorglass_R_001-mesh-map-0">
-          <float_array id="super_doorglass_R_001-mesh-map-0-array" count="60">0.5373575 0.01042133 0.6088248 0.01051646 0.5740307 0.06959354 0.5740307 0.06959354 0.5031133 0.07209837 0.5373575 0.01042133 0.6618072 0.06747901 0.5740307 0.06959354 0.6088248 0.01051646 0.4667334 0.1339514 0.5031133 0.07209837 0.5740307 0.06959354 0.4667334 0.1339514 0.5740307 0.06959354 0.5650313 0.1289239 0.5650313 0.1289239 0.5740307 0.06959354 0.6618072 0.06747901 0.6088248 0.01051646 0.7434922 0.01431846 0.6618072 0.06747901 0.4667334 0.1339514 0.5650313 0.1289239 0.4678327 0.190547 0.4014578 0.2310411 0.4263017 0.197934 0.4678327 0.190547 0.4678327 0.190547 0.4263017 0.197934 0.4667334 0.1339514</float_array>
-          <technique_common>
-            <accessor source="#super_doorglass_R_001-mesh-map-0-array" count="30" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0" name="geom-super_doorglass_R-map0">
-          <float_array id="super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0-array" count="120">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
-          <technique_common>
-            <accessor source="#super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0-array" count="30" stride="4">
-              <param name="R" type="float"/>
-              <param name="G" type="float"/>
-              <param name="B" type="float"/>
-              <param name="A" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <vertices id="super_doorglass_R_001-mesh-vertices">
-          <input semantic="POSITION" source="#super_doorglass_R_001-mesh-positions"/>
-        </vertices>
-        <triangles material="super_glass_fixed-material" count="10">
-          <input semantic="VERTEX" source="#super_doorglass_R_001-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#super_doorglass_R_001-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#super_doorglass_R_001-mesh-map-0" offset="2" set="0"/>
-          <input semantic="COLOR" source="#super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0" offset="3" set="0"/>
-          <p>1 0 0 0 2 1 1 1 0 2 2 2 0 2 3 3 3 3 4 4 1 0 5 5 6 4 6 6 0 2 7 7 2 1 8 8 4 5 9 9 3 3 10 10 0 2 11 11 4 5 12 12 0 2 13 13 5 6 14 14 5 6 15 15 0 2 16 16 6 4 17 17 2 1 18 18 7 7 19 19 6 4 20 20 4 5 21 21 5 6 22 22 8 8 23 23 9 9 24 24 10 10 25 25 8 8 26 26 8 8 27 27 10 10 28 28 4 5 29 29</p>
-        </triangles>
-      </mesh>
-    </geometry>
     <geometry id="super_doorglass_R_int_001-mesh" name="super_doorglass_R_int.001">
       <mesh>
         <source id="super_doorglass_R_int_001-mesh-positions">
@@ -201,12 +104,66 @@
         <vertices id="super_doorglass_R_int_001-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_R_int_001-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_int_openable-material" count="25">
+        <triangles material="super_glass_int-material" count="25">
           <input semantic="VERTEX" source="#super_doorglass_R_int_001-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_R_int_001-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_R_int_001-mesh-map-0" offset="2" set="0"/>
           <input semantic="COLOR" source="#super_doorglass_R_int_001-mesh-colors-geom-super_doorglass_R_int-map0" offset="3" set="0"/>
           <p>3 0 0 0 1 1 1 1 0 2 2 2 5 3 3 3 0 2 4 4 1 1 5 5 6 4 6 6 2 5 7 7 0 2 8 8 4 6 9 9 0 2 10 10 2 5 11 11 0 2 12 12 4 6 13 13 3 0 14 14 5 3 15 15 6 4 16 16 0 2 17 17 6 4 18 18 7 7 19 19 2 5 20 20 1 1 21 21 8 8 22 22 5 3 23 23 8 8 24 24 1 1 25 25 10 9 26 26 10 9 27 27 9 10 28 28 8 8 29 29 11 11 30 30 10 9 31 31 1 1 32 32 1 1 33 33 3 0 34 34 11 11 35 35 12 12 36 36 11 11 37 37 3 0 38 38 3 0 39 39 14 13 40 40 12 12 41 41 13 14 42 42 12 12 43 43 14 13 44 44 4 6 45 45 15 15 46 46 14 13 47 47 16 16 48 48 14 13 49 49 15 15 50 50 14 13 51 51 3 0 52 52 4 6 53 53 14 13 54 54 16 16 55 55 13 14 56 56 15 15 57 57 17 17 58 58 16 16 59 59 17 17 60 60 15 15 61 61 19 18 62 62 19 18 63 63 18 19 64 64 17 17 65 65 20 20 66 66 19 18 67 67 15 15 68 68 15 15 69 69 4 6 70 70 20 20 71 71 2 5 72 72 20 20 73 73 4 6 74 74</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="super_doorglass_R_001-mesh" name="super_doorglass_R.001">
+      <mesh>
+        <source id="super_doorglass_R_001-mesh-positions">
+          <float_array id="super_doorglass_R_001-mesh-positions-array" count="33">-76.69687 -40.63496 85.80804 -81.29088 -34.76878 77.47018 -81.01987 -46.20052 77.29889 -76.82733 -29.29118 86.38844 -71.60852 -23.47187 94.81226 -71.4396 -39.19545 93.71236 -76.26384 -54.67549 85.09188 -79.84614 -67.74152 77.21951 -65.90327 -23.64775 101.8691 -61.96351 -13.03058 107.0177 -65.37015 -17.00462 102.9383</float_array>
+          <technique_common>
+            <accessor source="#super_doorglass_R_001-mesh-positions-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="super_doorglass_R_001-mesh-normals">
+          <float_array id="super_doorglass_R_001-mesh-normals-array" count="33">-0.884483 -0.03097718 0.465543 -0.8786813 -0.0430932 0.4754602 -0.8566205 -0.0436123 0.5141004 -0.8539571 -0.03637886 0.5190702 -0.867913 -0.05081492 0.4941104 -0.7953287 -0.04678583 0.6043704 -0.8195638 -0.05035674 0.5707709 -0.8755673 -0.04947173 0.4805564 -0.7734592 -0.04416191 0.6323059 -0.7433174 -0.04773145 0.6672338 -0.7523815 -0.04538154 0.6571626</float_array>
+          <technique_common>
+            <accessor source="#super_doorglass_R_001-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="super_doorglass_R_001-mesh-map-0">
+          <float_array id="super_doorglass_R_001-mesh-map-0-array" count="60">0.5373575 0.01042133 0.6088248 0.01051646 0.5740307 0.06959354 0.5740307 0.06959354 0.5031133 0.07209837 0.5373575 0.01042133 0.6618072 0.06747901 0.5740307 0.06959354 0.6088248 0.01051646 0.4667334 0.1339514 0.5031133 0.07209837 0.5740307 0.06959354 0.4667334 0.1339514 0.5740307 0.06959354 0.5650313 0.1289239 0.5650313 0.1289239 0.5740307 0.06959354 0.6618072 0.06747901 0.6088248 0.01051646 0.7434922 0.01431846 0.6618072 0.06747901 0.4667334 0.1339514 0.5650313 0.1289239 0.4678327 0.190547 0.4014578 0.2310411 0.4263017 0.197934 0.4678327 0.190547 0.4678327 0.190547 0.4263017 0.197934 0.4667334 0.1339514</float_array>
+          <technique_common>
+            <accessor source="#super_doorglass_R_001-mesh-map-0-array" count="30" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0" name="geom-super_doorglass_R-map0">
+          <float_array id="super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0-array" count="120">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0-array" count="30" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="super_doorglass_R_001-mesh-vertices">
+          <input semantic="POSITION" source="#super_doorglass_R_001-mesh-positions"/>
+        </vertices>
+        <triangles material="super_glass-material" count="10">
+          <input semantic="VERTEX" source="#super_doorglass_R_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#super_doorglass_R_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#super_doorglass_R_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#super_doorglass_R_001-mesh-colors-geom-super_doorglass_R-map0" offset="3" set="0"/>
+          <p>1 0 0 0 2 1 1 1 0 2 2 2 0 2 3 3 3 3 4 4 1 0 5 5 6 4 6 6 0 2 7 7 2 1 8 8 4 5 9 9 3 3 10 10 0 2 11 11 4 5 12 12 0 2 13 13 5 6 14 14 5 6 15 15 0 2 16 16 6 4 17 17 2 1 18 18 7 7 19 19 6 4 20 20 4 5 21 21 5 6 22 22 8 8 23 23 9 9 24 24 10 10 25 25 8 8 26 26 8 8 27 27 10 10 28 28 4 5 29 29</p>
         </triangles>
       </mesh>
     </geometry>
@@ -255,7 +212,7 @@
         <vertices id="super_doorglass_L_int_001-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_L_int_001-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_int_openable-material" count="25">
+        <triangles material="super_glass_int-material" count="25">
           <input semantic="VERTEX" source="#super_doorglass_L_int_001-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_L_int_001-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_L_int_001-mesh-map-0" offset="2" set="0"/>
@@ -267,7 +224,7 @@
     <geometry id="super_doorglass_L_001-mesh" name="super_doorglass_L.001">
       <mesh>
         <source id="super_doorglass_L_001-mesh-positions">
-          <float_array id="super_doorglass_L_001-mesh-positions-array" count="33">76.69687 -40.63496 85.80804 79.84614 -67.74153 77.21951 81.01987 -46.20053 77.29888 81.29088 -34.76878 77.47018 76.82733 -29.29119 86.38844 71.60852 -23.47188 94.81226 65.37015 -17.00463 102.9383 61.96351 -13.03059 107.0177 65.90327 -23.64775 101.8691 71.4396 -39.19546 93.71236 76.26384 -54.6755 85.09187</float_array>
+          <float_array id="super_doorglass_L_001-mesh-positions-array" count="33">76.69687 -40.63496 85.80804 81.01987 -46.20053 77.29888 81.29088 -34.76878 77.47018 76.82733 -29.29119 86.38844 71.60852 -23.47188 94.81226 71.4396 -39.19546 93.71236 76.26384 -54.6755 85.09187 79.84614 -67.74153 77.21951 65.90327 -23.64775 101.8691 61.96351 -13.03059 107.0177 65.37015 -17.00463 102.9383</float_array>
           <technique_common>
             <accessor source="#super_doorglass_L_001-mesh-positions-array" count="11" stride="3">
               <param name="X" type="float"/>
@@ -277,7 +234,7 @@
           </technique_common>
         </source>
         <source id="super_doorglass_L_001-mesh-normals">
-          <float_array id="super_doorglass_L_001-mesh-normals-array" count="33">0.8786813 -0.0430932 0.4754602 0.8566205 -0.0436123 0.5141004 0.867913 -0.05081492 0.4941104 0.8755673 -0.04947173 0.4805564 0.7433174 -0.04773145 0.6672338 0.7734592 -0.04416191 0.6323059 0.7523815 -0.04538154 0.6571626 0.8195638 -0.05035674 0.5707709 0.7953287 -0.04678583 0.6043704 0.8539571 -0.03637886 0.5190702 0.884483 -0.03097718 0.465543</float_array>
+          <float_array id="super_doorglass_L_001-mesh-normals-array" count="33">0.8566205 -0.0436123 0.5141004 0.8786813 -0.0430932 0.4754602 0.884483 -0.03097718 0.465543 0.867913 -0.05081492 0.4941104 0.8539571 -0.03637886 0.5190702 0.7953287 -0.04678583 0.6043704 0.8195638 -0.05035674 0.5707709 0.8755673 -0.04947173 0.4805564 0.7734592 -0.04416191 0.6323059 0.7433174 -0.04773145 0.6672338 0.7523815 -0.04538154 0.6571626</float_array>
           <technique_common>
             <accessor source="#super_doorglass_L_001-mesh-normals-array" count="11" stride="3">
               <param name="X" type="float"/>
@@ -287,7 +244,7 @@
           </technique_common>
         </source>
         <source id="super_doorglass_L_001-mesh-map-0">
-          <float_array id="super_doorglass_L_001-mesh-map-0-array" count="60">0.6088248 0.01051646 0.5740307 0.06959354 0.6618072 0.06747901 0.6618072 0.06747901 0.7434922 0.01431846 0.6088248 0.01051646 0.4014578 0.2310411 0.4678327 0.190547 0.4263017 0.197934 0.4678327 0.190547 0.5650313 0.1289239 0.4667334 0.1339514 0.4667334 0.1339514 0.4263017 0.197934 0.4678327 0.190547 0.4667334 0.1339514 0.5650313 0.1289239 0.5740307 0.06959354 0.4667334 0.1339514 0.5740307 0.06959354 0.5031133 0.07209837 0.5740307 0.06959354 0.6088248 0.01051646 0.5373575 0.01042133 0.5373575 0.01042133 0.5031133 0.07209837 0.5740307 0.06959354 0.5650313 0.1289239 0.6618072 0.06747901 0.5740307 0.06959354</float_array>
+          <float_array id="super_doorglass_L_001-mesh-map-0-array" count="60">0.5740307 0.06959354 0.6088248 0.01051646 0.5373575 0.01042133 0.6088248 0.01051646 0.5740307 0.06959354 0.6618072 0.06747901 0.5373575 0.01042133 0.5031133 0.07209837 0.5740307 0.06959354 0.4667334 0.1339514 0.5740307 0.06959354 0.5031133 0.07209837 0.4667334 0.1339514 0.5650313 0.1289239 0.5740307 0.06959354 0.5650313 0.1289239 0.6618072 0.06747901 0.5740307 0.06959354 0.6618072 0.06747901 0.7434922 0.01431846 0.6088248 0.01051646 0.4678327 0.190547 0.5650313 0.1289239 0.4667334 0.1339514 0.4014578 0.2310411 0.4678327 0.190547 0.4263017 0.197934 0.4667334 0.1339514 0.4263017 0.197934 0.4678327 0.190547</float_array>
           <technique_common>
             <accessor source="#super_doorglass_L_001-mesh-map-0-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -309,12 +266,12 @@
         <vertices id="super_doorglass_L_001-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_L_001-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_fixed-material" count="10">
+        <triangles material="super_glass-material" count="10">
           <input semantic="VERTEX" source="#super_doorglass_L_001-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_L_001-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_L_001-mesh-map-0" offset="2" set="0"/>
           <input semantic="COLOR" source="#super_doorglass_L_001-mesh-colors-geom-super_doorglass_L-map0" offset="3" set="0"/>
-          <p>2 0 0 0 0 1 1 1 10 2 2 2 10 2 3 3 1 3 4 4 2 0 5 5 7 4 6 6 8 5 7 7 6 6 8 8 8 5 9 9 9 7 10 10 5 8 11 11 5 8 12 12 6 6 13 13 8 5 14 14 5 8 15 15 9 7 16 16 0 1 17 17 5 8 18 18 0 1 19 19 4 9 20 20 0 1 21 21 2 0 22 22 3 10 23 23 3 10 24 24 4 9 25 25 0 1 26 26 9 7 27 27 10 2 28 28 0 1 29 29</p>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 3 3 0 0 4 4 6 3 5 5 2 2 6 6 3 4 7 7 0 0 8 8 4 5 9 9 0 0 10 10 3 4 11 11 4 5 12 12 5 6 13 13 0 0 14 14 5 6 15 15 6 3 16 16 0 0 17 17 6 3 18 18 7 7 19 19 1 1 20 20 8 8 21 21 5 6 22 22 4 5 23 23 9 9 24 24 8 8 25 25 10 10 26 26 4 5 27 27 10 10 28 28 8 8 29 29</p>
         </triangles>
       </mesh>
     </geometry>
@@ -363,7 +320,7 @@
         <vertices id="super_doorglass_R_int-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_R_int-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_int_fixed-material" count="10">
+        <triangles material="super_glass_int-material" count="10">
           <input semantic="VERTEX" source="#super_doorglass_R_int-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_R_int-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_R_int-mesh-map-0" offset="2" set="0"/>
@@ -417,7 +374,7 @@
         <vertices id="super_doorglass_L_int-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_L_int-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_int_fixed-material" count="10">
+        <triangles material="super_glass_int-material" count="10">
           <input semantic="VERTEX" source="#super_doorglass_L_int-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_L_int-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_L_int-mesh-map-0" offset="2" set="0"/>
@@ -471,7 +428,7 @@
         <vertices id="super_doorglass_R-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_R-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_openable-material" count="25">
+        <triangles material="super_glass-material" count="25">
           <input semantic="VERTEX" source="#super_doorglass_R-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_R-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_R-mesh-map-0" offset="2" set="0"/>
@@ -525,7 +482,7 @@
         <vertices id="super_doorglass_L-mesh-vertices">
           <input semantic="POSITION" source="#super_doorglass_L-mesh-positions"/>
         </vertices>
-        <triangles material="super_glass_openable-material" count="25">
+        <triangles material="super_glass-material" count="25">
           <input semantic="VERTEX" source="#super_doorglass_L-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#super_doorglass_L-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#super_doorglass_L-mesh-map-0" offset="2" set="0"/>
@@ -537,25 +494,25 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="super_doorglass_fixed_R" name="super_doorglass_fixed_R" type="NODE">
-        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
-        <instance_geometry url="#super_doorglass_R_001-mesh" name="super_doorglass_fixed_R">
-          <bind_material>
-            <technique_common>
-              <instance_material symbol="super_glass_fixed-material" target="#super_glass_fixed-material">
-                <bind_vertex_input semantic="geom-super_doorglass_R-map1" input_semantic="TEXCOORD" input_set="0"/>
-              </instance_material>
-            </technique_common>
-          </bind_material>
-        </instance_geometry>
-      </node>
       <node id="super_doorglass_openable_R_int" name="super_doorglass_openable_R_int" type="NODE">
         <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
         <instance_geometry url="#super_doorglass_R_int_001-mesh" name="super_doorglass_openable_R_int">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_int_openable-material" target="#super_glass_int_openable-material">
+              <instance_material symbol="super_glass_int-material" target="#super_glass_int-material">
                 <bind_vertex_input semantic="geom-super_doorglass_R_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="super_doorglass_fixed_R" name="super_doorglass_fixed_R" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#super_doorglass_R_001-mesh" name="super_doorglass_fixed_R">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="super_glass-material" target="#super_glass-material">
+                <bind_vertex_input semantic="geom-super_doorglass_R-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
           </bind_material>
@@ -566,7 +523,7 @@
         <instance_geometry url="#super_doorglass_L_int_001-mesh" name="super_doorglass_openable_L_int">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_int_openable-material" target="#super_glass_int_openable-material">
+              <instance_material symbol="super_glass_int-material" target="#super_glass_int-material">
                 <bind_vertex_input semantic="geom-super_doorglass_L_int-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
@@ -578,7 +535,7 @@
         <instance_geometry url="#super_doorglass_L_001-mesh" name="super_doorglass_fixed_L">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_fixed-material" target="#super_glass_fixed-material">
+              <instance_material symbol="super_glass-material" target="#super_glass-material">
                 <bind_vertex_input semantic="geom-super_doorglass_L-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
@@ -590,7 +547,7 @@
         <instance_geometry url="#super_doorglass_R_int-mesh" name="super_doorglass_fixed_R_int">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_int_fixed-material" target="#super_glass_int_fixed-material">
+              <instance_material symbol="super_glass_int-material" target="#super_glass_int-material">
                 <bind_vertex_input semantic="geom-super_doorglass_R_int-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
@@ -602,7 +559,7 @@
         <instance_geometry url="#super_doorglass_L_int-mesh" name="super_doorglass_fixed_L_int">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_int_fixed-material" target="#super_glass_int_fixed-material">
+              <instance_material symbol="super_glass_int-material" target="#super_glass_int-material">
                 <bind_vertex_input semantic="geom-super_doorglass_L_int-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
@@ -614,7 +571,7 @@
         <instance_geometry url="#super_doorglass_R-mesh" name="super_doorglass_openable_R">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_openable-material" target="#super_glass_openable-material">
+              <instance_material symbol="super_glass-material" target="#super_glass-material">
                 <bind_vertex_input semantic="geom-super_doorglass_R-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
@@ -626,7 +583,7 @@
         <instance_geometry url="#super_doorglass_L-mesh" name="super_doorglass_openable_L">
           <bind_material>
             <technique_common>
-              <instance_material symbol="super_glass_openable-material" target="#super_glass_openable-material">
+              <instance_material symbol="super_glass-material" target="#super_glass-material">
                 <bind_vertex_input semantic="geom-super_doorglass_L-map1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
