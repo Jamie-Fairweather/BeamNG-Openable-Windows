@@ -3,8 +3,4 @@
     "FLWindowDown":{"order":  14,  "onChange":"electrics.values.FLWindowPress = -1-(electrics.values.FLWindowPress or 0)", "title": "Front Left Window Down", "desc": "Opens Front Left Window" },
     "FRWindowUp":{"order":  15,  "onChange":"electrics.values.FRWindowPress = 1-(electrics.values.FRWindowPress or 0)", "title": "Front Right Window Up", "desc": "Closes Front Right Window" },
     "FRWindowDown":{"order":  16,  "onChange":"electrics.values.FRWindowPress = -1-(electrics.values.FRWindowPress or 0)", "title": "Front Right Window Down", "desc": "Opens Front Right Window" },
-    "RLWindowUp":{"order":  19,  "onChange":"electrics.values.RLWindowPress = 1-(electrics.values.RLWindowPress or 0)", "title": "Rear Left Window Up", "desc": "Closes Rear Left Window" },
-    "RLWindowDown":{"order":  20,  "onChange":"electrics.values.RLWindowPress = -1-(electrics.values.RLWindowPress or 0)", "title": "Rear Left Window Down", "desc": "Opens Rear Left Window" },
-    "RRWindowUp":{"order":  21,  "onChange":"electrics.values.RRWindowPress = 1-(electrics.values.RRWindowPress or 0)", "title": "Rear Right Window Up", "desc": "Closes Rear Right Window" },
-    "RRWindowDown":{"order":  22,  "onChange":"electrics.values.RRWindowPress = -1-(electrics.values.RRWindowPress or 0)", "title": "Rear Right Window Down", "desc": "Opens Rear Right Window" }
 }

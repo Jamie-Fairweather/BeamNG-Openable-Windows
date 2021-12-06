@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2021-12-04T17:48:57</created>
+    <modified>2021-12-04T17:48:57</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="etki_glass_int-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.05858837 0.05858837 0.05858837 1</color>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.5166667</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="etki_glass-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.05858837 0.05858837 0.05858837 1</color>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.5166667</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="etki_glass_int-material" name="etki_glass_int">
+      <instance_effect url="#etki_glass_int-effect"/>
+    </material>
+    <material id="etki_glass-material" name="etki_glass">
+      <instance_effect url="#etki_glass-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="german_006-mesh" name="german.006">
+      <mesh>
+        <source id="german_006-mesh-positions">
+          <float_array id="german_006-mesh-positions-array" count="51">-0.7505403 1.131176 0.8692874 -0.7338994 1.159155 0.9546644 -0.7380003 0.9210526 0.9434344 -0.7525653 0.9215896 0.8692874 -0.7106594 0.9203835 1.040795 -0.7113224 1.168509 1.03383 -0.6713383 1.002476 1.15148 -0.7146133 1.177173 1.021847 -0.7205594 1.176313 1.006193 -0.7042682 0.919297 1.058809 -0.7106602 0.9192791 1.040802 -0.6712963 0.9193899 1.151736 -0.7378364 0.9191825 0.9440349 -0.7380028 0.9191819 0.943431 -0.6490864 0.9194413 1.203222 -0.7524524 0.9191084 0.8698742 -0.7525706 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_006-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_006-mesh-normals">
+          <float_array id="german_006-mesh-normals-array" count="51">0.9818477 -0.008270561 -0.1894906 0.9730246 -0.003998041 -0.2306668 0.981154 -0.005310297 -0.1931545 0.9424412 -7.01948e-4 -0.3343713 0.9530856 -0.002594113 -0.3026899 0.9531921 -0.003143429 -0.3023493 0.9308255 -6.40896e-4 -0.3654634 0.946035 -0.009308338 -0.323931 0.9594631 -0.005340814 -0.2817839 0.9731839 -0.001922667 -0.2300203 0.963294 -0.001770079 -0.268443 0.9733724 -7.93493e-4 -0.229228 0.918214 -7.32471e-4 -0.396084 0.9388579 -0.003662228 -0.3442856 0.9808115 -0.001434326 -0.1949537 0.9802104 -0.002166807 -0.1979464 0.9523289 -0.004394769 -0.3050419</float_array>
+          <technique_common>
+            <accessor source="#german_006-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_006-mesh-map-0">
+          <float_array id="german_006-mesh-map-0-array" count="102">0.9422858 0.008392453 0.8277873 0.04879575 0.8280798 0.008392453 0.8268307 0.1116651 0.8268209 0.1018526 0.8274227 0.1018488 0.8274227 0.1018488 0.8268812 0.1623018 0.8268307 0.1116651 0.9673496 0.09152382 0.9626291 0.09805345 0.8274227 0.1018488 0.9575315 0.05491524 0.8274227 0.1018488 0.8277873 0.04879575 0.8267682 0.04912298 0.8267679 0.04879391 0.8277873 0.04879575 0.8269096 0.190357 0.8268812 0.1623018 0.8721562 0.1621621 0.8267278 0.008712172 0.8267275 0.008393287 0.8280798 0.008392453 0.8274227 0.1018488 0.9668808 0.08299332 0.9673496 0.09152382 0.9422858 0.008392453 0.9575315 0.05491524 0.8277873 0.04879575 0.8274227 0.1018488 0.9626291 0.09805345 0.8721562 0.1621621 0.9575315 0.05491524 0.9668808 0.08299332 0.8274227 0.1018488 0.8274227 0.1018488 0.8267682 0.04912298 0.8277873 0.04879575 0.8277873 0.04879575 0.8267278 0.008712172 0.8280798 0.008392453 0.8274227 0.1018488 0.8721562 0.1621621 0.8268812 0.1623018 0.8274227 0.1018488 0.8268209 0.1018526 0.8267682 0.04912298 0.8277873 0.04879575 0.8267679 0.04879391 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_006-mesh-map-0-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_006-mesh-map-1">
+          <float_array id="german_006-mesh-map-1-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_006-mesh-map-1-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_006-mesh-map-2">
+          <float_array id="german_006-mesh-map-2-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_006-mesh-map-2-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_006-mesh-vertices">
+          <input semantic="POSITION" source="#german_006-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass_int-material" count="17">
+          <input semantic="VERTEX" source="#german_006-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_006-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_006-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_006-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_006-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 3 2 2 9 3 3 10 4 4 4 5 5 4 5 6 11 6 7 9 3 8 7 7 9 5 8 10 4 5 11 1 9 12 4 5 13 2 1 14 12 10 15 13 11 16 2 1 17 14 12 18 11 6 19 6 13 20 15 14 21 16 15 22 3 2 23 4 5 24 8 16 25 7 7 26 0 0 27 1 9 28 2 1 29 4 5 30 5 8 31 6 13 32 1 9 33 8 16 34 4 5 35 4 5 36 12 10 37 2 1 38 2 1 39 15 14 40 3 2 41 4 5 42 6 13 43 11 6 44 4 5 45 10 4 46 12 10 47 2 1 48 13 11 49 15 14 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_005-mesh" name="german.005">
+      <mesh>
+        <source id="german_005-mesh-positions">
+          <float_array id="german_005-mesh-positions-array" count="51">-0.7537047 1.131176 0.8692874 -0.7370638 1.159155 0.9546644 -0.7411647 0.9210526 0.9434344 -0.7557297 0.9215896 0.8692874 -0.7138238 0.9203835 1.040795 -0.7144868 1.168509 1.03383 -0.6745027 1.002476 1.15148 -0.7177777 1.177173 1.021847 -0.7237238 1.176313 1.006193 -0.7074326 0.919297 1.058809 -0.7138246 0.9192791 1.040802 -0.6744607 0.9193899 1.151736 -0.7410008 0.9191825 0.9440349 -0.6522508 0.9194413 1.203222 -0.7556169 0.9191084 0.8698742 -0.7411671 0.9191819 0.943431 -0.755735 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_005-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_005-mesh-normals">
+          <float_array id="german_005-mesh-normals-array" count="51">-0.9818477 0.008270561 0.1894906 -0.9730263 0.003997921 0.23066 -0.9731839 0.001922667 0.2300203 -0.9424413 5.7987e-4 0.3343713 -0.9531892 0.003174006 0.302358 -0.9530766 0.002655148 0.3027176 -0.9308255 6.40896e-4 0.3654634 -0.9388579 0.003662228 0.3442856 -0.946035 0.009308338 0.323931 -0.9594631 0.005340814 0.2817839 -0.9523289 0.004394769 0.3050419 -0.963294 0.001739561 0.268443 -0.918214 7.32471e-4 0.396084 -0.9808114 0.001495361 0.1949537 -0.9733724 8.54532e-4 0.229228 -0.981154 0.005310297 0.1931545 -0.9802104 0.002197325 0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_005-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_005-mesh-map-0">
+          <float_array id="german_005-mesh-map-0-array" count="102">0.9422858 0.008392453 0.8277873 0.04879575 0.9575315 0.05491524 0.8268307 0.1116651 0.8274227 0.1018488 0.8268209 0.1018526 0.8274227 0.1018488 0.8268812 0.1623018 0.8721562 0.1621621 0.9673496 0.09152382 0.8274227 0.1018488 0.9626291 0.09805345 0.9575315 0.05491524 0.8274227 0.1018488 0.9668808 0.08299332 0.8274227 0.1018488 0.8267682 0.04912298 0.8268209 0.1018526 0.8269096 0.190357 0.8721562 0.1621621 0.8268811 0.1623018 0.8277873 0.04879575 0.8267278 0.008712172 0.8267679 0.04879391 0.8274227 0.1018488 0.9673496 0.09152382 0.9668808 0.08299332 0.9422858 0.008392453 0.8280798 0.008392453 0.8277873 0.04879575 0.8721562 0.1621621 0.9626291 0.09805345 0.8274227 0.1018488 0.9575315 0.05491524 0.8277873 0.04879575 0.8274227 0.1018488 0.8267682 0.04912304 0.8277873 0.04879575 0.8267679 0.04879391 0.8267278 0.008712172 0.8280798 0.008392453 0.8267275 0.008393287 0.8274227 0.1018488 0.8268307 0.1116651 0.8268812 0.1623018 0.8274227 0.1018488 0.8277873 0.04879575 0.8267682 0.04912298 0.8277873 0.04879575 0.8280798 0.008392453 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_005-mesh-map-0-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_005-mesh-map-1">
+          <float_array id="german_005-mesh-map-1-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_005-mesh-map-1-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_005-mesh-map-2">
+          <float_array id="german_005-mesh-map-2-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_005-mesh-map-2-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_005-mesh-vertices">
+          <input semantic="POSITION" source="#german_005-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass-material" count="17">
+          <input semantic="VERTEX" source="#german_005-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_005-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_005-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_005-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_005-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 1 2 2 9 3 3 4 4 4 10 5 5 4 4 6 11 6 7 6 7 8 7 8 9 4 4 10 5 9 11 1 2 12 4 4 13 8 10 14 4 4 15 12 11 16 10 5 17 13 12 18 6 7 19 11 6 20 2 1 21 14 13 22 15 14 23 4 4 24 7 8 25 8 10 26 0 0 27 3 15 28 2 1 29 6 7 30 5 9 31 4 4 32 1 2 33 2 1 34 4 4 35 12 11 36 2 1 37 15 14 38 14 13 39 3 15 40 16 16 41 4 4 42 9 3 43 11 6 44 4 4 45 2 1 46 12 11 47 2 1 48 3 15 49 14 13 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_003-mesh" name="german.003">
+      <mesh>
+        <source id="german_003-mesh-positions">
+          <float_array id="german_003-mesh-positions-array" count="51">0.7505148 1.131176 0.8692874 0.7338739 1.159155 0.9546644 0.7379748 0.9210526 0.9434344 0.7525398 0.9215896 0.8692874 0.7106339 0.9203835 1.040795 0.7112969 1.168509 1.03383 0.6713128 1.002476 1.15148 0.7145878 1.177173 1.021847 0.7205339 1.176313 1.006193 0.7042428 0.919297 1.058809 0.7106348 0.9192791 1.040802 0.6712708 0.9193899 1.151736 0.7378109 0.9191825 0.9440349 0.6490609 0.9194413 1.203222 0.7524269 0.9191084 0.8698742 0.7379773 0.9191819 0.943431 0.7525451 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_003-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_003-mesh-normals">
+          <float_array id="german_003-mesh-normals-array" count="51">-0.9818477 -0.008270561 -0.1894906 -0.9730246 -0.003998041 -0.2306668 -0.9731839 -0.001922667 -0.2300203 -0.9424413 -5.7987e-4 -0.3343713 -0.9531892 -0.003174006 -0.302358 -0.9530767 -0.00262463 -0.3027176 -0.9308255 -6.40896e-4 -0.3654634 -0.9388579 -0.003662228 -0.3442856 -0.946035 -0.009308338 -0.323931 -0.9594631 -0.005340814 -0.2817839 -0.9523289 -0.004394769 -0.3050419 -0.963294 -0.001770079 -0.268443 -0.918214 -7.32471e-4 -0.396084 -0.9808115 -0.001464843 -0.1949537 -0.9733724 -7.93493e-4 -0.229228 -0.981154 -0.005310297 -0.1931545 -0.9802104 -0.002166807 -0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_003-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_003-mesh-map-0">
+          <float_array id="german_003-mesh-map-0-array" count="102">0.9422858 0.008392453 0.8277873 0.04879575 0.9575315 0.05491524 0.8268307 0.1116651 0.8274227 0.1018488 0.8268209 0.1018526 0.8274227 0.1018488 0.8268812 0.1623018 0.8721562 0.1621621 0.9673496 0.09152382 0.8274227 0.1018488 0.9626291 0.09805345 0.9575315 0.05491524 0.8274227 0.1018488 0.9668808 0.08299332 0.8274227 0.1018488 0.8267682 0.04912298 0.8268209 0.1018526 0.8269096 0.190357 0.8721562 0.1621621 0.8268811 0.1623018 0.8277873 0.04879575 0.8267278 0.008712172 0.8267679 0.04879391 0.8274227 0.1018488 0.9673496 0.09152382 0.9668808 0.08299332 0.9422858 0.008392453 0.8280798 0.008392453 0.8277873 0.04879575 0.8721562 0.1621621 0.9626291 0.09805345 0.8274227 0.1018488 0.9575315 0.05491524 0.8277873 0.04879575 0.8274227 0.1018488 0.8267682 0.04912304 0.8277873 0.04879575 0.8267679 0.04879391 0.8267278 0.008712172 0.8280798 0.008392453 0.8267275 0.008393287 0.8274227 0.1018488 0.8268307 0.1116651 0.8268812 0.1623018 0.8274227 0.1018488 0.8277873 0.04879575 0.8267682 0.04912298 0.8277873 0.04879575 0.8280798 0.008392453 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_003-mesh-map-0-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_003-mesh-map-1">
+          <float_array id="german_003-mesh-map-1-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_003-mesh-map-1-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_003-mesh-map-2">
+          <float_array id="german_003-mesh-map-2-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_003-mesh-map-2-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_003-mesh-vertices">
+          <input semantic="POSITION" source="#german_003-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass_int-material" count="17">
+          <input semantic="VERTEX" source="#german_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_003-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_003-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 1 2 2 9 3 3 4 4 4 10 5 5 4 4 6 11 6 7 6 7 8 7 8 9 4 4 10 5 9 11 1 2 12 4 4 13 8 10 14 4 4 15 12 11 16 10 5 17 13 12 18 6 7 19 11 6 20 2 1 21 14 13 22 15 14 23 4 4 24 7 8 25 8 10 26 0 0 27 3 15 28 2 1 29 6 7 30 5 9 31 4 4 32 1 2 33 2 1 34 4 4 35 12 11 36 2 1 37 15 14 38 14 13 39 3 15 40 16 16 41 4 4 42 9 3 43 11 6 44 4 4 45 2 1 46 12 11 47 2 1 48 3 15 49 14 13 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_001-mesh" name="german.001">
+      <mesh>
+        <source id="german_001-mesh-positions">
+          <float_array id="german_001-mesh-positions-array" count="51">0.7536792 1.131176 0.8692874 0.7370383 1.159155 0.9546644 0.7411392 0.9210526 0.9434344 0.7557042 0.9215896 0.8692874 0.7137983 0.9203835 1.040795 0.7144613 1.168509 1.03383 0.6744772 1.002476 1.15148 0.7177522 1.177173 1.021847 0.7236983 1.176313 1.006193 0.7074071 0.919297 1.058809 0.7137991 0.9192791 1.040802 0.6744352 0.9193899 1.151736 0.7409753 0.9191825 0.9440349 0.7411417 0.9191819 0.943431 0.6522253 0.9194413 1.203222 0.7555913 0.9191084 0.8698742 0.7557095 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_001-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_001-mesh-normals">
+          <float_array id="german_001-mesh-normals-array" count="51">0.9818477 0.008270561 0.1894906 0.9730245 0.004028558 0.2306668 0.981154 0.005310297 0.1931545 0.9424412 7.01948e-4 0.3343713 0.9530857 0.002563595 0.3026899 0.9531921 0.003143429 0.3023493 0.9308255 6.40896e-4 0.3654634 0.946035 0.009308338 0.323931 0.9594631 0.005340814 0.2817839 0.9731839 0.001922667 0.2300203 0.9632939 0.001831114 0.2684429 0.9733724 8.24012e-4 0.229228 0.9388579 0.003662228 0.3442856 0.918214 7.32471e-4 0.396084 0.9808115 0.001464843 0.1949537 0.9802104 0.002166807 0.1979464 0.9523289 0.004394769 0.3050419</float_array>
+          <technique_common>
+            <accessor source="#german_001-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_001-mesh-map-0">
+          <float_array id="german_001-mesh-map-0-array" count="102">0.9422858 0.008392453 0.8277873 0.04879575 0.8280798 0.008392453 0.8268307 0.1116651 0.8268209 0.1018526 0.8274227 0.1018488 0.8274227 0.1018488 0.8268812 0.1623018 0.8268307 0.1116651 0.9673496 0.09152382 0.9626291 0.09805345 0.8274227 0.1018488 0.9575315 0.05491524 0.8274227 0.1018488 0.8277873 0.04879575 0.8267682 0.04912298 0.8267679 0.04879391 0.8277873 0.04879575 0.8721562 0.1621621 0.8269096 0.190357 0.8268812 0.1623018 0.8267278 0.008712172 0.8267275 0.008393287 0.8280798 0.008392453 0.8274227 0.1018488 0.9668808 0.08299332 0.9673496 0.09152382 0.9422858 0.008392453 0.9575315 0.05491524 0.8277873 0.04879575 0.8274227 0.1018488 0.9626291 0.09805345 0.8721562 0.1621621 0.9575315 0.05491524 0.9668808 0.08299332 0.8274227 0.1018488 0.8274227 0.1018488 0.8267682 0.04912298 0.8277873 0.04879575 0.8277873 0.04879575 0.8267278 0.008712172 0.8280798 0.008392453 0.8274227 0.1018488 0.8721562 0.1621621 0.8268812 0.1623018 0.8274227 0.1018488 0.8268209 0.1018526 0.8267682 0.04912298 0.8277873 0.04879575 0.8267679 0.04879391 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_001-mesh-map-0-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_001-mesh-map-1">
+          <float_array id="german_001-mesh-map-1-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_001-mesh-map-1-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_001-mesh-map-2">
+          <float_array id="german_001-mesh-map-2-array" count="102">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_001-mesh-map-2-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_001-mesh-vertices">
+          <input semantic="POSITION" source="#german_001-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass-material" count="17">
+          <input semantic="VERTEX" source="#german_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_001-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_001-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 3 2 2 9 3 3 10 4 4 4 5 5 4 5 6 11 6 7 9 3 8 7 7 9 5 8 10 4 5 11 1 9 12 4 5 13 2 1 14 12 10 15 13 11 16 2 1 17 6 12 18 14 13 19 11 6 20 15 14 21 16 15 22 3 2 23 4 5 24 8 16 25 7 7 26 0 0 27 1 9 28 2 1 29 4 5 30 5 8 31 6 12 32 1 9 33 8 16 34 4 5 35 4 5 36 12 10 37 2 1 38 2 1 39 15 14 40 3 2 41 4 5 42 6 12 43 11 6 44 4 5 45 10 4 46 12 10 47 2 1 48 13 11 49 15 14 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_031-mesh" name="german.031">
+      <mesh>
+        <source id="german_031-mesh-positions">
+          <float_array id="german_031-mesh-positions-array" count="72">-0.7532303 0.6094796 0.8694813 -0.7384083 0.6104506 0.9428654 -0.7386903 0.2989816 0.9424393 -0.7536914 0.2928366 0.8696133 -0.6712934 0.9136916 1.151754 -0.6725523 0.6133226 1.153605 -0.7108913 0.6117085 1.042768 -0.6429004 0.8963576 1.217607 -0.6423553 0.3233015 1.225598 -0.6733834 0.3169565 1.154738 -0.6414714 0.6139705 1.224892 -0.7110604 0.3075715 1.043987 -0.6264073 0.3262595 1.25751 -0.6265693 0.6127836 1.254823 -0.6273093 0.8206526 1.252351 -0.6353164 0.8602685 1.235794 -0.7042682 0.919297 1.058809 -0.7106602 0.9192791 1.040802 -0.6712963 0.9193899 1.151736 -0.7378364 0.9191825 0.9440349 -0.7380028 0.9191819 0.943431 -0.6490864 0.9194413 1.203222 -0.7524524 0.9191084 0.8698742 -0.7525706 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_031-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_031-mesh-normals">
+          <float_array id="german_031-mesh-normals-array" count="72">0.9801561 -0.001464903 -0.1982225 0.9731274 -9.46088e-4 -0.2302655 0.9794656 -0.001495361 -0.2016062 0.930893 -0.002594113 -0.3652828 0.9531439 -0.00262463 -0.3025059 0.9423866 -0.002655088 -0.3345154 0.9308504 -6.40892e-4 -0.3654002 0.9728298 -0.001190245 -0.2315186 0.9635663 -0.001434326 -0.2674657 0.9549453 -0.002807736 -0.2967686 0.918214 -7.32471e-4 -0.396084 0.9179276 -0.00476098 -0.3967198 0.9062947 -0.003906428 -0.4226283 0.9315894 -0.004852473 -0.3634801 0.9064338 -0.003814935 -0.422331 0.9806591 -0.001648008 -0.1957167 0.9328407 -0.003143429 -0.3602756 0.9566569 -0.001220762 -0.2912148 0.8946893 -0.003784298 -0.4466732 0.8951304 -0.002899289 -0.4457951 0.8973644 -0.002838253 -0.4412812 0.9157872 -0.005096673 -0.4016315 0.9733368 -8.54527e-4 -0.2293794 0.9802104 -0.002197325 -0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_031-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_031-mesh-map-0">
+          <float_array id="german_031-mesh-map-0-array" count="162">0.6580079 0.008498191 0.4888146 0.04825353 0.485466 0.008569836 0.8237761 0.1623114 0.8268209 0.1018526 0.8268307 0.1116651 0.8237761 0.1623114 0.8268307 0.1116651 0.8268812 0.1623018 0.6585372 0.04848575 0.8267682 0.04912298 0.6592224 0.1029238 0.8237761 0.1623114 0.8269096 0.190357 0.8143309 0.1981953 0.5020667 0.2025496 0.6601022 0.16332 0.6604552 0.202165 0.6580079 0.008498191 0.8267278 0.008712172 0.6585372 0.04848575 0.4986091 0.1639373 0.6592224 0.1029238 0.6601022 0.16332 0.4934953 0.1035881 0.6585372 0.04848575 0.6592224 0.1029238 0.6601022 0.16332 0.8143309 0.1981953 0.6604552 0.202165 0.5036785 0.2199388 0.6604552 0.202165 0.6598084 0.2184747 0.7730783 0.2171277 0.6604552 0.202165 0.7946655 0.2081056 0.6604552 0.202165 0.8143309 0.1981953 0.7946655 0.2081056 0.7730783 0.2171277 0.6598084 0.2184747 0.6604552 0.202165 0.6580079 0.008498191 0.6585372 0.04848575 0.4888146 0.04825353 0.8237761 0.1623114 0.6601022 0.16332 0.6592224 0.1029238 0.6592224 0.1029238 0.8267682 0.04912298 0.8268209 0.1018526 0.5020667 0.2025496 0.4986091 0.1639373 0.6601022 0.16332 0.6585372 0.04848575 0.8267278 0.008712172 0.8267679 0.04879391 0.4986091 0.1639373 0.4934953 0.1035881 0.6592224 0.1029238 0.4934953 0.1035881 0.4888146 0.04825353 0.6585372 0.04848575 0.6601022 0.16332 0.8237761 0.1623114 0.8143309 0.1981953 0.5036785 0.2199388 0.5020667 0.2025496 0.6604552 0.202165 0.8237761 0.1623114 0.6592224 0.1029238 0.8268209 0.1018526 0.6585372 0.04848575 0.8267679 0.04879391 0.8267682 0.04912298 0.8237761 0.1623114 0.8268812 0.1623018 0.8269096 0.190357 0.6580079 0.008498191 0.8267275 0.008393287 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_031-mesh-map-0-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_031-mesh-map-1">
+          <float_array id="german_031-mesh-map-1-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_031-mesh-map-1-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_031-mesh-map-2">
+          <float_array id="german_031-mesh-map-2-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_031-mesh-map-2-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_031-mesh-vertices">
+          <input semantic="POSITION" source="#german_031-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass_int-material" count="27">
+          <input semantic="VERTEX" source="#german_031-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_031-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_031-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_031-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_031-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 3 2 2 4 3 3 17 4 4 16 5 5 4 3 6 16 5 7 18 6 8 1 7 9 19 8 10 6 9 11 4 3 12 21 10 13 7 11 14 8 12 15 5 13 16 10 14 17 0 0 18 22 15 19 1 7 20 9 16 21 6 9 22 5 13 23 11 17 24 1 7 25 6 9 26 5 13 27 7 11 28 10 14 29 12 18 30 10 14 31 13 19 32 14 20 33 10 14 34 15 21 35 10 14 36 7 11 37 15 21 38 14 20 39 13 19 40 10 14 41 0 0 42 1 7 43 2 1 44 4 3 45 5 13 46 6 9 47 6 9 48 19 8 49 17 4 50 8 12 51 9 16 52 5 13 53 1 7 54 22 15 55 20 22 56 9 16 57 11 17 58 6 9 59 11 17 60 2 1 61 1 7 62 5 13 63 4 3 64 7 11 65 12 18 66 8 12 67 10 14 68 4 3 69 6 9 70 17 4 71 1 7 72 20 22 73 19 8 74 4 3 75 18 6 76 21 10 77 0 0 78 23 23 79 22 15 80</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_028-mesh" name="german.028">
+      <mesh>
+        <source id="german_028-mesh-positions">
+          <float_array id="german_028-mesh-positions-array" count="72">0.7532048 0.6094796 0.8694813 0.7383828 0.6104506 0.9428654 0.7386648 0.2989816 0.9424393 0.7536659 0.2928366 0.8696133 0.6712679 0.9136916 1.151754 0.6725268 0.6133226 1.153605 0.7108658 0.6117085 1.042768 0.6428748 0.8963576 1.217607 0.6423298 0.3233015 1.225598 0.6733579 0.3169565 1.154738 0.6414459 0.6139705 1.224892 0.7110348 0.3075715 1.043987 0.6263818 0.3262595 1.25751 0.6265438 0.6127836 1.254823 0.6272838 0.8206526 1.252351 0.6352909 0.8602685 1.235794 0.7042428 0.919297 1.058809 0.7106348 0.9192791 1.040802 0.6712708 0.9193899 1.151736 0.7378109 0.9191825 0.9440349 0.6490609 0.9194413 1.203222 0.7524269 0.9191084 0.8698742 0.7379773 0.9191819 0.943431 0.7525451 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_028-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_028-mesh-normals">
+          <float_array id="german_028-mesh-normals-array" count="72">-0.9801561 -0.001464903 -0.1982225 -0.9731274 -9.46088e-4 -0.2302655 -0.9728298 -0.001190245 -0.2315186 -0.9531439 -0.00262463 -0.3025059 -0.930893 -0.002594113 -0.3652828 -0.9424055 -0.002807736 -0.334461 -0.9308504 -6.10374e-4 -0.3654002 -0.9549453 -0.002807736 -0.2967686 -0.9635663 -0.001434326 -0.2674657 -0.918214 -7.32471e-4 -0.396084 -0.9062947 -0.003906428 -0.4226283 -0.9315894 -0.004852473 -0.3634801 -0.9328407 -0.003143429 -0.3602756 -0.9733368 -8.54527e-4 -0.2293794 -0.9806591 -0.001648008 -0.1957167 -0.9566569 -0.001220762 -0.2912148 -0.9179276 -0.00476098 -0.3967198 -0.9064338 -0.003814935 -0.422331 -0.8946893 -0.003784298 -0.4466732 -0.8973644 -0.002838253 -0.4412812 -0.9157872 -0.005096673 -0.4016315 -0.8951304 -0.002899289 -0.4457951 -0.9794656 -0.001495361 -0.2016062 -0.9802104 -0.002197325 -0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_028-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_028-mesh-map-0">
+          <float_array id="german_028-mesh-map-0-array" count="162">0.6580079 0.008498191 0.4888146 0.04825353 0.6585372 0.04848575 0.8268209 0.1018526 0.8237761 0.1623114 0.8268307 0.1116651 0.8237761 0.1623114 0.8268812 0.1623018 0.8268307 0.1116651 0.6592224 0.1029238 0.8268209 0.1018526 0.8267682 0.04912298 0.8237761 0.1623114 0.8269096 0.190357 0.8268811 0.1623018 0.5020667 0.2025496 0.6601022 0.16332 0.4986091 0.1639373 0.6585372 0.04848575 0.8267679 0.04879391 0.8267278 0.008712172 0.4986091 0.1639373 0.6592224 0.1029238 0.4934953 0.1035881 0.4934953 0.1035881 0.6585372 0.04848575 0.4888146 0.04825353 0.8143309 0.1981953 0.6601022 0.16332 0.6604552 0.202165 0.5036785 0.2199388 0.6604552 0.202165 0.5020667 0.2025496 0.7730783 0.2171277 0.7946655 0.2081056 0.6604552 0.202165 0.6604552 0.202165 0.7946655 0.2081056 0.8143309 0.1981953 0.7730783 0.2171277 0.6604552 0.202165 0.6598084 0.2184747 0.6580079 0.008498191 0.485466 0.008569836 0.4888146 0.04825353 0.6592224 0.1029238 0.6601022 0.16332 0.8237761 0.1623114 0.6585372 0.04848575 0.8267682 0.04912304 0.8267679 0.04879391 0.5020667 0.2025496 0.6604552 0.202165 0.6601022 0.16332 0.6580079 0.008498191 0.8267278 0.008712172 0.8267275 0.008393287 0.4986091 0.1639373 0.6601022 0.16332 0.6592224 0.1029238 0.4934953 0.1035881 0.6592224 0.1029238 0.6585372 0.04848575 0.8143309 0.1981953 0.8237761 0.1623114 0.6601022 0.16332 0.5036785 0.2199388 0.6598084 0.2184747 0.6604552 0.202165 0.8268209 0.1018526 0.6592224 0.1029238 0.8237761 0.1623114 0.8237761 0.1623114 0.8143309 0.1981953 0.8269096 0.190357 0.6585372 0.04848575 0.6592224 0.1029238 0.8267682 0.04912304 0.6580079 0.008498191 0.6585372 0.04848575 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_028-mesh-map-0-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_028-mesh-map-1">
+          <float_array id="german_028-mesh-map-1-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_028-mesh-map-1-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_028-mesh-map-2">
+          <float_array id="german_028-mesh-map-2-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_028-mesh-map-2-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_028-mesh-vertices">
+          <input semantic="POSITION" source="#german_028-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass_int-material" count="27">
+          <input semantic="VERTEX" source="#german_028-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_028-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_028-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_028-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_028-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 1 2 2 17 3 3 4 4 4 16 5 5 4 4 6 18 6 7 16 5 8 6 7 9 17 3 10 19 8 11 4 4 12 20 9 13 18 6 14 8 10 15 5 11 16 9 12 17 1 2 18 22 13 19 21 14 20 9 12 21 6 7 22 11 15 23 11 15 24 1 2 25 2 1 26 7 16 27 5 11 28 10 17 29 12 18 30 10 17 31 8 10 32 14 19 33 15 20 34 10 17 35 10 17 36 15 20 37 7 16 38 14 19 39 10 17 40 13 21 41 0 0 42 3 22 43 2 1 44 6 7 45 5 11 46 4 4 47 1 2 48 19 8 49 22 13 50 8 10 51 10 17 52 5 11 53 0 0 54 21 14 55 23 23 56 9 12 57 5 11 58 6 7 59 11 15 60 6 7 61 1 2 62 7 16 63 4 4 64 5 11 65 12 18 66 13 21 67 10 17 68 17 3 69 6 7 70 4 4 71 4 4 72 7 16 73 20 9 74 1 2 75 6 7 76 19 8 77 0 0 78 1 2 79 21 14 80</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_046-mesh" name="german.046">
+      <mesh>
+        <source id="german_046-mesh-positions">
+          <float_array id="german_046-mesh-positions-array" count="72">-0.7563948 0.6094796 0.8694813 -0.7415727 0.6104506 0.9428654 -0.7418547 0.2989816 0.9424393 -0.7568558 0.2928366 0.8696133 -0.6744578 0.9136916 1.151754 -0.6757167 0.6133226 1.153605 -0.7140557 0.6117085 1.042768 -0.6460648 0.8963576 1.217607 -0.6455197 0.3233015 1.225598 -0.6765478 0.3169565 1.154738 -0.6446358 0.6139705 1.224892 -0.7142248 0.3075715 1.043987 -0.6295717 0.3262595 1.25751 -0.6297338 0.6127836 1.254823 -0.6304737 0.8206526 1.252351 -0.6384808 0.8602685 1.235794 -0.7074326 0.919297 1.058809 -0.7138246 0.9192791 1.040802 -0.6744607 0.9193899 1.151736 -0.7410008 0.9191825 0.9440349 -0.6522508 0.9194413 1.203222 -0.7556169 0.9191084 0.8698742 -0.7411671 0.9191819 0.943431 -0.755735 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_046-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_046-mesh-normals">
+          <float_array id="german_046-mesh-normals-array" count="72">-0.9801561 0.001464903 0.1982225 -0.9731274 9.46088e-4 0.2302655 -0.9728298 0.001190245 0.2315186 -0.9531439 0.00262463 0.3025059 -0.930893 0.002594113 0.3652828 -0.9424055 0.002807736 0.334461 -0.9308504 6.40892e-4 0.3654002 -0.9549453 0.002807736 0.2967686 -0.9635663 0.001434326 0.2674657 -0.9182188 7.32451e-4 0.3960729 -0.9062947 0.003906428 0.4226283 -0.9315894 0.004852473 0.3634801 -0.9328407 0.003143429 0.3602756 -0.9733368 8.54527e-4 0.2293794 -0.9806591 0.001648008 0.1957167 -0.9566569 0.001220762 0.2912148 -0.9179276 0.00476098 0.3967198 -0.9064338 0.003814935 0.422331 -0.8946893 0.003784298 0.4466732 -0.8973704 0.002838194 0.4412692 -0.9157872 0.005096673 0.4016315 -0.8951426 0.002899348 0.4457706 -0.9794656 0.001495361 0.2016062 -0.9802104 0.002197325 0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_046-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_046-mesh-map-0">
+          <float_array id="german_046-mesh-map-0-array" count="162">0.6580079 0.008498191 0.4888146 0.04825353 0.6585372 0.04848575 0.8268209 0.1018526 0.8237761 0.1623114 0.8268307 0.1116651 0.8237761 0.1623114 0.8268812 0.1623018 0.8268307 0.1116651 0.6592224 0.1029238 0.8268209 0.1018526 0.8267682 0.04912298 0.8237761 0.1623114 0.8269096 0.190357 0.8268811 0.1623018 0.5020667 0.2025496 0.6601022 0.16332 0.4986091 0.1639373 0.6585372 0.04848575 0.8267679 0.04879391 0.8267278 0.008712172 0.4986091 0.1639373 0.6592224 0.1029238 0.4934953 0.1035881 0.4934953 0.1035881 0.6585372 0.04848575 0.4888146 0.04825353 0.8143309 0.1981953 0.6601022 0.16332 0.6604552 0.202165 0.5036785 0.2199388 0.6604552 0.202165 0.5020667 0.2025496 0.7730783 0.2171277 0.7946655 0.2081056 0.6604552 0.202165 0.6604552 0.202165 0.7946655 0.2081056 0.8143309 0.1981953 0.7730783 0.2171277 0.6604552 0.202165 0.6598084 0.2184747 0.6580079 0.008498191 0.485466 0.008569836 0.4888146 0.04825353 0.6592224 0.1029238 0.6601022 0.16332 0.8237761 0.1623114 0.6585372 0.04848575 0.8267682 0.04912304 0.8267679 0.04879391 0.5020667 0.2025496 0.6604552 0.202165 0.6601022 0.16332 0.6580079 0.008498191 0.8267278 0.008712172 0.8267275 0.008393287 0.4986091 0.1639373 0.6601022 0.16332 0.6592224 0.1029238 0.4934953 0.1035881 0.6592224 0.1029238 0.6585372 0.04848575 0.8143309 0.1981953 0.8237761 0.1623114 0.6601022 0.16332 0.5036785 0.2199388 0.6598084 0.2184747 0.6604552 0.202165 0.8268209 0.1018526 0.6592224 0.1029238 0.8237761 0.1623114 0.8237761 0.1623114 0.8143309 0.1981953 0.8269096 0.190357 0.6585372 0.04848575 0.6592224 0.1029238 0.8267682 0.04912304 0.6580079 0.008498191 0.6585372 0.04848575 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_046-mesh-map-0-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_046-mesh-map-1">
+          <float_array id="german_046-mesh-map-1-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_046-mesh-map-1-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_046-mesh-map-2">
+          <float_array id="german_046-mesh-map-2-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_046-mesh-map-2-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_046-mesh-vertices">
+          <input semantic="POSITION" source="#german_046-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass-material" count="27">
+          <input semantic="VERTEX" source="#german_046-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_046-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_046-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_046-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_046-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 1 2 2 17 3 3 4 4 4 16 5 5 4 4 6 18 6 7 16 5 8 6 7 9 17 3 10 19 8 11 4 4 12 20 9 13 18 6 14 8 10 15 5 11 16 9 12 17 1 2 18 22 13 19 21 14 20 9 12 21 6 7 22 11 15 23 11 15 24 1 2 25 2 1 26 7 16 27 5 11 28 10 17 29 12 18 30 10 17 31 8 10 32 14 19 33 15 20 34 10 17 35 10 17 36 15 20 37 7 16 38 14 19 39 10 17 40 13 21 41 0 0 42 3 22 43 2 1 44 6 7 45 5 11 46 4 4 47 1 2 48 19 8 49 22 13 50 8 10 51 10 17 52 5 11 53 0 0 54 21 14 55 23 23 56 9 12 57 5 11 58 6 7 59 11 15 60 6 7 61 1 2 62 7 16 63 4 4 64 5 11 65 12 18 66 13 21 67 10 17 68 17 3 69 6 7 70 4 4 71 4 4 72 7 16 73 20 9 74 1 2 75 6 7 76 19 8 77 0 0 78 1 2 79 21 14 80</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="german_033-mesh" name="german.033">
+      <mesh>
+        <source id="german_033-mesh-positions">
+          <float_array id="german_033-mesh-positions-array" count="72">0.7563692 0.6094796 0.8694813 0.7415472 0.6104506 0.9428654 0.7418292 0.2989816 0.9424393 0.7568303 0.2928366 0.8696133 0.6744323 0.9136916 1.151754 0.6756912 0.6133226 1.153605 0.7140302 0.6117085 1.042768 0.6460393 0.8963576 1.217607 0.6454942 0.3233015 1.225598 0.6765223 0.3169565 1.154738 0.6446103 0.6139705 1.224892 0.7141993 0.3075715 1.043987 0.6295462 0.3262595 1.25751 0.6297082 0.6127836 1.254823 0.6304482 0.8206526 1.252351 0.6384553 0.8602685 1.235794 0.7074071 0.919297 1.058809 0.7137991 0.9192791 1.040802 0.6744352 0.9193899 1.151736 0.7409753 0.9191825 0.9440349 0.7411417 0.9191819 0.943431 0.6522253 0.9194413 1.203222 0.7555913 0.9191084 0.8698742 0.7557095 0.9191079 0.869289</float_array>
+          <technique_common>
+            <accessor source="#german_033-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_033-mesh-normals">
+          <float_array id="german_033-mesh-normals-array" count="72">0.9801561 0.001464903 0.1982225 0.9731274 9.46088e-4 0.2302655 0.9794656 0.001495361 0.2016062 0.930893 0.002594113 0.3652828 0.9531439 0.00262463 0.3025059 0.9423864 0.002746641 0.3345153 0.9308504 6.40892e-4 0.3654002 0.9728298 0.001190245 0.2315186 0.9635663 0.001434326 0.2674657 0.9549453 0.002807736 0.2967686 0.918214 7.32471e-4 0.396084 0.9062947 0.003906428 0.4226283 0.9315894 0.004852473 0.3634801 0.9064338 0.003814935 0.422331 0.9806591 0.001648008 0.1957167 0.9328407 0.003143429 0.3602756 0.9566569 0.001220762 0.2912148 0.9179276 0.00476098 0.3967198 0.8946893 0.003784298 0.4466732 0.8951304 0.002899289 0.4457951 0.8973644 0.002838253 0.4412812 0.9157872 0.005096673 0.4016315 0.9733368 8.54527e-4 0.2293794 0.9802104 0.002197325 0.1979464</float_array>
+          <technique_common>
+            <accessor source="#german_033-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_033-mesh-map-0">
+          <float_array id="german_033-mesh-map-0-array" count="162">0.6580079 0.008498191 0.4888146 0.04825353 0.485466 0.008569836 0.8237761 0.1623114 0.8268209 0.1018526 0.8268307 0.1116651 0.8237761 0.1623114 0.8268307 0.1116651 0.8268812 0.1623018 0.6585372 0.04848575 0.8267682 0.04912298 0.6592224 0.1029238 0.8269096 0.190357 0.8237761 0.1623114 0.8268812 0.1623018 0.5020667 0.2025496 0.6601022 0.16332 0.6604552 0.202165 0.6580079 0.008498191 0.8267278 0.008712172 0.6585372 0.04848575 0.4986091 0.1639373 0.6592224 0.1029238 0.6601022 0.16332 0.4934953 0.1035881 0.6585372 0.04848575 0.6592224 0.1029238 0.6601022 0.16332 0.8143309 0.1981953 0.6604552 0.202165 0.5036785 0.2199388 0.6604552 0.202165 0.6598084 0.2184747 0.7730783 0.2171277 0.6604552 0.202165 0.7946655 0.2081056 0.6604552 0.202165 0.8143309 0.1981953 0.7946655 0.2081056 0.7730783 0.2171277 0.6598084 0.2184747 0.6604552 0.202165 0.6580079 0.008498191 0.6585372 0.04848575 0.4888146 0.04825353 0.8237761 0.1623114 0.6601022 0.16332 0.6592224 0.1029238 0.6592224 0.1029238 0.8267682 0.04912298 0.8268209 0.1018526 0.5020667 0.2025496 0.4986091 0.1639373 0.6601022 0.16332 0.6585372 0.04848575 0.8267278 0.008712172 0.8267679 0.04879391 0.4986091 0.1639373 0.4934953 0.1035881 0.6592224 0.1029238 0.4934953 0.1035881 0.4888146 0.04825353 0.6585372 0.04848575 0.6601022 0.16332 0.8237761 0.1623114 0.8143309 0.1981953 0.5036785 0.2199388 0.5020667 0.2025496 0.6604552 0.202165 0.8237761 0.1623114 0.6592224 0.1029238 0.8268209 0.1018526 0.6585372 0.04848575 0.8267679 0.04879391 0.8267682 0.04912298 0.8269096 0.190357 0.8143309 0.1981953 0.8237761 0.1623114 0.6580079 0.008498191 0.8267275 0.008393287 0.8267278 0.008712172</float_array>
+          <technique_common>
+            <accessor source="#german_033-mesh-map-0-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_033-mesh-map-1">
+          <float_array id="german_033-mesh-map-1-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_033-mesh-map-1-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="german_033-mesh-map-2">
+          <float_array id="german_033-mesh-map-2-array" count="162">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#german_033-mesh-map-2-array" count="81" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="german_033-mesh-vertices">
+          <input semantic="POSITION" source="#german_033-mesh-positions"/>
+        </vertices>
+        <triangles material="etki_glass-material" count="27">
+          <input semantic="VERTEX" source="#german_033-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#german_033-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#german_033-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#german_033-mesh-map-1" offset="2" set="1"/>
+          <input semantic="TEXCOORD" source="#german_033-mesh-map-2" offset="2" set="2"/>
+          <p>0 0 0 2 1 1 3 2 2 4 3 3 17 4 4 16 5 5 4 3 6 16 5 7 18 6 8 1 7 9 19 8 10 6 9 11 21 10 12 4 3 13 18 6 14 8 11 15 5 12 16 10 13 17 0 0 18 22 14 19 1 7 20 9 15 21 6 9 22 5 12 23 11 16 24 1 7 25 6 9 26 5 12 27 7 17 28 10 13 29 12 18 30 10 13 31 13 19 32 14 20 33 10 13 34 15 21 35 10 13 36 7 17 37 15 21 38 14 20 39 13 19 40 10 13 41 0 0 42 1 7 43 2 1 44 4 3 45 5 12 46 6 9 47 6 9 48 19 8 49 17 4 50 8 11 51 9 15 52 5 12 53 1 7 54 22 14 55 20 22 56 9 15 57 11 16 58 6 9 59 11 16 60 2 1 61 1 7 62 5 12 63 4 3 64 7 17 65 12 18 66 8 11 67 10 13 68 4 3 69 6 9 70 17 4 71 1 7 72 20 22 73 19 8 74 21 10 75 7 17 76 4 3 77 0 0 78 23 23 79 22 14 80</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="etki_doorglass_fixed_RR_int" name="etki_doorglass_fixed_RR_int" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_006-mesh" name="etki_doorglass_fixed_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass_int-material" target="#etki_glass_int-material">
+                <bind_vertex_input semantic="german_031-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_031-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_fixed_RR" name="etki_doorglass_fixed_RR" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_005-mesh" name="etki_doorglass_fixed_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass-material" target="#etki_glass-material">
+                <bind_vertex_input semantic="german_046-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_046-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_fixed_RL_int" name="etki_doorglass_fixed_RL_int" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_003-mesh" name="etki_doorglass_fixed_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass_int-material" target="#etki_glass_int-material">
+                <bind_vertex_input semantic="german_028-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_028-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_fixed_RL" name="etki_doorglass_fixed_RL" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_001-mesh" name="etki_doorglass_fixed_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass-material" target="#etki_glass-material">
+                <bind_vertex_input semantic="german_033-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_033-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_openable_RR_int" name="etki_doorglass_openable_RR_int" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_031-mesh" name="etki_doorglass_openable_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass_int-material" target="#etki_glass_int-material">
+                <bind_vertex_input semantic="german_031-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_031-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_openable_RL_int" name="etki_doorglass_openable_RL_int" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_028-mesh" name="etki_doorglass_openable_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass_int-material" target="#etki_glass_int-material">
+                <bind_vertex_input semantic="german_028-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_028-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_openable_RR" name="etki_doorglass_openable_RR" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_046-mesh" name="etki_doorglass_openable_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass-material" target="#etki_glass-material">
+                <bind_vertex_input semantic="german_046-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_046-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="etki_doorglass_openable_RL" name="etki_doorglass_openable_RL" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#german_033-mesh" name="etki_doorglass_openable_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="etki_glass-material" target="#etki_glass-material">
+                <bind_vertex_input semantic="german_033-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="german_033-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="2"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

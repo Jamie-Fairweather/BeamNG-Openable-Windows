@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2021-12-05T17:56:54</created>
+    <modified>2021-12-05T17:56:54</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="miramar_glass_int-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.588 0.588 0.588 1</color>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.3</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="miramar_glass-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.3</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="miramar_glass_int-material" name="miramar_glass_int">
+      <instance_effect url="#miramar_glass_int-effect"/>
+    </material>
+    <material id="miramar_glass-material" name="miramar_glass">
+      <instance_effect url="#miramar_glass-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="miramar_doorglass_RR_int_001-mesh" name="miramar_doorglass_RR_int.001">
+      <mesh>
+        <source id="miramar_doorglass_RR_int_001-mesh-positions">
+          <float_array id="miramar_doorglass_RR_int_001-mesh-positions-array" count="57">-70.08041 89.14921 108.63 -67.46925 86.12987 123.0824 -72.21204 90.80648 96.93661 -69.84579 96.56014 108.9295 -71.06046 97.65801 102.2464 -71.46471 97.13651 100.1376 -71.81116 95.78422 98.44793 -70.2337 82.91451 108.6152 -72.43985 82.81719 96.74892 -72.06076 93.63776 97.38307 -67.67449 92.83571 121.1052 -70.6158 97.54649 104.6552 -66.39415 90.24625 128.336 -65.99421 89.04826 130.6452 -65.6851 87.4174 132.5217 -65.53909 85.40891 133.5691 -65.50042 83.11667 134.0753 -65.49144 83.11707 134.1237 -67.5291 83.02873 123.1634</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int_001-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int_001-mesh-normals">
+          <float_array id="miramar_doorglass_RR_int_001-mesh-normals-array" count="57">0.9829112 -0.02373301 -0.1825441 0.9829109 -0.02373939 -0.1825449 0.9829113 -0.02374005 -0.1825428 0.9829118 -0.02373296 -0.1825412 0.9829101 -0.02373981 -0.1825491 0.9829109 -0.02373975 -0.1825445 0.9829099 -0.02373737 -0.1825506 0.9829116 -0.02374327 -0.1825409 0.9829117 -0.02373749 -0.182541 0.9829112 -0.02373474 -0.182544 0.9829108 -0.02373206 -0.1825463 0.9829114 -0.02374023 -0.1825427 0.9829109 -0.02372837 -0.182546 0.9829107 -0.02374047 -0.1825456 0.9829112 -0.02374005 -0.1825438 0.9829855 -0.02370119 -0.1821475 0.9829111 -0.02373528 -0.1825447 0.9829107 -0.02373695 -0.1825461 0.9829115 -0.02373611 -0.1825425</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int_001-mesh-normals-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int_001-mesh-map-0">
+          <float_array id="miramar_doorglass_RR_int_001-mesh-map-0-array" count="114">0.59952 0.3679926 0.5994317 0.3305398 0.5113985 0.3482549 0.5234614 0.3080285 0.5113985 0.3482549 0.5994317 0.3305398 0.6714869 0.3688898 0.6703604 0.320895 0.5994317 0.3305398 0.6703604 0.320895 0.667664 0.3038782 0.5994317 0.3305398 0.6235916 0.2802077 0.5976109 0.2860155 0.5994317 0.3305398 0.5994317 0.3305398 0.5976109 0.2860155 0.5234614 0.3080285 0.6510021 0.2827936 0.638215 0.2796028 0.5994317 0.3305398 0.638215 0.2796028 0.6235916 0.2802077 0.5994317 0.3305398 0.6612301 0.2909602 0.6510021 0.2827936 0.5994317 0.3305398 0.667664 0.3038782 0.6612301 0.2909602 0.5994317 0.3305398 0.5994317 0.3305398 0.59952 0.3679926 0.6714869 0.3688898 0.5234614 0.3080285 0.4793642 0.3233639 0.5113985 0.3482549 0.4793642 0.3233639 0.46527 0.3304911 0.5113985 0.3482549 0.46527 0.3304911 0.4538158 0.3402336 0.5113985 0.3482549 0.4538158 0.3402336 0.4474201 0.3522722 0.5113985 0.3482549 0.4474201 0.3522722 0.4440354 0.3660317 0.4443304 0.3660356 0.4443304 0.3660356 0.5113985 0.3482549 0.4474201 0.3522722 0.5109046 0.366883 0.5113985 0.3482549 0.4443304 0.3660356 0.5113985 0.3482549 0.5109046 0.366883 0.59952 0.3679926</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int_001-mesh-map-0-array" count="57" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int_001-mesh-colors-geom-miramar_doorglass_RR_int-map0" name="geom-miramar_doorglass_RR_int-map0">
+          <float_array id="miramar_doorglass_RR_int_001-mesh-colors-geom-miramar_doorglass_RR_int-map0-array" count="228">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int_001-mesh-colors-geom-miramar_doorglass_RR_int-map0-array" count="57" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RR_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RR_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="19">
+          <input semantic="VERTEX" source="#miramar_doorglass_RR_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RR_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RR_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RR_int_001-mesh-colors-geom-miramar_doorglass_RR_int-map0" offset="3" set="0"/>
+          <p>7 0 0 0 0 0 1 1 1 0 2 2 10 1 3 3 1 1 4 4 0 1 5 5 8 2 6 6 2 2 7 7 0 2 8 8 2 3 9 9 9 3 10 10 0 3 11 11 11 4 12 12 3 4 13 13 0 4 14 14 0 5 15 15 3 5 16 16 10 5 17 17 5 6 18 18 4 6 19 19 0 6 20 20 4 7 21 21 11 7 22 22 0 7 23 23 6 8 24 24 5 8 25 25 0 8 26 26 9 9 27 27 6 9 28 28 0 9 29 29 0 10 30 30 7 10 31 31 8 10 32 32 10 11 33 33 12 11 34 34 1 11 35 35 12 12 36 36 13 12 37 37 1 12 38 38 13 13 39 39 14 13 40 40 1 13 41 41 14 14 42 42 15 14 43 43 1 14 44 44 15 15 45 45 17 15 46 46 16 15 47 47 16 16 48 48 1 16 49 49 15 16 50 50 18 17 51 51 1 17 52 52 16 17 53 53 1 18 54 54 18 18 55 55 7 18 56 56</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FR_int_001-mesh" name="miramar_doorglass_FR_int.001">
+      <mesh>
+        <source id="miramar_doorglass_FR_int_001-mesh-positions">
+          <float_array id="miramar_doorglass_FR_int_001-mesh-positions-array" count="42">-71.42557 -41.55394 97.07904 -69.61792 -33.45229 108.131 -68.41786 -48.35999 109.8511 -70.77532 -51.45273 97.50675 -71.81407 -34.76062 97.06689 -70.61904 -52.82412 97.88859 -70.12164 -54.0981 99.95968 -69.87247 -53.75599 101.2686 -70.37489 -53.74509 98.82333 -66.9199 -31.83006 121.7278 -66.84029 -41.32175 119.4874 -65.86883 -36.35184 125.5976 -65.39055 -32.8512 128.8976 -65.1594 -30.87779 130.5704</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int_001-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int_001-mesh-normals">
+          <float_array id="miramar_doorglass_FR_int_001-mesh-normals-array" count="36">0.9780726 0.05557543 -0.2007123 0.9780725 0.05557668 -0.2007126 0.9780727 0.05557757 -0.2007113 0.9780733 0.05557072 -0.2007103 0.9780718 0.05557578 -0.2007163 0.9780728 0.05557322 -0.2007119 0.9780743 0.05556625 -0.2007065 0.978073 0.05557519 -0.2007103 0.9780713 0.05558127 -0.200717 0.9780728 0.05558007 -0.2007099 0.9780725 0.05558103 -0.2007113 0.9780728 0.05557394 -0.200712</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int_001-mesh-map-0">
+          <float_array id="miramar_doorglass_FR_int_001-mesh-map-0-array" count="72">0.844194 0.476437 0.9400811 0.487782 0.8954811 0.4043418 0.844194 0.476437 0.8954811 0.4043418 0.851837 0.404247 0.9590918 0.4071662 0.8954811 0.4043418 0.9400811 0.487782 0.9762543 0.4231802 0.9679269 0.4096618 0.9590918 0.4071662 0.9590918 0.4071662 0.9741458 0.4317223 0.9762543 0.4231802 0.9400811 0.487782 0.9741458 0.4317223 0.9590918 0.4071662 0.9762543 0.4231802 0.9739081 0.4157617 0.9679269 0.4096618 0.9400811 0.487782 0.844194 0.476437 0.8348313 0.5656747 0.8348313 0.5656747 0.8955831 0.5508729 0.9400811 0.487782 0.8641601 0.5910603 0.8955831 0.5508729 0.8348313 0.5656747 0.8419573 0.6128141 0.8641601 0.5910603 0.8348313 0.5656747 0.8419573 0.6128141 0.8348313 0.5656747 0.8294269 0.6237715</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int_001-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int_001-mesh-colors-geom-miramar_doorglass_FR_int-map0" name="geom-miramar_doorglass_FR_int-map0">
+          <float_array id="miramar_doorglass_FR_int_001-mesh-colors-geom-miramar_doorglass_FR_int-map0-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int_001-mesh-colors-geom-miramar_doorglass_FR_int-map0-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FR_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FR_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="12">
+          <input semantic="VERTEX" source="#miramar_doorglass_FR_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FR_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FR_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FR_int_001-mesh-colors-geom-miramar_doorglass_FR_int-map0" offset="3" set="0"/>
+          <p>1 0 0 0 2 0 1 1 0 0 2 2 1 1 3 3 0 1 4 4 4 1 5 5 3 2 6 6 0 2 7 7 2 2 8 8 6 3 9 9 5 3 10 10 3 3 11 11 3 4 12 12 7 4 13 13 6 4 14 14 2 5 15 15 7 5 16 16 3 5 17 17 6 6 18 18 8 6 19 19 5 6 20 20 2 7 21 21 1 7 22 22 9 7 23 23 9 8 24 24 10 8 25 25 2 8 26 26 11 9 27 27 10 9 28 28 9 9 29 29 12 10 30 30 11 10 31 31 9 10 32 32 12 11 33 33 9 11 34 34 13 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RR_001-mesh" name="miramar_doorglass_RR.001">
+      <mesh>
+        <source id="miramar_doorglass_RR_001-mesh-positions">
+          <float_array id="miramar_doorglass_RR_001-mesh-positions-array" count="54">-70.34654 89.14949 108.5845 -67.72002 86.12959 122.9787 -72.49153 90.80687 96.93757 -72.33709 93.63802 97.38182 -67.92165 92.83538 121.0083 -70.10482 96.56011 108.8816 -70.8793 97.54659 104.6244 -71.32692 97.65813 102.2252 -71.73432 97.13669 100.1248 -72.08416 95.78446 98.44213 -72.72694 82.81514 96.7519 -70.50571 82.90851 108.5709 -67.78281 83.01745 123.0602 -65.73074 83.10183 133.9795 -65.7773 85.40823 133.4232 -65.9228 87.41669 132.3797 -66.23279 89.04762 130.5105 -66.63454 90.24573 128.2104</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_001-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_001-mesh-normals">
+          <float_array id="miramar_doorglass_RR_001-mesh-normals-array" count="54">-0.9825314 0.02465558 0.1844567 -0.9825316 0.02465748 0.1844558 -0.9825308 0.0246545 0.1844599 -0.982531 0.02465617 0.1844588 -0.9825308 0.02465778 0.1844598 -0.9825313 0.02465516 0.1844574 -0.9825314 0.02465331 0.1844564 -0.9825311 0.02465742 0.1844581 -0.9825316 0.02464985 0.1844561 -0.9825307 0.02465349 0.184461 -0.9825309 0.02465623 0.1844593 -0.9825316 0.02465397 0.1844557 -0.9825313 0.02465856 0.184457 -0.9825311 0.02465295 0.184458 -0.9825317 0.02465218 0.1844555 -0.9825308 0.02466613 0.1844584 -0.9825313 0.0246573 0.1844573 -0.9825311 0.02465778 0.1844576</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_001-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_001-mesh-map-0">
+          <float_array id="miramar_doorglass_RR_001-mesh-map-0-array" count="108">0.5113985 0.3482549 0.5994317 0.3305398 0.59952 0.3680312 0.5994317 0.3305398 0.5113985 0.3482549 0.5234614 0.3080285 0.5994317 0.3305398 0.6703604 0.320895 0.6714873 0.3689056 0.6703604 0.320895 0.5994317 0.3305398 0.667664 0.3038782 0.667664 0.3038782 0.5994317 0.3305398 0.6612301 0.2909602 0.5234614 0.3080285 0.5976109 0.2860155 0.5994317 0.3305398 0.6235916 0.2802077 0.5994317 0.3305398 0.5976109 0.2860155 0.638215 0.2796028 0.5994317 0.3305398 0.6235916 0.2802077 0.6510021 0.2827936 0.5994317 0.3305398 0.638215 0.2796028 0.6612301 0.2909602 0.5994317 0.3305398 0.6510021 0.2827936 0.6714873 0.3689056 0.59952 0.3680312 0.5994317 0.3305398 0.59952 0.3680312 0.5109027 0.3669497 0.5113985 0.3482549 0.5109027 0.3669497 0.4440138 0.3661194 0.5113985 0.3482549 0.4474201 0.3522722 0.5113985 0.3482549 0.4440138 0.3661194 0.4538158 0.3402336 0.5113985 0.3482549 0.4474201 0.3522722 0.46527 0.3304911 0.5113985 0.3482549 0.4538158 0.3402336 0.4793642 0.3233639 0.5113985 0.3482549 0.46527 0.3304911 0.5234614 0.3080285 0.5113985 0.3482549 0.4793642 0.3233639</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_001-mesh-colors-geom-miramar_doorglass_RR-map0" name="geom-miramar_doorglass_RR-map0">
+          <float_array id="miramar_doorglass_RR_001-mesh-colors-geom-miramar_doorglass_RR-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_001-mesh-colors-geom-miramar_doorglass_RR-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RR_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RR_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RR_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RR_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RR_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RR_001-mesh-colors-geom-miramar_doorglass_RR-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 0 1 1 11 0 2 2 0 1 3 3 1 1 4 4 4 1 5 5 0 2 6 6 2 2 7 7 10 2 8 8 2 3 9 9 0 3 10 10 3 3 11 11 3 4 12 12 0 4 13 13 9 4 14 14 4 5 15 15 5 5 16 16 0 5 17 17 6 6 18 18 0 6 19 19 5 6 20 20 7 7 21 21 0 7 22 22 6 7 23 23 8 8 24 24 0 8 25 25 7 8 26 26 9 9 27 27 0 9 28 28 8 9 29 29 10 10 30 30 11 10 31 31 0 10 32 32 11 11 33 33 12 11 34 34 1 11 35 35 12 12 36 36 13 12 37 37 1 12 38 38 14 13 39 39 1 13 40 40 13 13 41 41 15 14 42 42 1 14 43 43 14 14 44 44 16 15 45 45 1 15 46 46 15 15 47 47 17 16 48 48 1 16 49 49 16 16 50 50 4 17 51 51 1 17 52 52 17 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FR_001-mesh" name="miramar_doorglass_FR.001">
+      <mesh>
+        <source id="miramar_doorglass_FR_001-mesh-positions">
+          <float_array id="miramar_doorglass_FR_001-mesh-positions-array" count="42">-71.79448 -41.55399 97.07919 -69.98572 -33.4524 108.1314 -68.78506 -48.36002 109.8512 -71.14389 -51.45276 97.50686 -72.18317 -34.76068 97.06708 -70.98751 -52.82415 97.88871 -70.48981 -54.09814 99.95988 -70.24048 -53.75606 101.2689 -70.74322 -53.74514 98.82349 -67.28625 -31.82999 121.7276 -67.20664 -41.32169 119.4872 -66.23463 -36.35175 125.5972 -65.75608 -32.8511 128.8971 -65.52481 -30.87767 130.5699</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_001-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_001-mesh-normals">
+          <float_array id="miramar_doorglass_FR_001-mesh-normals-array" count="36">-0.9780482 -0.05560523 0.2008229 -0.9780486 -0.05560225 0.2008219 -0.9780483 -0.0556038 0.2008223 -0.9780492 -0.05560123 0.200819 -0.978048 -0.05561608 0.2008208 -0.9780482 -0.05560469 0.2008233 -0.9780471 -0.05560159 0.2008296 -0.9780482 -0.05560517 0.2008231 -0.9780481 -0.05560332 0.2008237 -0.9780482 -0.05560779 0.2008223 -0.9780482 -0.05560535 0.200823 -0.9780475 -0.05561959 0.2008225</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_001-mesh-map-0">
+          <float_array id="miramar_doorglass_FR_001-mesh-map-0-array" count="72">0.8441941 0.4764382 0.8954811 0.4043418 0.9400811 0.487782 0.8441941 0.4764382 0.851837 0.4042469 0.8954811 0.4043418 0.9400811 0.487782 0.8954811 0.4043418 0.9590918 0.4071662 0.9590918 0.4071662 0.9679269 0.4096618 0.9762543 0.4231802 0.9762543 0.4231802 0.9741458 0.4317223 0.9590918 0.4071662 0.9590918 0.4071662 0.9741458 0.4317223 0.9400811 0.487782 0.9762543 0.4231802 0.9679269 0.4096618 0.9739081 0.4157617 0.8348314 0.5656737 0.8441941 0.4764382 0.9400811 0.487782 0.9400811 0.487782 0.8955831 0.5508729 0.8348314 0.5656737 0.8641601 0.5910603 0.8348314 0.5656737 0.8955831 0.5508729 0.8419573 0.6128141 0.8348314 0.5656737 0.8641601 0.5910603 0.8419573 0.6128141 0.8294255 0.6237601 0.8348314 0.5656737</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_001-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_001-mesh-colors-geom-miramar_doorglass_FR-map0" name="geom-miramar_doorglass_FR-map0">
+          <float_array id="miramar_doorglass_FR_001-mesh-colors-geom-miramar_doorglass_FR-map0-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_001-mesh-colors-geom-miramar_doorglass_FR-map0-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FR_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FR_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="12">
+          <input semantic="VERTEX" source="#miramar_doorglass_FR_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FR_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FR_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FR_001-mesh-colors-geom-miramar_doorglass_FR-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 0 1 1 2 0 2 2 1 1 3 3 4 1 4 4 0 1 5 5 2 2 6 6 0 2 7 7 3 2 8 8 3 3 9 9 5 3 10 10 6 3 11 11 6 4 12 12 7 4 13 13 3 4 14 14 3 5 15 15 7 5 16 16 2 5 17 17 6 6 18 18 5 6 19 19 8 6 20 20 9 7 21 21 1 7 22 22 2 7 23 23 2 8 24 24 10 8 25 25 9 8 26 26 11 9 27 27 9 9 28 28 10 9 29 29 12 10 30 30 9 10 31 31 11 10 32 32 12 11 33 33 13 11 34 34 9 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RL_int_001-mesh" name="miramar_doorglass_RL_int.001">
+      <mesh>
+        <source id="miramar_doorglass_RL_int_001-mesh-positions">
+          <float_array id="miramar_doorglass_RL_int_001-mesh-positions-array" count="57">70.08043 89.14924 108.63 67.46926 86.12987 123.0824 72.21208 90.80648 96.93661 70.23373 82.91451 108.6152 72.43987 82.81719 96.74894 72.0608 93.63773 97.38306 67.67451 92.83571 121.1053 69.84583 96.56011 108.9296 70.61582 97.54646 104.6552 71.06049 97.65797 102.2464 71.46473 97.13651 100.1376 71.81118 95.78416 98.44793 66.39416 90.24625 128.336 65.99424 89.0482 130.6452 65.68513 87.41737 132.5217 65.53912 85.40891 133.569 65.50044 83.11667 134.0753 65.49146 83.11707 134.1237 67.52911 83.02873 123.1634</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int_001-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int_001-mesh-normals">
+          <float_array id="miramar_doorglass_RL_int_001-mesh-normals-array" count="57">-0.982911 -0.02373546 -0.1825448 -0.9829109 -0.02373474 -0.1825453 -0.9829112 -0.02373582 -0.1825438 -0.9829114 -0.02373325 -0.1825434 -0.982911 -0.02373212 -0.1825454 -0.98291 -0.02375167 -0.1825479 -0.9829109 -0.02373754 -0.1825454 -0.9829119 -0.02373874 -0.18254 -0.9829111 -0.02373731 -0.1825442 -0.9829106 -0.02374345 -0.1825461 -0.982912 -0.02372729 -0.1825407 -0.9829109 -0.02373623 -0.1825455 -0.9829115 -0.02374291 -0.1825411 -0.9829114 -0.02373433 -0.1825431 -0.9829111 -0.02373462 -0.1825447 -0.9829112 -0.02373051 -0.1825444 -0.9829794 -0.02368378 -0.1821832 -0.9829109 -0.02373695 -0.1825453 -0.9829112 -0.02373385 -0.1825444</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int_001-mesh-normals-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int_001-mesh-map-0">
+          <float_array id="miramar_doorglass_RL_int_001-mesh-map-0-array" count="114">0.5113985 0.3482549 0.5994317 0.3305398 0.59952 0.3679926 0.5994317 0.3305398 0.5113985 0.3482549 0.5234614 0.3080285 0.5994317 0.3305398 0.6703604 0.320895 0.6714869 0.3688898 0.6703604 0.320895 0.5994317 0.3305398 0.667664 0.3038782 0.6714869 0.3688898 0.59952 0.3679926 0.5994317 0.3305398 0.667664 0.3038782 0.5994317 0.3305398 0.6612301 0.2909602 0.5234614 0.3080285 0.5976109 0.2860155 0.5994317 0.3305398 0.6235916 0.2802077 0.5994317 0.3305398 0.5976109 0.2860155 0.638215 0.2796028 0.5994317 0.3305398 0.6235916 0.2802077 0.6510021 0.2827936 0.5994317 0.3305398 0.638215 0.2796028 0.6612301 0.2909602 0.5994317 0.3305398 0.6510021 0.2827936 0.5234614 0.3080285 0.5113985 0.3482549 0.4793642 0.3233639 0.4793642 0.3233639 0.5113985 0.3482549 0.46527 0.3304911 0.46527 0.3304911 0.5113985 0.3482549 0.4538158 0.3402336 0.4538158 0.3402336 0.5113985 0.3482549 0.4474201 0.3522722 0.4474201 0.3522722 0.5113985 0.3482549 0.4443304 0.3660356 0.4443304 0.3660356 0.4440354 0.3660317 0.4474201 0.3522722 0.5109046 0.366883 0.4443304 0.3660356 0.5113985 0.3482549 0.59952 0.3679926 0.5109046 0.366883 0.5113985 0.3482549</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int_001-mesh-map-0-array" count="57" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int_001-mesh-colors-geom-miramar_doorglass_RL_int-map0" name="geom-miramar_doorglass_RL_int-map0">
+          <float_array id="miramar_doorglass_RL_int_001-mesh-colors-geom-miramar_doorglass_RL_int-map0-array" count="228">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int_001-mesh-colors-geom-miramar_doorglass_RL_int-map0-array" count="57" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RL_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RL_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="19">
+          <input semantic="VERTEX" source="#miramar_doorglass_RL_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RL_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RL_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RL_int_001-mesh-colors-geom-miramar_doorglass_RL_int-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 0 1 1 3 0 2 2 0 1 3 3 1 1 4 4 6 1 5 5 0 2 6 6 2 2 7 7 4 2 8 8 2 3 9 9 0 3 10 10 5 3 11 11 4 4 12 12 3 4 13 13 0 4 14 14 5 5 15 15 0 5 16 16 11 5 17 17 6 6 18 18 7 6 19 19 0 6 20 20 8 7 21 21 0 7 22 22 7 7 23 23 9 8 24 24 0 8 25 25 8 8 26 26 10 9 27 27 0 9 28 28 9 9 29 29 11 10 30 30 0 10 31 31 10 10 32 32 6 11 33 33 1 11 34 34 12 11 35 35 12 12 36 36 1 12 37 37 13 12 38 38 13 13 39 39 1 13 40 40 14 13 41 41 14 14 42 42 1 14 43 43 15 14 44 44 15 15 45 45 1 15 46 46 16 15 47 47 16 16 48 48 17 16 49 49 15 16 50 50 18 17 51 51 16 17 52 52 1 17 53 53 3 18 54 54 18 18 55 55 1 18 56 56</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FL_int_001-mesh" name="miramar_doorglass_FL_int.001">
+      <mesh>
+        <source id="miramar_doorglass_FL_int_001-mesh-positions">
+          <float_array id="miramar_doorglass_FL_int_001-mesh-positions-array" count="42">71.42563 -41.55394 97.07905 68.41789 -48.36 109.851 69.61788 -33.45229 108.131 70.77543 -51.45271 97.50674 71.8141 -34.76064 97.0669 70.61915 -52.82411 97.88859 70.12173 -54.09813 99.9597 69.87256 -53.756 101.2686 70.37499 -53.74511 98.82336 66.91976 -31.83005 121.7278 65.8687 -36.35184 125.5975 66.84023 -41.32175 119.4874 65.39039 -32.85124 128.8975 65.15922 -30.87783 130.5703</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int_001-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int_001-mesh-normals">
+          <float_array id="miramar_doorglass_FL_int_001-mesh-normals-array" count="36">-0.9780717 0.05557209 -0.2007181 -0.9780715 0.05557286 -0.2007183 -0.9780719 0.05557048 -0.2007173 -0.9780709 0.05556726 -0.2007229 -0.9780724 0.05556392 -0.2007167 -0.9780718 0.05557423 -0.200717 -0.9780724 0.05556732 -0.2007156 -0.9780718 0.05557203 -0.200717 -0.9780716 0.05557262 -0.2007176 -0.9780715 0.0555759 -0.2007175 -0.9780715 0.05557197 -0.2007188 -0.9780716 0.05556708 -0.2007192</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int_001-mesh-map-0">
+          <float_array id="miramar_doorglass_FL_int_001-mesh-map-0-array" count="72">0.9400811 0.487782 0.8954811 0.4043418 0.9590918 0.4071662 0.844194 0.476437 0.8954811 0.4043418 0.9400811 0.487782 0.844194 0.476437 0.851837 0.404247 0.8954811 0.4043418 0.9590918 0.4071662 0.9679269 0.4096618 0.9762543 0.4231802 0.9762543 0.4231802 0.9741458 0.4317223 0.9590918 0.4071662 0.9590918 0.4071662 0.9741458 0.4317223 0.9400811 0.487782 0.9762543 0.4231802 0.9679269 0.4096618 0.9739081 0.4157617 0.8348313 0.5656747 0.844194 0.476437 0.9400811 0.487782 0.9400811 0.487782 0.8955831 0.5508729 0.8348313 0.5656747 0.8419573 0.6128141 0.8348313 0.5656747 0.8641601 0.5910603 0.8641601 0.5910603 0.8348313 0.5656747 0.8955831 0.5508729 0.8419573 0.6128141 0.8294269 0.6237715 0.8348313 0.5656747</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int_001-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int_001-mesh-colors-geom-miramar_doorglass_FL_int-map0" name="geom-miramar_doorglass_FL_int-map0">
+          <float_array id="miramar_doorglass_FL_int_001-mesh-colors-geom-miramar_doorglass_FL_int-map0-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int_001-mesh-colors-geom-miramar_doorglass_FL_int-map0-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FL_int_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FL_int_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="12">
+          <input semantic="VERTEX" source="#miramar_doorglass_FL_int_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FL_int_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FL_int_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FL_int_001-mesh-colors-geom-miramar_doorglass_FL_int-map0" offset="3" set="0"/>
+          <p>1 0 0 0 0 0 1 1 3 0 2 2 2 1 3 3 0 1 4 4 1 1 5 5 2 2 6 6 4 2 7 7 0 2 8 8 3 3 9 9 5 3 10 10 6 3 11 11 6 4 12 12 7 4 13 13 3 4 14 14 3 5 15 15 7 5 16 16 1 5 17 17 6 6 18 18 5 6 19 19 8 6 20 20 9 7 21 21 2 7 22 22 1 7 23 23 1 8 24 24 11 8 25 25 9 8 26 26 12 9 27 27 9 9 28 28 10 9 29 29 10 10 30 30 9 10 31 31 11 10 32 32 12 11 33 33 13 11 34 34 9 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RL_001-mesh" name="miramar_doorglass_RL.001">
+      <mesh>
+        <source id="miramar_doorglass_RL_001-mesh-positions">
+          <float_array id="miramar_doorglass_RL_001-mesh-positions-array" count="54">70.34656 89.14946 108.5845 67.72002 86.12959 122.9787 72.49154 90.80687 96.93758 70.10484 96.56011 108.8816 70.87933 97.54659 104.6244 71.32694 97.65813 102.2252 71.73433 97.13672 100.1249 72.33709 93.63796 97.38183 67.92167 92.83535 121.0083 72.08418 95.78443 98.44215 72.72693 82.81511 96.75191 70.50571 82.90845 108.5709 67.78281 83.01742 123.0602 65.73074 83.1018 133.9795 65.77731 85.4082 133.4232 65.92281 87.41672 132.3797 66.2328 89.04758 130.5105 66.63454 90.24573 128.2104</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_001-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_001-mesh-normals">
+          <float_array id="miramar_doorglass_RL_001-mesh-normals-array" count="54">0.9825313 0.02465468 0.1844574 0.9825315 0.02465397 0.1844562 0.9825311 0.02465355 0.1844589 0.9825311 0.02465665 0.184458 0.9825308 0.02465534 0.1844592 0.9825313 0.02465248 0.1844572 0.9825323 0.02464532 0.184453 0.9825307 0.02465945 0.1844601 0.9825314 0.02464747 0.1844575 0.9825313 0.02465754 0.1844573 0.9825311 0.02465218 0.1844587 0.9825317 0.02465397 0.1844555 0.9825312 0.02465838 0.184457 0.9825316 0.02464789 0.1844568 0.9825317 0.0246514 0.1844556 0.9825314 0.02465349 0.1844567 0.9825313 0.02466452 0.1844564 0.982531 0.0246523 0.1844597</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_001-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_001-mesh-map-0">
+          <float_array id="miramar_doorglass_RL_001-mesh-map-0-array" count="108">0.59952 0.3680312 0.5994317 0.3305398 0.5113985 0.3482549 0.5234614 0.3080285 0.5113985 0.3482549 0.5994317 0.3305398 0.6714873 0.3689056 0.6703604 0.320895 0.5994317 0.3305398 0.6703604 0.320895 0.667664 0.3038782 0.5994317 0.3305398 0.6235916 0.2802077 0.5976109 0.2860155 0.5994317 0.3305398 0.5994317 0.3305398 0.5976109 0.2860155 0.5234614 0.3080285 0.638215 0.2796028 0.6235916 0.2802077 0.5994317 0.3305398 0.6510021 0.2827936 0.638215 0.2796028 0.5994317 0.3305398 0.6612301 0.2909602 0.6510021 0.2827936 0.5994317 0.3305398 0.667664 0.3038782 0.6612301 0.2909602 0.5994317 0.3305398 0.5994317 0.3305398 0.59952 0.3680312 0.6714873 0.3689056 0.5113985 0.3482549 0.5109027 0.3669497 0.59952 0.3680312 0.5109027 0.3669497 0.5113985 0.3482549 0.4440138 0.3661194 0.4474201 0.3522722 0.4440138 0.3661194 0.5113985 0.3482549 0.4538158 0.3402336 0.4474201 0.3522722 0.5113985 0.3482549 0.46527 0.3304911 0.4538158 0.3402336 0.5113985 0.3482549 0.4793642 0.3233639 0.46527 0.3304911 0.5113985 0.3482549 0.5234614 0.3080285 0.4793642 0.3233639 0.5113985 0.3482549</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_001-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_001-mesh-colors-geom-miramar_doorglass_RL-map0" name="geom-miramar_doorglass_RL-map0">
+          <float_array id="miramar_doorglass_RL_001-mesh-colors-geom-miramar_doorglass_RL-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_001-mesh-colors-geom-miramar_doorglass_RL-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RL_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RL_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RL_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RL_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RL_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RL_001-mesh-colors-geom-miramar_doorglass_RL-map0" offset="3" set="0"/>
+          <p>11 0 0 0 0 0 1 1 1 0 2 2 8 1 3 3 1 1 4 4 0 1 5 5 10 2 6 6 2 2 7 7 0 2 8 8 2 3 9 9 7 3 10 10 0 3 11 11 4 4 12 12 3 4 13 13 0 4 14 14 0 5 15 15 3 5 16 16 8 5 17 17 5 6 18 18 4 6 19 19 0 6 20 20 6 7 21 21 5 7 22 22 0 7 23 23 9 8 24 24 6 8 25 25 0 8 26 26 7 9 27 27 9 9 28 28 0 9 29 29 0 10 30 30 11 10 31 31 10 10 32 32 1 11 33 33 12 11 34 34 11 11 35 35 12 12 36 36 1 12 37 37 13 12 38 38 14 13 39 39 13 13 40 40 1 13 41 41 15 14 42 42 14 14 43 43 1 14 44 44 16 15 45 45 15 15 46 46 1 15 47 47 17 16 48 48 16 16 49 49 1 16 50 50 8 17 51 51 17 17 52 52 1 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FL_001-mesh" name="miramar_doorglass_FL.001">
+      <mesh>
+        <source id="miramar_doorglass_FL_001-mesh-positions">
+          <float_array id="miramar_doorglass_FL_001-mesh-positions-array" count="42">71.79452 -41.55398 97.07917 68.78508 -48.36005 109.8512 69.98569 -33.45237 108.1314 71.14397 -51.45275 97.50687 72.18319 -34.76069 97.06708 70.9876 -52.82417 97.88873 70.4899 -54.09819 99.9599 70.24056 -53.75606 101.2688 70.7433 -53.74516 98.82352 67.28617 -31.83001 121.7276 66.23456 -36.35175 125.5972 67.20661 -41.32171 119.4872 65.75599 -32.85111 128.8971 65.5247 -30.87771 130.5699</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_001-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_001-mesh-normals">
+          <float_array id="miramar_doorglass_FL_001-mesh-normals-array" count="36">0.9780479 -0.05559957 0.2008256 0.9780479 -0.05560159 0.2008258 0.9780478 -0.05560076 0.2008261 0.9780486 -0.05560433 0.2008213 0.9780448 -0.05558276 0.2008458 0.9780472 -0.05560803 0.2008274 0.9780475 -0.05560636 0.2008259 0.978048 -0.05559903 0.2008255 0.9780482 -0.05559951 0.2008247 0.978048 -0.05560117 0.2008247 0.9780478 -0.05560141 0.2008258 0.9780476 -0.05560547 0.2008263</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_001-mesh-map-0">
+          <float_array id="miramar_doorglass_FL_001-mesh-map-0-array" count="72">0.9590918 0.4071662 0.8954811 0.4043418 0.9400811 0.487782 0.8441941 0.4764382 0.9400811 0.487782 0.8954811 0.4043418 0.8441941 0.4764382 0.8954811 0.4043418 0.851837 0.4042469 0.9762543 0.4231802 0.9679269 0.4096618 0.9590918 0.4071662 0.9590918 0.4071662 0.9741458 0.4317223 0.9762543 0.4231802 0.9400811 0.487782 0.9741458 0.4317223 0.9590918 0.4071662 0.9762543 0.4231802 0.9739081 0.4157617 0.9679269 0.4096618 0.9400811 0.487782 0.8441941 0.4764382 0.8348314 0.5656737 0.8348314 0.5656737 0.8955831 0.5508729 0.9400811 0.487782 0.8419573 0.6128141 0.8641601 0.5910603 0.8348314 0.5656737 0.8641601 0.5910603 0.8955831 0.5508729 0.8348314 0.5656737 0.8419573 0.6128141 0.8348314 0.5656737 0.8294255 0.6237601</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_001-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_001-mesh-colors-geom-miramar_doorglass_FL-map0" name="geom-miramar_doorglass_FL-map0">
+          <float_array id="miramar_doorglass_FL_001-mesh-colors-geom-miramar_doorglass_FL-map0-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_001-mesh-colors-geom-miramar_doorglass_FL-map0-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FL_001-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FL_001-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="12">
+          <input semantic="VERTEX" source="#miramar_doorglass_FL_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FL_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FL_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FL_001-mesh-colors-geom-miramar_doorglass_FL-map0" offset="3" set="0"/>
+          <p>3 0 0 0 0 0 1 1 1 0 2 2 2 1 3 3 1 1 4 4 0 1 5 5 2 2 6 6 0 2 7 7 4 2 8 8 6 3 9 9 5 3 10 10 3 3 11 11 3 4 12 12 7 4 13 13 6 4 14 14 1 5 15 15 7 5 16 16 3 5 17 17 6 6 18 18 8 6 19 19 5 6 20 20 1 7 21 21 2 7 22 22 9 7 23 23 9 8 24 24 11 8 25 25 1 8 26 26 12 9 27 27 10 9 28 28 9 9 29 29 10 10 30 30 11 10 31 31 9 10 32 32 12 11 33 33 9 11 34 34 13 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RR_int-mesh" name="miramar_doorglass_RR_int">
+      <mesh>
+        <source id="miramar_doorglass_RR_int-mesh-positions">
+          <float_array id="miramar_doorglass_RR_int-mesh-positions-array" count="48">-70.62666 52.15721 108.5483 -70.46514 74.52372 108.6003 -67.61433 72.8208 123.4096 -67.73164 52.4941 123.5148 -72.97215 51.88547 96.42269 -70.75819 31.15318 108.6037 -73.11612 31.15246 96.40416 -65.43537 71.4672 134.7305 -65.51746 52.76287 134.9611 -72.7765 75.62528 96.60315 -67.84956 31.15248 123.6524 -65.65092 31.15284 135.0278 -70.41095 81.58175 108.6334 -67.59218 81.72263 123.2123 -65.4695 81.82935 134.1908 -72.71333 81.46565 96.72533</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int-mesh-normals">
+          <float_array id="miramar_doorglass_RR_int-mesh-normals-array" count="54">0.9818071 -0.006648421 -0.1897645 0.9818072 -0.0066486 -0.1897638 0.9818072 -0.006646275 -0.1897646 0.9818072 -0.006649911 -0.1897643 0.9818074 -0.006647884 -0.1897634 0.9818071 -0.006648838 -0.189765 0.9818071 -0.006647288 -0.1897651 0.981807 -0.006648182 -0.1897652 0.9818072 -0.006648719 -0.1897644 0.9818072 -0.006648838 -0.1897646 0.9818068 -0.006650269 -0.1897663 0.9818069 -0.006649494 -0.1897655 0.9818071 -0.006648719 -0.189765 0.9818072 -0.006648719 -0.1897646 0.9818074 -0.006648242 -0.1897636 0.981807 -0.006649851 -0.1897654 0.9818071 -0.006649434 -0.1897644 0.9818074 -0.006651461 -0.1897631</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int-mesh-map-0">
+          <float_array id="miramar_doorglass_RR_int-mesh-map-0-array" count="108">0.8135083 0.1054058 0.812453 0.2274784 0.9037447 0.2299243 0.9037447 0.2299243 0.9038687 0.09560441 0.8135083 0.1054058 0.9038687 0.09560441 0.9037802 0.05811536 0.8148704 0.05404818 0.8148704 0.05404818 0.8135083 0.1054058 0.9038687 0.09560441 0.9030176 0.356061 0.9770877 0.3563838 0.9773514 0.2318805 0.9773514 0.2318805 0.9037447 0.2299243 0.9030176 0.356061 0.7443213 0.1132018 0.7425176 0.225544 0.812453 0.2274784 0.812453 0.2274784 0.8135083 0.1054058 0.7443213 0.1132018 0.9773514 0.2318805 0.9767314 0.08932292 0.9038687 0.09560441 0.9038687 0.09560441 0.9037447 0.2299243 0.9773514 0.2318805 0.8135083 0.1054058 0.8148704 0.05404818 0.7478145 0.05097454 0.7478145 0.05097454 0.7443213 0.1132018 0.8135083 0.1054058 0.8112197 0.3556443 0.9030176 0.356061 0.9037447 0.2299243 0.9037447 0.2299243 0.812453 0.2274784 0.8112197 0.3556443 0.741711 0.3553386 0.8112197 0.3556443 0.812453 0.2274784 0.812453 0.2274784 0.7425176 0.225544 0.741711 0.3553386 0.9037802 0.05811536 0.9038687 0.09560441 0.9767314 0.08932292 0.9767314 0.08932292 0.9760765 0.06142288 0.9037802 0.05811536</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR_int-mesh-colors-geom-miramar_doorglass_RR_int-map0" name="geom-miramar_doorglass_RR_int-map0">
+          <float_array id="miramar_doorglass_RR_int-mesh-colors-geom-miramar_doorglass_RR_int-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR_int-mesh-colors-geom-miramar_doorglass_RR_int-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RR_int-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RR_int-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RR_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RR_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RR_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RR_int-mesh-colors-geom-miramar_doorglass_RR_int-map0" offset="3" set="0"/>
+          <p>2 0 0 0 3 0 1 1 0 0 2 2 0 1 3 3 1 1 4 4 2 1 5 5 1 2 6 6 12 2 7 7 13 2 8 8 13 3 9 9 2 3 10 10 1 3 11 11 5 4 12 12 6 4 13 13 4 4 14 14 4 5 15 15 0 5 16 16 5 5 17 17 7 6 18 18 8 6 19 19 3 6 20 20 3 7 21 21 2 7 22 22 7 7 23 23 4 8 24 24 9 8 25 25 1 8 26 26 1 9 27 27 0 9 28 28 4 9 29 29 2 10 30 30 13 10 31 31 14 10 32 32 14 11 33 33 7 11 34 34 2 11 35 35 10 12 36 36 5 12 37 37 0 12 38 38 0 13 39 39 3 13 40 40 10 13 41 41 11 14 42 42 10 14 43 43 3 14 44 44 3 15 45 45 8 15 46 46 11 15 47 47 12 16 48 48 1 16 49 49 9 16 50 50 9 17 51 51 15 17 52 52 12 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FR_int-mesh" name="miramar_doorglass_FR_int">
+      <mesh>
+        <source id="miramar_doorglass_FR_int-mesh-positions">
+          <float_array id="miramar_doorglass_FR_int-mesh-positions-array" count="57">-67.11963 -15.69153 123.1474 -69.93246 -18.32986 108.3926 -70.28735 3.017426 108.4359 -67.41263 3.260214 123.2998 -66.96576 -25.47116 123.0826 -64.88761 -22.5493 134.0691 -64.93136 -26.24759 133.5182 -65.21438 3.454255 134.6667 -67.65372 20.29165 123.5514 -65.46105 20.29069 134.8724 -72.21066 -20.43226 96.44524 -72.61573 2.827571 96.39751 -64.97101 -13.58128 134.4264 -72.91346 20.29161 96.39471 -70.55761 20.28995 108.5582 -69.69388 -32.03193 108.4205 -71.96642 -33.42645 96.56462 -66.89237 -30.3371 123.034 -65.06547 -29.2584 132.5613</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int-mesh-normals">
+          <float_array id="miramar_doorglass_FR_int-mesh-normals-array" count="66">0.9816187 0.01670485 -0.1901203 0.9816187 0.01670473 -0.1901205 0.9816186 0.01670515 -0.1901208 0.9816187 0.01670408 -0.1901209 0.9816187 0.01670408 -0.1901201 0.9816186 0.01670449 -0.1901211 0.9816187 0.01670414 -0.1901202 0.9816187 0.01670396 -0.1901202 0.9816184 0.01670473 -0.1901216 0.9816185 0.01670491 -0.1901213 0.9816185 0.01670455 -0.1901217 0.9816184 0.01670616 -0.1901216 0.9816189 0.01670593 -0.1901196 0.9816185 0.01670414 -0.1901216 0.9816184 0.01670372 -0.1901226 0.9816187 0.01670569 -0.1901204 0.9816187 0.0167039 -0.1901205 0.9816184 0.01670461 -0.190122 0.9816187 0.01670473 -0.1901204 0.9816185 0.01670408 -0.1901213 0.9816185 0.01670497 -0.1901214 0.9816187 0.01670539 -0.1901204</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int-mesh-map-0">
+          <float_array id="miramar_doorglass_FR_int-mesh-map-0-array" count="132">0.5080795 0.1057095 0.5075682 0.1967138 0.6213896 0.1949735 0.6213896 0.1949735 0.6362871 0.1045443 0.5080795 0.1057095 0.6801503 0.1941879 0.7129555 0.1042066 0.6362871 0.1045443 0.6362871 0.1045443 0.6213896 0.1949735 0.6801503 0.1941879 0.6633186 0.2616653 0.6801503 0.1941879 0.6213896 0.1949735 0.6213896 0.1949735 0.6094543 0.2642279 0.6633186 0.2616653 0.4052863 0.1989508 0.406003 0.2683814 0.5071268 0.2664291 0.5071268 0.2664291 0.5075682 0.1967138 0.4052863 0.1989508 0.5084865 0.03232753 0.5080795 0.1057095 0.6362871 0.1045443 0.6362871 0.1045443 0.6481763 0.03161984 0.5084865 0.03232753 0.6094543 0.2642279 0.6213896 0.1949735 0.5075682 0.1967138 0.5075682 0.1967138 0.5071268 0.2664291 0.6094543 0.2642279 0.4036057 0.03301972 0.4043444 0.1071529 0.5080795 0.1057095 0.5080795 0.1057095 0.5084865 0.03232753 0.4036057 0.03301972 0.4043444 0.1071529 0.4052863 0.1989508 0.5075682 0.1967138 0.5075682 0.1967138 0.5080795 0.1057095 0.4043444 0.1071529 0.6481763 0.03161984 0.6362871 0.1045443 0.7129555 0.1042066 0.7129555 0.1042066 0.7179271 0.03188413 0.6481763 0.03161984 0.6855111 0.2581423 0.7029566 0.2521695 0.7068455 0.1937035 0.7068455 0.1937035 0.6801503 0.1941879 0.6855111 0.2581423 0.6633186 0.2616653 0.6855111 0.2581423 0.6801503 0.1941879 0.6801503 0.1941879 0.7068455 0.1937035 0.7129555 0.1042066</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int-mesh-map-0-array" count="66" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR_int-mesh-colors-geom-miramar_doorglass_FR_int-map0" name="geom-miramar_doorglass_FR_int-map0">
+          <float_array id="miramar_doorglass_FR_int-mesh-colors-geom-miramar_doorglass_FR_int-map0-array" count="264">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR_int-mesh-colors-geom-miramar_doorglass_FR_int-map0-array" count="66" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FR_int-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FR_int-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="22">
+          <input semantic="VERTEX" source="#miramar_doorglass_FR_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FR_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FR_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FR_int-mesh-colors-geom-miramar_doorglass_FR_int-map0" offset="3" set="0"/>
+          <p>2 0 0 0 3 0 1 1 0 0 2 2 0 1 3 3 1 1 4 4 2 1 5 5 4 2 6 6 15 2 7 7 1 2 8 8 1 3 9 9 0 3 10 10 4 3 11 11 5 4 12 12 4 4 13 13 0 4 14 14 0 5 15 15 12 5 16 16 5 5 17 17 8 6 18 18 9 6 19 19 7 6 20 20 7 7 21 21 3 7 22 22 8 7 23 23 11 8 24 24 2 8 25 25 1 8 26 26 1 9 27 27 10 9 28 28 11 9 29 29 12 10 30 30 0 10 31 31 3 10 32 32 3 11 33 33 7 11 34 34 12 11 35 35 13 12 36 36 14 12 37 37 2 12 38 38 2 13 39 39 11 13 40 40 13 13 41 41 14 14 42 42 8 14 43 43 3 14 44 44 3 15 45 45 2 15 46 46 14 15 47 47 10 16 48 48 1 16 49 49 15 16 50 50 15 17 51 51 16 17 52 52 10 17 53 53 6 18 54 54 18 18 55 55 17 18 56 56 17 19 57 57 4 19 58 58 6 19 59 59 5 20 60 60 6 20 61 61 4 20 62 62 4 21 63 63 17 21 64 64 15 21 65 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RL_int-mesh" name="miramar_doorglass_RL_int">
+      <mesh>
+        <source id="miramar_doorglass_RL_int-mesh-positions">
+          <float_array id="miramar_doorglass_RL_int-mesh-positions-array" count="48">70.62666 52.15718 108.5483 70.46516 74.52372 108.6003 67.61433 72.82077 123.4096 67.73163 52.49413 123.5148 72.97216 51.88553 96.42271 70.75818 31.15317 108.6037 73.11613 31.15246 96.40416 65.43537 71.4672 134.7305 65.51746 52.7629 134.9611 72.77653 75.62525 96.60316 67.84955 31.15244 123.6524 65.6509 31.15287 135.0278 70.41098 81.58172 108.6334 67.59219 81.7226 123.2123 65.46951 81.82932 134.1909 72.71336 81.46565 96.72535</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int-mesh-normals">
+          <float_array id="miramar_doorglass_RL_int-mesh-normals-array" count="54">-0.9818072 -0.006647825 -0.1897649 -0.9818071 -0.006647467 -0.1897649 -0.9818071 -0.006648123 -0.1897652 -0.9818069 -0.006645321 -0.1897664 -0.9818068 -0.006648838 -0.1897659 -0.9818071 -0.006647467 -0.1897653 -0.9818071 -0.006647348 -0.1897649 -0.9818071 -0.00664848 -0.1897646 -0.9818068 -0.006648004 -0.1897662 -0.981807 -0.006648302 -0.1897653 -0.981807 -0.006647825 -0.1897654 -0.9818072 -0.006647706 -0.1897644 -0.9818071 -0.006648659 -0.189765 -0.981807 -0.006649136 -0.1897652 -0.9818071 -0.006649136 -0.1897649 -0.9818072 -0.006648302 -0.1897639 -0.9818072 -0.006649076 -0.1897642 -0.9818071 -0.006646394 -0.1897651</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int-mesh-map-0">
+          <float_array id="miramar_doorglass_RL_int-mesh-map-0-array" count="108">0.8135083 0.1054058 0.9038687 0.09560441 0.9037447 0.2299243 0.9037447 0.2299243 0.812453 0.2274784 0.8135083 0.1054058 0.9038687 0.09560441 0.8135083 0.1054058 0.8148704 0.05404818 0.8148704 0.05404818 0.9037802 0.05811536 0.9038687 0.09560441 0.9030176 0.356061 0.9037447 0.2299243 0.9773514 0.2318805 0.9773514 0.2318805 0.9770877 0.3563838 0.9030176 0.356061 0.7443213 0.1132018 0.8135083 0.1054058 0.812453 0.2274784 0.812453 0.2274784 0.7425176 0.225544 0.7443213 0.1132018 0.9773514 0.2318805 0.9037447 0.2299243 0.9038687 0.09560441 0.9038687 0.09560441 0.9767314 0.08932292 0.9773514 0.2318805 0.8135083 0.1054058 0.7443213 0.1132018 0.7478145 0.05097454 0.7478145 0.05097454 0.8148704 0.05404818 0.8135083 0.1054058 0.8112197 0.3556443 0.812453 0.2274784 0.9037447 0.2299243 0.9037447 0.2299243 0.9030176 0.356061 0.8112197 0.3556443 0.741711 0.3553386 0.7425176 0.225544 0.812453 0.2274784 0.812453 0.2274784 0.8112197 0.3556443 0.741711 0.3553386 0.9037802 0.05811536 0.9760765 0.06142288 0.9767314 0.08932292 0.9767314 0.08932292 0.9038687 0.09560441 0.9037802 0.05811536</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL_int-mesh-colors-geom-miramar_doorglass_RL_int-map0" name="geom-miramar_doorglass_RL_int-map0">
+          <float_array id="miramar_doorglass_RL_int-mesh-colors-geom-miramar_doorglass_RL_int-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL_int-mesh-colors-geom-miramar_doorglass_RL_int-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RL_int-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RL_int-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RL_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RL_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RL_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RL_int-mesh-colors-geom-miramar_doorglass_RL_int-map0" offset="3" set="0"/>
+          <p>2 0 0 0 1 0 1 1 0 0 2 2 0 1 3 3 3 1 4 4 2 1 5 5 1 2 6 6 2 2 7 7 13 2 8 8 13 3 9 9 12 3 10 10 1 3 11 11 5 4 12 12 0 4 13 13 4 4 14 14 4 5 15 15 6 5 16 16 5 5 17 17 7 6 18 18 2 6 19 19 3 6 20 20 3 7 21 21 8 7 22 22 7 7 23 23 4 8 24 24 0 8 25 25 1 8 26 26 1 9 27 27 9 9 28 28 4 9 29 29 2 10 30 30 7 10 31 31 14 10 32 32 14 11 33 33 13 11 34 34 2 11 35 35 10 12 36 36 3 12 37 37 0 12 38 38 0 13 39 39 5 13 40 40 10 13 41 41 11 14 42 42 8 14 43 43 3 14 44 44 3 15 45 45 10 15 46 46 11 15 47 47 12 16 48 48 15 16 49 49 9 16 50 50 9 17 51 51 1 17 52 52 12 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FL_int-mesh" name="miramar_doorglass_FL_int">
+      <mesh>
+        <source id="miramar_doorglass_FL_int-mesh-positions">
+          <float_array id="miramar_doorglass_FL_int-mesh-positions-array" count="57">67.11964 -15.69153 123.1474 69.93246 -18.32986 108.3926 70.28735 3.017426 108.4359 67.41261 3.260246 123.2998 66.96577 -25.47115 123.0826 64.8876 -22.54935 134.0691 64.93136 -26.2476 133.5182 65.21435 3.454257 134.6667 67.65368 20.29158 123.5514 65.46101 20.29066 134.8724 72.21068 -20.43228 96.44524 72.61573 2.827556 96.3975 64.971 -13.58128 134.4264 72.91344 20.29159 96.39469 70.55757 20.28995 108.5581 69.6939 -32.03194 108.4205 71.96645 -33.42645 96.56462 66.89238 -30.33712 123.034 65.06547 -29.2584 132.5613</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int-mesh-normals">
+          <float_array id="miramar_doorglass_FL_int-mesh-normals-array" count="66">-0.9816188 0.01670467 -0.1901201 -0.9816184 0.01670318 -0.1901221 -0.9816187 0.01670372 -0.1901202 -0.9816186 0.01670312 -0.1901211 -0.9816182 0.01670461 -0.1901227 -0.9816183 0.01670461 -0.1901224 -0.9816186 0.01670306 -0.1901211 -0.9816187 0.01670354 -0.1901202 -0.9816183 0.01670408 -0.1901227 -0.9816184 0.01670479 -0.1901217 -0.9816186 0.01670372 -0.1901213 -0.9816184 0.01670324 -0.1901221 -0.9816187 0.01670241 -0.190121 -0.9816184 0.01670265 -0.1901221 -0.9816184 0.01670283 -0.190122 -0.9816186 0.01670259 -0.1901211 -0.9816183 0.01670396 -0.1901224 -0.9816184 0.01670342 -0.190122 -0.9816184 0.01670378 -0.1901221 -0.9816186 0.01669561 -0.190122 -0.9816183 0.01670515 -0.1901223 -0.9816186 0.0167036 -0.1901208</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int-mesh-map-0">
+          <float_array id="miramar_doorglass_FL_int-mesh-map-0-array" count="132">0.5080795 0.1057095 0.6362871 0.1045443 0.6213896 0.1949735 0.6213896 0.1949735 0.5075682 0.1967138 0.5080795 0.1057095 0.6801503 0.1941879 0.6213896 0.1949735 0.6362871 0.1045443 0.6362871 0.1045443 0.7129555 0.1042066 0.6801503 0.1941879 0.6633186 0.2616653 0.6094543 0.2642279 0.6213896 0.1949735 0.6213896 0.1949735 0.6801503 0.1941879 0.6633186 0.2616653 0.4052863 0.1989508 0.5075682 0.1967138 0.5071268 0.2664291 0.5071268 0.2664291 0.406003 0.2683814 0.4052863 0.1989508 0.5084865 0.03232753 0.6481763 0.03161984 0.6362871 0.1045443 0.6362871 0.1045443 0.5080795 0.1057095 0.5084865 0.03232753 0.6094543 0.2642279 0.5071268 0.2664291 0.5075682 0.1967138 0.5075682 0.1967138 0.6213896 0.1949735 0.6094543 0.2642279 0.4036057 0.03301972 0.5084865 0.03232753 0.5080795 0.1057095 0.5080795 0.1057095 0.4043444 0.1071529 0.4036057 0.03301972 0.4043444 0.1071529 0.5080795 0.1057095 0.5075682 0.1967138 0.5075682 0.1967138 0.4052863 0.1989508 0.4043444 0.1071529 0.6481763 0.03161984 0.7179271 0.03188413 0.7129555 0.1042066 0.7129555 0.1042066 0.6362871 0.1045443 0.6481763 0.03161984 0.6855111 0.2581423 0.6801503 0.1941879 0.7068455 0.1937035 0.7068455 0.1937035 0.7029566 0.2521695 0.6855111 0.2581423 0.6633186 0.2616653 0.6801503 0.1941879 0.6855111 0.2581423 0.6801503 0.1941879 0.7129555 0.1042066 0.7068455 0.1937035</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int-mesh-map-0-array" count="66" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL_int-mesh-colors-geom-miramar_doorglass_FL_int-map0" name="geom-miramar_doorglass_FL_int-map0">
+          <float_array id="miramar_doorglass_FL_int-mesh-colors-geom-miramar_doorglass_FL_int-map0-array" count="264">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL_int-mesh-colors-geom-miramar_doorglass_FL_int-map0-array" count="66" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FL_int-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FL_int-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass_int-material" count="22">
+          <input semantic="VERTEX" source="#miramar_doorglass_FL_int-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FL_int-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FL_int-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FL_int-mesh-colors-geom-miramar_doorglass_FL_int-map0" offset="3" set="0"/>
+          <p>2 0 0 0 1 0 1 1 0 0 2 2 0 1 3 3 3 1 4 4 2 1 5 5 4 2 6 6 0 2 7 7 1 2 8 8 1 3 9 9 15 3 10 10 4 3 11 11 5 4 12 12 12 4 13 13 0 4 14 14 0 5 15 15 4 5 16 16 5 5 17 17 8 6 18 18 3 6 19 19 7 6 20 20 7 7 21 21 9 7 22 22 8 7 23 23 11 8 24 24 10 8 25 25 1 8 26 26 1 9 27 27 2 9 28 28 11 9 29 29 12 10 30 30 7 10 31 31 3 10 32 32 3 11 33 33 0 11 34 34 12 11 35 35 13 12 36 36 11 12 37 37 2 12 38 38 2 13 39 39 14 13 40 40 13 13 41 41 14 14 42 42 2 14 43 43 3 14 44 44 3 15 45 45 8 15 46 46 14 15 47 47 10 16 48 48 16 16 49 49 15 16 50 50 15 17 51 51 1 17 52 52 10 17 53 53 6 18 54 54 4 18 55 55 17 18 56 56 17 19 57 57 18 19 58 58 6 19 59 59 5 20 60 60 4 20 61 61 6 20 62 62 4 21 63 63 15 21 64 64 17 21 65 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RR-mesh" name="miramar_doorglass_RR">
+      <mesh>
+        <source id="miramar_doorglass_RR-mesh-positions">
+          <float_array id="miramar_doorglass_RR-mesh-positions-array" count="48">-70.7274 74.5237 108.5542 -70.88885 52.15723 108.5023 -67.99287 52.49413 123.4114 -67.87564 72.82082 123.3065 -73.23524 51.88554 96.42259 -73.37913 31.15246 96.40426 -71.02027 31.15319 108.5577 -65.77788 52.76286 134.8142 -65.69588 71.46722 134.5844 -73.03966 75.62529 96.60249 -68.11069 31.15247 123.5486 -65.91122 31.15279 134.8808 -65.73003 81.83392 134.047 -67.8535 81.72067 123.1102 -70.67329 81.57092 108.5872 -72.97669 81.44769 96.72386</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR-mesh-normals">
+          <float_array id="miramar_doorglass_RR-mesh-normals-array" count="54">-0.9816588 0.006643712 0.1905308 -0.981659 0.006644546 0.1905298 -0.9816589 0.006644725 0.19053 -0.981659 0.006645023 0.1905294 -0.9816589 0.006644845 0.1905301 -0.9816588 0.006644487 0.1905303 -0.9816589 0.006643176 0.1905301 -0.9816589 0.00664401 0.1905304 -0.9816589 0.006644666 0.1905299 -0.9816589 0.00664407 0.1905304 -0.9816588 0.006643772 0.1905301 -0.9816589 0.006644368 0.19053 -0.9816592 0.006643891 0.1905284 -0.981659 0.006643354 0.19053 -0.9816588 0.0066455 0.1905307 -0.9816587 0.00664407 0.1905307 -0.9816586 0.006648063 0.1905311 -0.9816588 0.006644606 0.1905307</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR-mesh-map-0">
+          <float_array id="miramar_doorglass_RR-mesh-map-0-array" count="108">0.8135083 0.1054058 0.9038687 0.09560441 0.9037447 0.2299243 0.9037447 0.2299243 0.812453 0.2274784 0.8135083 0.1054058 0.9030176 0.356061 0.9037447 0.2299243 0.9773514 0.2318805 0.9773514 0.2318805 0.9770877 0.3563838 0.9030176 0.356061 0.7443213 0.1132018 0.8135083 0.1054058 0.812453 0.2274784 0.812453 0.2274784 0.7425176 0.225544 0.7443213 0.1132018 0.9773514 0.2318805 0.9037447 0.2299243 0.9038687 0.09560441 0.9038687 0.09560441 0.9767314 0.08932292 0.9773514 0.2318805 0.8112197 0.3556443 0.812453 0.2274784 0.9037447 0.2299243 0.9037447 0.2299243 0.9030176 0.356061 0.8112197 0.3556443 0.741711 0.3553386 0.7425176 0.225544 0.812453 0.2274784 0.812453 0.2274784 0.8112197 0.3556443 0.741711 0.3553386 0.7478145 0.05097454 0.8148696 0.05407971 0.8135083 0.1054058 0.8135083 0.1054058 0.7443213 0.1132018 0.7478145 0.05097454 0.8148696 0.05407971 0.9037803 0.05818903 0.9038687 0.09560441 0.9038687 0.09560441 0.8135083 0.1054058 0.8148696 0.05407971 0.9037803 0.05818903 0.976079 0.06153106 0.9767314 0.08932292 0.9767314 0.08932292 0.9038687 0.09560441 0.9037803 0.05818903</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RR-mesh-colors-geom-miramar_doorglass_RR-map0" name="geom-miramar_doorglass_RR-map0">
+          <float_array id="miramar_doorglass_RR-mesh-colors-geom-miramar_doorglass_RR-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RR-mesh-colors-geom-miramar_doorglass_RR-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RR-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RR-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RR-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RR-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RR-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RR-mesh-colors-geom-miramar_doorglass_RR-map0" offset="3" set="0"/>
+          <p>3 0 0 0 0 0 1 1 1 0 2 2 1 1 3 3 2 1 4 4 3 1 5 5 6 2 6 6 1 2 7 7 4 2 8 8 4 3 9 9 5 3 10 10 6 3 11 11 8 4 12 12 3 4 13 13 2 4 14 14 2 5 15 15 7 5 16 16 8 5 17 17 4 6 18 18 1 6 19 19 0 6 20 20 0 7 21 21 9 7 22 22 4 7 23 23 10 8 24 24 2 8 25 25 1 8 26 26 1 9 27 27 6 9 28 28 10 9 29 29 11 10 30 30 7 10 31 31 2 10 32 32 2 11 33 33 10 11 34 34 11 11 35 35 12 12 36 36 13 12 37 37 3 12 38 38 3 13 39 39 8 13 40 40 12 13 41 41 13 14 42 42 14 14 43 43 0 14 44 44 0 15 45 45 3 15 46 46 13 15 47 47 14 16 48 48 15 16 49 49 9 16 50 50 9 17 51 51 0 17 52 52 14 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FR-mesh" name="miramar_doorglass_FR">
+      <mesh>
+        <source id="miramar_doorglass_FR-mesh-positions">
+          <float_array id="miramar_doorglass_FR-mesh-positions-array" count="57">-67.6058 -15.69151 123.1473 -67.89877 3.260252 123.2997 -70.77428 3.017402 108.4363 -70.41939 -18.3299 108.3931 -67.45193 -25.47114 123.0825 -65.37315 -22.54929 134.0689 -65.41693 -26.24759 133.5181 -65.69988 3.454258 134.6664 -65.94654 20.29071 134.8721 -68.13985 20.29167 123.5513 -73.10346 2.827607 96.39744 -72.69839 -20.43224 96.44518 -65.45654 -13.58125 134.4262 -71.04451 20.28992 108.5586 -73.40119 20.29161 96.39461 -70.18082 -32.03197 108.4209 -72.45413 -33.42645 96.5646 -67.37855 -30.33708 123.0339 -65.5511 -29.2584 132.5611</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR-mesh-normals">
+          <float_array id="miramar_doorglass_FR-mesh-normals-array" count="66">-0.9816077 -0.01670366 0.1901773 -0.9816077 -0.01670354 0.1901772 -0.9816077 -0.01670503 0.1901773 -0.9816078 -0.01670354 0.1901772 -0.9816078 -0.01670461 0.1901767 -0.9816078 -0.01670455 0.1901765 -0.9816076 -0.01670497 0.1901774 -0.9816079 -0.01670485 0.1901764 -0.9816079 -0.01670444 0.1901759 -0.9816079 -0.0167039 0.1901763 -0.9816078 -0.01670259 0.190177 -0.9816078 -0.01670324 0.1901765 -0.9816077 -0.01670449 0.190177 -0.9816078 -0.01670396 0.1901768 -0.9816077 -0.01670372 0.1901772 -0.9816077 -0.01670485 0.1901769 -0.9816079 -0.0167039 0.1901764 -0.9816081 -0.01670396 0.1901755 -0.981608 -0.01670485 0.190176 -0.9816077 -0.01670211 0.1901774 -0.9816081 -0.01669865 0.190176 -0.981608 -0.01670581 0.1901755</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR-mesh-map-0">
+          <float_array id="miramar_doorglass_FR-mesh-map-0-array" count="132">0.5080795 0.1057095 0.6362871 0.1045443 0.6213896 0.1949735 0.6213896 0.1949735 0.5075682 0.1967138 0.5080795 0.1057095 0.6801503 0.1941879 0.6213896 0.1949735 0.6362871 0.1045443 0.6362871 0.1045443 0.7129555 0.1042066 0.6801503 0.1941879 0.6633186 0.2616653 0.6094543 0.2642279 0.6213896 0.1949735 0.6213896 0.1949735 0.6801503 0.1941879 0.6633186 0.2616653 0.4052863 0.1989508 0.5075682 0.1967138 0.5071268 0.2664291 0.5071268 0.2664291 0.406003 0.2683814 0.4052863 0.1989508 0.5084865 0.03232753 0.6481763 0.03161984 0.6362871 0.1045443 0.6362871 0.1045443 0.5080795 0.1057095 0.5084865 0.03232753 0.6094543 0.2642279 0.5071268 0.2664291 0.5075682 0.1967138 0.5075682 0.1967138 0.6213896 0.1949735 0.6094543 0.2642279 0.4036057 0.03301972 0.5084865 0.03232753 0.5080795 0.1057095 0.5080795 0.1057095 0.4043444 0.1071529 0.4036057 0.03301972 0.4043444 0.1071529 0.5080795 0.1057095 0.5075682 0.1967138 0.5075682 0.1967138 0.4052863 0.1989508 0.4043444 0.1071529 0.6481763 0.03161984 0.7179271 0.03188413 0.7129555 0.1042066 0.7129555 0.1042066 0.6362871 0.1045443 0.6481763 0.03161984 0.6855111 0.2581423 0.6801503 0.1941879 0.7068455 0.1937035 0.7068455 0.1937035 0.7029566 0.2521695 0.6855111 0.2581423 0.6633186 0.2616653 0.6801503 0.1941879 0.6855111 0.2581423 0.6801503 0.1941879 0.7129555 0.1042066 0.7068455 0.1937035</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR-mesh-map-0-array" count="66" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FR-mesh-colors-geom-miramar_doorglass_FR-map0" name="geom-miramar_doorglass_FR-map0">
+          <float_array id="miramar_doorglass_FR-mesh-colors-geom-miramar_doorglass_FR-map0-array" count="264">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FR-mesh-colors-geom-miramar_doorglass_FR-map0-array" count="66" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FR-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FR-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="22">
+          <input semantic="VERTEX" source="#miramar_doorglass_FR-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FR-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FR-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FR-mesh-colors-geom-miramar_doorglass_FR-map0" offset="3" set="0"/>
+          <p>2 0 0 0 3 0 1 1 0 0 2 2 0 1 3 3 1 1 4 4 2 1 5 5 4 2 6 6 0 2 7 7 3 2 8 8 3 3 9 9 15 3 10 10 4 3 11 11 5 4 12 12 12 4 13 13 0 4 14 14 0 5 15 15 4 5 16 16 5 5 17 17 9 6 18 18 1 6 19 19 7 6 20 20 7 7 21 21 8 7 22 22 9 7 23 23 10 8 24 24 11 8 25 25 3 8 26 26 3 9 27 27 2 9 28 28 10 9 29 29 12 10 30 30 7 10 31 31 1 10 32 32 1 11 33 33 0 11 34 34 12 11 35 35 14 12 36 36 10 12 37 37 2 12 38 38 2 13 39 39 13 13 40 40 14 13 41 41 13 14 42 42 2 14 43 43 1 14 44 44 1 15 45 45 9 15 46 46 13 15 47 47 11 16 48 48 16 16 49 49 15 16 50 50 15 17 51 51 3 17 52 52 11 17 53 53 6 18 54 54 4 18 55 55 17 18 56 56 17 19 57 57 18 19 58 58 6 19 59 59 5 20 60 60 4 20 61 61 6 20 62 62 4 21 63 63 15 21 64 64 17 21 65 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_RL-mesh" name="miramar_doorglass_RL">
+      <mesh>
+        <source id="miramar_doorglass_RL-mesh-positions">
+          <float_array id="miramar_doorglass_RL-mesh-positions-array" count="48">70.72741 74.52367 108.5542 70.88884 52.15723 108.5023 67.99285 52.49413 123.4114 67.87563 72.82076 123.3065 73.23524 51.88546 96.42257 73.37911 31.15246 96.40425 71.02024 31.15319 108.5577 65.77785 52.76292 134.8142 65.69587 71.46725 134.5844 73.03967 75.62529 96.60249 68.11066 31.15247 123.5486 65.91118 31.15282 134.8808 65.73003 81.83389 134.0469 67.85351 81.72067 123.1103 70.67331 81.57089 108.5872 72.97671 81.44778 96.72388</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL-mesh-normals">
+          <float_array id="miramar_doorglass_RL-mesh-normals-array" count="54">0.9816588 0.006643772 0.1905302 0.9816585 0.006643891 0.1905323 0.9816589 0.00664395 0.19053 0.981659 0.006643235 0.19053 0.9816587 0.006642997 0.1905312 0.9816591 0.006644308 0.1905294 0.9816589 0.006642937 0.1905301 0.9816588 0.006642997 0.1905306 0.9816589 0.006643354 0.1905304 0.9816589 0.00664395 0.1905304 0.9816587 0.006643831 0.1905307 0.9816587 0.006643831 0.190531 0.9816591 0.006645083 0.1905291 0.9816582 0.006641626 0.1905336 0.9816586 0.006638467 0.1905315 0.9816589 0.006642401 0.1905305 0.9816589 0.006642699 0.1905304 0.9816586 0.006642282 0.1905313</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL-mesh-map-0">
+          <float_array id="miramar_doorglass_RL-mesh-map-0-array" count="108">0.8135083 0.1054058 0.812453 0.2274784 0.9037447 0.2299243 0.9037447 0.2299243 0.9038687 0.09560441 0.8135083 0.1054058 0.9030176 0.356061 0.9770877 0.3563838 0.9773514 0.2318805 0.9773514 0.2318805 0.9037447 0.2299243 0.9030176 0.356061 0.7443213 0.1132018 0.7425176 0.225544 0.812453 0.2274784 0.812453 0.2274784 0.8135083 0.1054058 0.7443213 0.1132018 0.9773514 0.2318805 0.9767314 0.08932292 0.9038687 0.09560441 0.9038687 0.09560441 0.9037447 0.2299243 0.9773514 0.2318805 0.8112197 0.3556443 0.9030176 0.356061 0.9037447 0.2299243 0.9037447 0.2299243 0.812453 0.2274784 0.8112197 0.3556443 0.741711 0.3553386 0.8112197 0.3556443 0.812453 0.2274784 0.812453 0.2274784 0.7425176 0.225544 0.741711 0.3553386 0.7478145 0.05097454 0.7443213 0.1132018 0.8135083 0.1054058 0.8135083 0.1054058 0.8148696 0.05407971 0.7478145 0.05097454 0.8148696 0.05407971 0.8135083 0.1054058 0.9038687 0.09560441 0.9038687 0.09560441 0.9037803 0.05818903 0.8148696 0.05407971 0.9037803 0.05818903 0.9038687 0.09560441 0.9767314 0.08932292 0.9767314 0.08932292 0.976079 0.06153106 0.9037803 0.05818903</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL-mesh-map-0-array" count="54" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_RL-mesh-colors-geom-miramar_doorglass_RL-map0" name="geom-miramar_doorglass_RL-map0">
+          <float_array id="miramar_doorglass_RL-mesh-colors-geom-miramar_doorglass_RL-map0-array" count="216">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_RL-mesh-colors-geom-miramar_doorglass_RL-map0-array" count="54" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_RL-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_RL-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="18">
+          <input semantic="VERTEX" source="#miramar_doorglass_RL-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_RL-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_RL-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_RL-mesh-colors-geom-miramar_doorglass_RL-map0" offset="3" set="0"/>
+          <p>3 0 0 0 2 0 1 1 1 0 2 2 1 1 3 3 0 1 4 4 3 1 5 5 6 2 6 6 5 2 7 7 4 2 8 8 4 3 9 9 1 3 10 10 6 3 11 11 8 4 12 12 7 4 13 13 2 4 14 14 2 5 15 15 3 5 16 16 8 5 17 17 4 6 18 18 9 6 19 19 0 6 20 20 0 7 21 21 1 7 22 22 4 7 23 23 10 8 24 24 6 8 25 25 1 8 26 26 1 9 27 27 2 9 28 28 10 9 29 29 11 10 30 30 10 10 31 31 2 10 32 32 2 11 33 33 7 11 34 34 11 11 35 35 12 12 36 36 8 12 37 37 3 12 38 38 3 13 39 39 13 13 40 40 12 13 41 41 13 14 42 42 3 14 43 43 0 14 44 44 0 15 45 45 14 15 46 46 13 15 47 47 14 16 48 48 0 16 49 49 9 16 50 50 9 17 51 51 15 17 52 52 14 17 53 53</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="miramar_doorglass_FL-mesh" name="miramar_doorglass_FL">
+      <mesh>
+        <source id="miramar_doorglass_FL-mesh-positions">
+          <float_array id="miramar_doorglass_FL-mesh-positions-array" count="57">67.6058 -15.69153 123.1473 67.89877 3.260253 123.2997 70.77428 3.017402 108.4363 70.4194 -18.3299 108.3931 67.45193 -25.47115 123.0825 65.37315 -22.54933 134.0689 65.41694 -26.24759 133.5181 65.69987 3.454258 134.6665 65.94653 20.29072 134.8721 68.13985 20.29159 123.5513 73.10347 2.827577 96.39743 72.69841 -20.43227 96.44517 65.45654 -13.58126 134.4262 71.04451 20.28989 108.5586 73.40119 20.29161 96.39461 70.18083 -32.03197 108.4209 72.45415 -33.42645 96.5646 67.37855 -30.3371 123.0339 65.5511 -29.25842 132.5611</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL-mesh-normals">
+          <float_array id="miramar_doorglass_FL-mesh-normals-array" count="66">0.9816078 -0.01670372 0.1901769 0.9816076 -0.01670289 0.1901777 0.9816076 -0.01670491 0.1901779 0.9816076 -0.01670473 0.1901777 0.9816079 -0.01670497 0.1901765 0.9816079 -0.01670402 0.1901766 0.9816077 -0.01670205 0.1901777 0.9816078 -0.01670461 0.1901763 0.9816076 -0.01670354 0.190178 0.9816078 -0.01670408 0.1901766 0.9816077 -0.01670354 0.1901769 0.981608 -0.01670384 0.1901758 0.9816079 -0.0167042 0.1901768 0.9816076 -0.0167039 0.1901778 0.9816078 -0.01670467 0.1901768 0.9816077 -0.01670408 0.1901772 0.9816079 -0.01670372 0.1901765 0.9816077 -0.0167042 0.1901773 0.9816076 -0.01670467 0.1901777 0.9816082 -0.01670151 0.1901749 0.9816081 -0.01669889 0.190176 0.9816079 -0.01670068 0.1901766</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL-mesh-map-0">
+          <float_array id="miramar_doorglass_FL-mesh-map-0-array" count="132">0.5080795 0.1057095 0.5075682 0.1967138 0.6213896 0.1949735 0.6213896 0.1949735 0.6362871 0.1045443 0.5080795 0.1057095 0.6801503 0.1941879 0.7129555 0.1042066 0.6362871 0.1045443 0.6362871 0.1045443 0.6213896 0.1949735 0.6801503 0.1941879 0.6633186 0.2616653 0.6801503 0.1941879 0.6213896 0.1949735 0.6213896 0.1949735 0.6094543 0.2642279 0.6633186 0.2616653 0.4052863 0.1989508 0.406003 0.2683814 0.5071268 0.2664291 0.5071268 0.2664291 0.5075682 0.1967138 0.4052863 0.1989508 0.5084865 0.03232753 0.5080795 0.1057095 0.6362871 0.1045443 0.6362871 0.1045443 0.6481763 0.03161984 0.5084865 0.03232753 0.6094543 0.2642279 0.6213896 0.1949735 0.5075682 0.1967138 0.5075682 0.1967138 0.5071268 0.2664291 0.6094543 0.2642279 0.4036057 0.03301972 0.4043444 0.1071529 0.5080795 0.1057095 0.5080795 0.1057095 0.5084865 0.03232753 0.4036057 0.03301972 0.4043444 0.1071529 0.4052863 0.1989508 0.5075682 0.1967138 0.5075682 0.1967138 0.5080795 0.1057095 0.4043444 0.1071529 0.6481763 0.03161984 0.6362871 0.1045443 0.7129555 0.1042066 0.7129555 0.1042066 0.7179271 0.03188413 0.6481763 0.03161984 0.6855111 0.2581423 0.7029566 0.2521695 0.7068455 0.1937035 0.7068455 0.1937035 0.6801503 0.1941879 0.6855111 0.2581423 0.6633186 0.2616653 0.6855111 0.2581423 0.6801503 0.1941879 0.6801503 0.1941879 0.7068455 0.1937035 0.7129555 0.1042066</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL-mesh-map-0-array" count="66" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="miramar_doorglass_FL-mesh-colors-geom-miramar_doorglass_FL-map0" name="geom-miramar_doorglass_FL-map0">
+          <float_array id="miramar_doorglass_FL-mesh-colors-geom-miramar_doorglass_FL-map0-array" count="264">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#miramar_doorglass_FL-mesh-colors-geom-miramar_doorglass_FL-map0-array" count="66" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="miramar_doorglass_FL-mesh-vertices">
+          <input semantic="POSITION" source="#miramar_doorglass_FL-mesh-positions"/>
+        </vertices>
+        <triangles material="miramar_glass-material" count="22">
+          <input semantic="VERTEX" source="#miramar_doorglass_FL-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#miramar_doorglass_FL-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#miramar_doorglass_FL-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#miramar_doorglass_FL-mesh-colors-geom-miramar_doorglass_FL-map0" offset="3" set="0"/>
+          <p>2 0 0 0 1 0 1 1 0 0 2 2 0 1 3 3 3 1 4 4 2 1 5 5 4 2 6 6 15 2 7 7 3 2 8 8 3 3 9 9 0 3 10 10 4 3 11 11 5 4 12 12 4 4 13 13 0 4 14 14 0 5 15 15 12 5 16 16 5 5 17 17 9 6 18 18 8 6 19 19 7 6 20 20 7 7 21 21 1 7 22 22 9 7 23 23 10 8 24 24 2 8 25 25 3 8 26 26 3 9 27 27 11 9 28 28 10 9 29 29 12 10 30 30 0 10 31 31 1 10 32 32 1 11 33 33 7 11 34 34 12 11 35 35 14 12 36 36 13 12 37 37 2 12 38 38 2 13 39 39 10 13 40 40 14 13 41 41 13 14 42 42 9 14 43 43 1 14 44 44 1 15 45 45 2 15 46 46 13 15 47 47 11 16 48 48 3 16 49 49 15 16 50 50 15 17 51 51 16 17 52 52 11 17 53 53 6 18 54 54 18 18 55 55 17 18 56 56 17 19 57 57 4 19 58 58 6 19 59 59 5 20 60 60 6 20 61 61 4 20 62 62 4 21 63 63 17 21 64 64 15 21 65 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="miramar_doorglass_fixed_RR_int" name="miramar_doorglass_fixed_RR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RR_int_001-mesh" name="miramar_doorglass_fixed_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_FR_int" name="miramar_doorglass_fixed_FR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FR_int_001-mesh" name="miramar_doorglass_fixed_FR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_RR" name="miramar_doorglass_fixed_RR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RR_001-mesh" name="miramar_doorglass_fixed_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RR-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_FR" name="miramar_doorglass_fixed_FR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FR_001-mesh" name="miramar_doorglass_fixed_FR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FR-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_RL_int" name="miramar_doorglass_fixed_RL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RL_int_001-mesh" name="miramar_doorglass_fixed_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_FL_int" name="miramar_doorglass_fixed_FL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FL_int_001-mesh" name="miramar_doorglass_fixed_FL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_RL" name="miramar_doorglass_fixed_RL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RL_001-mesh" name="miramar_doorglass_fixed_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RL-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_fixed_FL" name="miramar_doorglass_fixed_FL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FL_001-mesh" name="miramar_doorglass_fixed_FL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FL-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_RR_int" name="miramar_doorglass_openable_RR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RR_int-mesh" name="miramar_doorglass_openable_RR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_FR_int" name="miramar_doorglass_openable_FR_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FR_int-mesh" name="miramar_doorglass_openable_FR_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FR_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_RL_int" name="miramar_doorglass_openable_RL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RL_int-mesh" name="miramar_doorglass_openable_RL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_FL_int" name="miramar_doorglass_openable_FL_int" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FL_int-mesh" name="miramar_doorglass_openable_FL_int">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass_int-material" target="#miramar_glass_int-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FL_int-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_RR" name="miramar_doorglass_openable_RR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RR-mesh" name="miramar_doorglass_openable_RR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RR-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_FR" name="miramar_doorglass_openable_FR" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FR-mesh" name="miramar_doorglass_openable_FR">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FR-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_RL" name="miramar_doorglass_openable_RL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_RL-mesh" name="miramar_doorglass_openable_RL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_RL-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="miramar_doorglass_openable_FL" name="miramar_doorglass_openable_FL" type="NODE">
+        <matrix sid="transform">0.01 0 0 0 0 0.01 0 0 0 0 0.01 0 0 0 0 1</matrix>
+        <instance_geometry url="#miramar_doorglass_FL-mesh" name="miramar_doorglass_openable_FL">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="miramar_glass-material" target="#miramar_glass-material">
+                <bind_vertex_input semantic="geom-miramar_doorglass_FL-map1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

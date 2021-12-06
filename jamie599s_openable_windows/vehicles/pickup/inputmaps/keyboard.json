@@ -15,22 +15,6 @@
     {
         "control"           : "shift k"          ,
         "action"            : "FRWindowDown"
-    },
-    {
-        "control"           : "shift o"          ,
-        "action"            : "RLWindowUp"
-    },
-    {
-        "control"           : "shift l"          ,
-        "action"            : "RLWindowDown"
-    },
-    {
-        "control"           : "shift p"          ,
-        "action"            : "RRWindowUp"
-    },
-    {
-        "control"           : "shift ;"          ,
-        "action"            : "RRWindowDown"
     }
   ],
 "name"              : "Keyboard"          ,
