@@ -1,5 +1,5 @@
 Autobello
-[ ]    Piccolina
+[ ]    Piccolina 
 
 Bruckell
 [x]    LeGran
@@ -23,31 +23,36 @@ ETK
 Gavril
 [x]    Barstow
 [ ]    Bluebuck
-[ ]    D-Series
+[x]    D-Series
 [x]    Grand Marshal
-[ ]    H-Series
-[ ]    Roamer
+[x]    H-Series
+[\]    Roamer
 [ ]    T-Series
 [ ]    Vertex (MOD)
 
 Hirochi
 [x]    CCF (MOD - Unreleased)
-[ ]    SBR4
-[ ]    Sunburst
+[x]    SBR4
+[x]    Sunburst
 
 Ibishu
 [x]    200BX
 [x]    Covet
 [ ]    Hopper
-[ ]    Miramar
-[ ]    Pessima 88
+[x]    Miramar
+[x]    Pessima 88
 [x]    Pessima 96
-[ ]    Pigeon
+[x]    Pigeon
 [x]    Saga (MOD)
-[ ]    Wigeon
 
 Procyon
 [ ]    Centauri (MOD - Unreleased)
 
 Soliad
 [x]    Wendover
+
+
+Issues:
+Piccolina - grouping causing invisible parts
+Special - missing final window node on rear
+Bluebuck - some mad shit
