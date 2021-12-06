@@ -28,7 +28,7 @@ Gavril
 [x]    H-Series
 [\]    Roamer
 [ ]    T-Series
-[ ]    Vertex (MOD)
+[ ]    Vertex (MOD - Planned)
 
 Hirochi
 [x]    CCF (MOD - Unreleased)
@@ -38,7 +38,7 @@ Hirochi
 Ibishu
 [x]    200BX
 [x]    Covet
-[ ]    Hopper
+[x]    Hopper
 [x]    Miramar
 [x]    Pessima 88
 [x]    Pessima 96
@@ -56,3 +56,5 @@ Issues:
 Piccolina - grouping causing invisible parts
 Special - missing final window node on rear
 Bluebuck - some mad shit
+Roamer - 2 types of rear windows
+
