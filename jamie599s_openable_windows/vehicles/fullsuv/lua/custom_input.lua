@@ -116,8 +116,8 @@ local function updateGFX(dt) -- ms
 
   electrics.values.FLWindow = math.min(0, math.max(-1, electrics.values.FLWindow + electrics.values.FLWindowPress * 0.45 * dt))
   electrics.values.FRWindow = math.min(0, math.max(-1, electrics.values.FRWindow + electrics.values.FRWindowPress * 0.45 * dt))
-  electrics.values.RLWindow = math.min(0, math.max(-1, electrics.values.RLWindow + electrics.values.RLWindowPress * 0.75 * dt))
-  electrics.values.RRWindow = math.min(0, math.max(-1, electrics.values.RRWindow + electrics.values.RRWindowPress * 0.75 * dt))
+  electrics.values.RLWindow = math.min(0, math.max(-1, electrics.values.RLWindow + electrics.values.RLWindowPress * 0.45 * dt))
+  electrics.values.RRWindow = math.min(0, math.max(-1, electrics.values.RRWindow + electrics.values.RRWindowPress * 0.45 * dt))
 end
 
 M.onInit    = reset

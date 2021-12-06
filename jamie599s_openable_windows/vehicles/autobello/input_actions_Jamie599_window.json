@@ -1,6 +1,0 @@
-{
-    "LWindowUp":{"order":  13,  "onChange":"electrics.values.LWindowPress = 1-(electrics.values.LWindowPress or 0)", "title": "Front Left Window Up", "desc": "Closes Front Left Window" },
-    "LWindowDown":{"order":  14,  "onChange":"electrics.values.LWindowPress = -1-(electrics.values.LWindowPress or 0)", "title": "Front Left Window Down", "desc": "Opens Front Left Window" },
-    "RWindowUp":{"order":  15,  "onChange":"electrics.values.RWindowPress = 1-(electrics.values.RWindowPress or 0)", "title": "Front Right Window Up", "desc": "Closes Front Right Window" },
-    "RWindowDown":{"order":  16,  "onChange":"electrics.values.RWindowPress = -1-(electrics.values.RWindowPress or 0)", "title": "Front Right Window Down", "desc": "Opens Front Right Window" }
-}
