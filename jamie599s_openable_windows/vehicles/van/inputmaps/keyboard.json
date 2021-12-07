@@ -1,6 +1,34 @@
 {
 "bindings" :   [
     {
+        "control"           : "o", 
+        "action"            : "toggle_doors"         
+     },
+    {  
+        "control"           : "pageup", 
+        "action"            : "tiltUp"            
+    },
+    {
+        "control"           : "pagedown", 
+        "action"            : "tiltDown"         
+    }, 
+    {
+        "control"           : "ctrl pageup", 
+        "action"            : "extend"            
+    },
+    {
+        "control"           : "ctrl pagedown", 
+        "action"            : "retract"         
+    },   
+    {
+        "control"           : "shift pageup",
+        "action"            : "extendFeet"
+    },
+    {
+        "control"           : "shift pagedown",
+        "action"            : "retractFeet"
+    },
+    {
         "control"           : "shift u"          ,
         "action"            : "FLWindowUp"
     },

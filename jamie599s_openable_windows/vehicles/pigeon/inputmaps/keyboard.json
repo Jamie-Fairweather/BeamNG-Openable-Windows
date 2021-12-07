@@ -1,6 +1,10 @@
 {
 "bindings" :   [
     {
+        "control"           : "o",
+        "action"            : "toggle_tailgate"
+    },
+    {
         "control"           : "shift u"          ,
         "action"            : "LWindowUp"
     },

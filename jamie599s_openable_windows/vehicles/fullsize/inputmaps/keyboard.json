@@ -1,6 +1,34 @@
 {
 "bindings" :   [
     {
+        "action"            : "hydraulics_jump_left",
+        "control"           : "alt f"
+    },
+    {
+        "action"            : "hydraulics_raise_full",
+        "control"           : "alt 1"
+    },
+    {
+        "action"            : "hydraulics_lower_full",
+        "control"           : "alt 2"
+    },
+    {
+        "action"            : "hydraulics_jump_front",
+        "control"           : "alt t"
+    },
+    {
+        "action"            : "hydraulics_jump_rear",
+        "control"           : "alt g"
+    },
+    {
+        "action"            : "hydraulics_jump_full",
+        "control"           : "t"
+    },
+    {
+        "action"            : "hydraulics_jump_right",
+        "control"           : "alt h"
+    },
+    {
         "control"           : "shift u"          ,
         "action"            : "FLWindowUp"
     },
