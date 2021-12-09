@@ -40,7 +40,7 @@ I've been wanting to experiment and expand my knowledge with python for a while 
 ## Coming soon
 #### Autobello
 	Piccolina
-#### Brunside
+#### Burnside
 	Special
 #### Gavril
 	Bluebuck
