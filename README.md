@@ -1,6 +1,6 @@
 # Openable Windows Mod
 ![](https://www.beamng.com/attachments/beamngdrivex642021-12-0704-03-35-png.860583/)
-
+I've been wanting to experiment and expand my knowledge with python for a while now, automating the creation of Jbeam files for openable windows turned out to be the perfect project.
 ## Available Vehicles
 #### Bruckell
 	LeGran
