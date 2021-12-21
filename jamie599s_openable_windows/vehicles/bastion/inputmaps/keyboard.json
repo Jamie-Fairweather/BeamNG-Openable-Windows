@@ -1,0 +1,41 @@
+{
+"bindings" :   [
+    {
+        "control"           : "shift u"          ,
+        "action"            : "FLWindowUp"
+    },
+    {
+        "control"           : "shift j"          ,
+        "action"            : "FLWindowDown"
+    },
+    {
+        "control"           : "shift i"          ,
+        "action"            : "FRWindowUp"
+    },
+    {
+        "control"           : "shift k"          ,
+        "action"            : "FRWindowDown"
+    },
+    {
+        "control"           : "shift o"          ,
+        "action"            : "RLWindowUp"
+    },
+    {
+        "control"           : "shift l"          ,
+        "action"            : "RLWindowDown"
+    },
+    {
+        "control"           : "shift p"          ,
+        "action"            : "RRWindowUp"
+    },
+    {
+        "control"           : "shift ;"          ,
+        "action"            : "RRWindowDown"
+    }
+  ],
+"name"              : "Keyboard"          ,
+"version"           : 1                   ,
+"devicetype"        : "keyboard"          ,
+"vidpid"            : "6F1D2B61"          ,
+"guid"              : "{6F1D2B61-D5A0-11CF-BFC7-444553540000}"
+}
