@@ -3,6 +3,7 @@
 I've been wanting to experiment and expand my knowledge with python for a while now, automating the creation of Jbeam files for openable windows turned out to be the perfect project.
 ## Available Vehicles
 #### Bruckell
+	Bastion
 	LeGran
 	Moonhawk
 #### Cherrier
