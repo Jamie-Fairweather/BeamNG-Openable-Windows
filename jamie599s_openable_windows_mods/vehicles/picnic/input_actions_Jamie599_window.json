@@ -1,0 +1,6 @@
+{
+    "FLWindowUp":{"order":  13,  "onChange":"electrics.values.FLWindowPress = 1-(electrics.values.FLWindowPress or 0)", "title": "Front Left Window Up", "desc": "Closes Front Left Window" },
+    "FLWindowDown":{"order":  14,  "onChange":"electrics.values.FLWindowPress = -1-(electrics.values.FLWindowPress or 0)", "title": "Front Left Window Down", "desc": "Opens Front Left Window" },
+    "FRWindowUp":{"order":  15,  "onChange":"electrics.values.FRWindowPress = 1-(electrics.values.FRWindowPress or 0)", "title": "Front Right Window Up", "desc": "Closes Front Right Window" },
+    "FRWindowDown":{"order":  16,  "onChange":"electrics.values.FRWindowPress = -1-(electrics.values.FRWindowPress or 0)", "title": "Front Right Window Down", "desc": "Opens Front Right Window" }
+}
